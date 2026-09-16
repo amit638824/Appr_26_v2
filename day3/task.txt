@@ -1,0 +1,473 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                                    DAY 3
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+7. If anything is missing from your notes, complete Day 1 and Day 2 topics in
+   your notes.
+
+Note: Incomplete work or failure to answer questions will be considered
+non-compliance with class requirements.
+
+
+================================================================================
+TOPIC 1: BASICS — console, alert, prompt, confirm
+================================================================================
+
+Task 01
+Write a program to display "Hello, JavaScript!" using console.log().
+
+Task 02
+Write a program to display "Welcome to JavaScript" using alert().
+
+Task 03
+Write a program that asks the user's name using prompt() and displays it
+using console.log().
+(No number conversion needed — name is text.)
+
+Task 04
+Write a program that asks the user's city using prompt() and displays it
+using document.write().
+(No number conversion needed — city is text.)
+
+Task 05
+Write a program that uses confirm("Do you want to continue?") and prints
+the returned value.
+
+Task 06
+Write a program using console.log() to display:
+  - your name
+  - your age
+  - the message "Learning JavaScript Engine"
+
+Task 07
+Write a program that asks two things using prompt():
+  - user name
+  - favourite topic
+Then display both using console.log().
+
+Task 08
+Write a program that uses:
+  1. alert("Class test on JS Engine")
+  2. confirm("Are your notes complete?")
+  3. console.log() to print the confirm result
+
+
+================================================================================
+TOPIC 2: JAVASCRIPT ENGINE — setTimeout, Promise, fetch
+================================================================================
+
+Task 09
+Write a program using console.log and setTimeout:
+  console.log("Start");
+  setTimeout to print "Timeout" with delay 0
+  console.log("End");
+
+Task 10
+Write a program using console.log, setTimeout, and fetch:
+  console.log("Start");
+  setTimeout to print "Timeout" with delay 0
+  fetch("https://api.example.com").then() to print "Fetch done"
+  console.log("End");
+
+Task 11
+Write a program:
+  console.log("A");
+  setTimeout to print "B" with delay 0
+  Promise.resolve().then() to print "C"
+  console.log("D");
+
+Task 12
+Write a program:
+  console.log("One");
+  setTimeout to print "Two" with delay 0
+  setTimeout to print "Three" with delay 0
+  console.log("Four");
+
+Task 13
+Write a program:
+  console.log("1");
+  setTimeout to print "2" with delay 0
+  console.log("3");
+  setTimeout to print "4" with delay 0
+  console.log("5");
+
+Task 14
+Write a program that prints:
+  First
+  Second
+  Third
+Use console.log for "First" and "Second".
+Use setTimeout for "Third".
+
+Task 15
+Write a program using a for loop to print:
+  Sync 1
+  Sync 2
+  Sync 3
+Then use setTimeout to print "Async done".
+
+
+================================================================================
+TOPIC 3: CONDITIONALS — if, if...else, if...else if
+================================================================================
+
+Task 16
+Write a program using num = 15. Check whether it is positive using if.
+
+Task 17
+Write a program using num = 24. Check whether it is even or odd using if...else.
+
+Task 18
+Write a program using num = 150. Check whether it is greater than 100.
+
+Task 19
+Write a program using age = 20. Check whether the person is eligible to vote
+(age >= 18).
+
+Task 20
+Write a program using marks = 55. Check whether the student passed or failed
+(passing marks = 40).
+
+Task 21
+Write a program using num1 = 30 and num2 = 45. Find the larger number using
+if...else.
+
+Task 22
+Write a program using a = 12, b = 25, and c = 18. Find the largest of the three
+numbers using if...else if.
+
+Task 23
+Write a program using num = 35. Check whether it is divisible by 5.
+
+Task 24
+Write a program using num = 30. Check whether it is divisible by both 3 and 5.
+
+Task 25
+Write a program using marks = 85. Assign a grade based on marks:
+  - 90–100  →  A
+  - 80–89   →  B
+  - 70–79   →  C
+  - Below 70  →  Fail
+
+Task 26
+Write a program using num = -5. Check whether it is negative, positive, or zero.
+
+Task 27
+Write a program using temperature = 32.
+If temperature >= 30, display "Hot", otherwise display "Pleasant".
+
+Task 28
+Write a program using year = 2024. Check whether it is a leap year.
+(Hint: year % 4 === 0)
+
+Task 29
+Write a program using char = "e". Check whether it is a vowel or a consonant
+using if...else if.
+(Vowels: a, e, i, o, u)
+
+Task 30
+Write a program using queueName = "microtask".
+If it is "microtask", display "Runs before setTimeout".
+If it is "macrotask", display "Runs after microtasks".
+Otherwise display "Unknown queue".
+
+
+================================================================================
+TOPIC 4: ARITHMETIC OPERATORS — +, -, *, /, %, ++, --
+================================================================================
+
+Task 31
+Write a program using a = 5 and b = 3. Display the result of a + b.
+
+Task 32
+Write a program using a = 10 and b = 4. Display the result of a - b.
+
+Task 33
+Write a program using a = 4 and b = 2. Display the result of a * b.
+
+Task 34
+Write a program using a = 20 and b = 5. Display the result of a / b.
+
+Task 35
+Write a program using a = 7 and b = 2. Display the result of a % b.
+
+Task 36
+Write a program using a = 1. Use the ++ operator, then display the value of a.
+
+Task 37
+Write a program using a = 2. Use the -- operator, then display the value of a.
+
+
+================================================================================
+TOPIC 5: ASSIGNMENT OPERATORS — =, +=, -=, *=, /=, %=
+================================================================================
+
+Task 38
+Create a variable x using the = operator with value 10. Display x.
+
+Task 39
+Create a variable x = 10. Use the += assignment operator to add 5 and display
+the result.
+
+Task 40
+Create a variable x = 20. Use the -= assignment operator to subtract 8 and
+display the result.
+
+Task 41
+Create a variable x = 6. Use the *= assignment operator to multiply by 4 and
+display the result.
+
+Task 42
+Create a variable x = 100. Use the /= assignment operator to divide by 5 and
+display the result.
+
+Task 43
+Create a variable x = 17. Use the %= assignment operator with 5 and display
+the result.
+
+Task 44
+Create a variable score = 50.
+Use += 10, then *= 2, then display the final score.
+
+Task 45
+Create a variable delay = 1000.
+Use += 500, then display delay.
+
+
+================================================================================
+TOPIC 6: COMPARISON OPERATORS — ==, ===, !=, !==, >, <, >=, <=
+================================================================================
+
+Task 46
+Write a program using num1 = 10 and num2 = 10. Compare them using ==.
+
+Task 47
+Write a program using a = 5 and b = "5". Compare them using === and display
+whether they are equal.
+
+Task 48
+Write a program using num1 = 8 and num2 = 12. Check whether they are not equal
+using !=.
+
+Task 49
+Write a program using a = 5 and b = "5". Compare them using !== and display
+the result.
+
+Task 50
+Write a program using a = 10 and b = 5. Display the result of a > b.
+
+Task 51
+Write a program using a = 3 and b = 8. Display the result of a < b.
+
+Task 52
+Write a program using a = 5 and b = 5. Display the result of a >= b.
+
+Task 53
+Write a program using a = 4 and b = 4. Display the result of a <= b.
+
+Task 54
+Write a program using x = 10 and y = "10".
+Display the result of x == y and x === y.
+
+Task 55
+Write a program using stackSize = 0.
+If stackSize === 0, display "Call Stack is empty. Event Loop can run queues."
+Otherwise display "Call Stack is still busy."
+
+
+================================================================================
+TOPIC 7: LOGICAL OPERATORS — &&, ||, !
+================================================================================
+
+Task 56
+Write a program using console.log(true && false).
+
+Task 57
+Write a program using console.log(true || false).
+
+Task 58
+Write a program using console.log(!true).
+
+Task 59
+Write a program using age = 20 and hasID = true.
+If age >= 18 && hasID is true, display "Entry allowed".
+Otherwise display "Entry not allowed".
+
+Task 60
+Write a program using isMicrotask = true and isMacrotask = false.
+Display the result of isMicrotask || isMacrotask.
+
+
+================================================================================
+TOPIC 8: STRING OPERATORS — + , +=
+================================================================================
+
+Task 61
+Write a program using "Hello, " + "world!" and display the result.
+
+Task 62
+Write a program using str = "Hello".
+Use += to add " world!" and display the result.
+
+Task 63
+Write a program using firstName = "Sumit" and lastName = "Kumar".
+Join them using + and display the full name.
+
+
+================================================================================
+TOPIC 9: CONDITIONAL (TERNARY) OPERATOR — ? :
+================================================================================
+
+Task 64
+Write a program using age = 18.
+Use the ternary operator to store "Yes" or "No" in canVote, then display it.
+(age >= 18 ? "Yes" : "No")
+
+Task 65
+Write a program using marks = 55.
+Use the ternary operator to display "Pass" if marks >= 40, otherwise "Fail".
+
+Task 66
+Write a program using taskType = "microtask".
+Using the ternary operator, display:
+  "Promise.then" if taskType is "microtask"
+  otherwise display "setTimeout"
+
+
+================================================================================
+TOPIC 10: TYPE OPERATORS — typeof, instanceof
+================================================================================
+
+Task 67
+Write a program using typeof 42 and display the result.
+
+Task 68
+Write a program using typeof "Hello" and display the result.
+
+Task 69
+Write a program using typeof true and display the result.
+
+Task 70
+Write a program using arr = [].
+Display the result of arr instanceof Array.
+
+
+================================================================================
+TOPIC 11: MINI PROGRAMS (PREDEFINED VALUES)
+================================================================================
+
+Task 71
+Write a program using num1 = 25 and num2 = 17. Display their sum.
+
+Task 72
+Write a program using num1 = 42 and num2 = 38. Display the larger number.
+
+Task 73
+Write a simple calculator using num1 = 20, num2 = 4, and choice = "+".
+Perform addition, subtraction, multiplication, or division based on choice
+using if...else if.
+
+Task 74
+Write a program using wantToExit = true. Display its value using console.log().
+
+Task 75
+Write a program using name = "Sumit", age = 22, and city = "Delhi".
+Display all the information using document.write().
+
+Task 76
+Write a program using engineName = "V8" and usedIn = "Chrome and Node.js".
+Display: "JavaScript engine V8 is used in Chrome and Node.js"
+
+
+================================================================================
+TOPIC 12: SWITCH STATEMENT
+================================================================================
+
+Task 77 — Day of the Week
+Write a program using dayNumber = 4.
+Use a switch statement to display the corresponding day of the week.
+Example: 1 → Monday, 2 → Tuesday, ..., 7 → Sunday.
+
+Task 78 — Simple Calculator
+Write a program using num1 = 50, num2 = 10, and operator = "-".
+Use a switch statement to perform the selected operation and display the result.
+
+Task 79 — Month Name
+Write a program using monthNumber = 8.
+Use a switch statement to display the corresponding month name.
+Example: 1 → January, 12 → December.
+
+Task 80 — Grade Message
+Write a program that asks the user for a grade (A, B, C, D, or F) using prompt().
+Use a switch statement to display:
+  A → Excellent
+  B → Very Good
+  C → Good
+  D → Needs Improvement
+  F → Fail
+(No number conversion needed — grade is text.)
+
+Task 81 — Traffic Light
+Write a program that asks the user for a traffic light color
+(red, yellow, or green) using prompt().
+Use a switch statement to display:
+  red    → Stop
+  yellow → Wait
+  green  → Go
+  Any other input → Invalid Color
+(No number conversion needed — color is text.)
+
+Task 82 — JS Engine Part
+Write a program using part = "eventloop".
+Use a switch statement to display:
+  callstack  → Executes synchronous code one by one
+  webapi     → Handles async operations like setTimeout and fetch
+  microtask  → Promise.then and fetch.then callbacks
+  macrotask  → setTimeout, setInterval, DOM events
+  eventloop  → If Call Stack is empty, run microtasks then macrotasks
+  default    → Unknown part
+
+
+================================================================================
+TOPIC 13: LOOPS — for, while, do...while
+================================================================================
+
+Task 83
+Write a program to find the sum of numbers from 1 to 100 using a for loop.
+
+Task 84
+Write a program to print all even numbers from 1 to 50 using a for loop.
+
+Task 85
+Write a program to print numbers from 10 to 1 using a while loop.
+
+Task 86
+Write a program to print the multiplication table of num = 7 using a while loop.
+
+Task 87
+Write a program to print even numbers from 2 to 20 using a do...while loop.
+
+Task 88
+Write a program to display the multiplication table of num = 9 using a
+do...while loop.
+
+Task 89
+Write a program using a while loop to print numbers from 1 to 5.
+
+
+================================================================================
+                              TOTAL TASKS: 89
+================================================================================
