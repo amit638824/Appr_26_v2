@@ -1,0 +1,292 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 3: FUNCTIONS
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+7. If anything is missing from your notes, complete Day 1 and Day 2 topics in
+   your notes.
+
+Note: Incomplete work or failure to answer questions will be considered
+non-compliance with class requirements.
+
+
+================================================================================
+TOPIC 1: BASIC FUNCTIONS — First Simple Functions
+================================================================================
+
+Task 01
+Write a function that prints "Hello World" using console.log().
+
+Task 02
+Write a function that prints your name.
+(Example: console.log("Rahul");)
+
+Task 03
+Write a function using num1 = 10 and num2 = 5. Add them and print the result.
+
+Task 04
+Write a function using num1 = 20 and num2 = 8. Subtract them and print the result.
+
+Task 05
+Write a function using num1 = 6 and num2 = 7. Multiply them and print the result.
+
+
+================================================================================
+TOPIC 2: INBUILT FUNCTIONS — alert, prompt, confirm, parseInt, Math
+================================================================================
+
+Task 06
+Use alert() to display "Welcome to JavaScript".
+
+Task 07
+Use prompt() to take the user's name and print it using console.log().
+(No number conversion needed — name is text.)
+
+Task 08
+Use confirm() to ask "Do you want to continue?" and print the result using console.log().
+(Result will be true or false.)
+
+Task 09
+Use parseInt("25") to convert the string into a number and print it using console.log().
+
+Task 10
+Use Math.max(10, 20) to find the larger number and print the result using console.log().
+
+
+================================================================================
+TOPIC 3: USER DEFINED FUNCTIONS — Create Your Own Functions
+================================================================================
+
+Task 11
+Create a user-defined function that prints "Learning JavaScript".
+
+Task 12
+Create a function that returns the square of num = 5.
+(Hint: 5 × 5 = 25)
+
+Task 13
+Create a function that returns the cube of num = 3.
+(Hint: 3 × 3 × 3 = 27)
+
+Task 14
+Create a function using num = 8. Check whether it is even or odd and print the result.
+
+Task 15
+Create a function using num1 = 15 and num2 = 22. Return the larger number.
+
+
+================================================================================
+TOPIC 4: NAMED FUNCTIONS — Functions with a Name
+================================================================================
+
+Task 16
+Create a named function greet() that prints "Good Morning".
+
+Task 17
+Create a named function showAge() that prints your age.
+(Example: console.log(20);)
+
+Task 18
+Create a named function findArea() using length = 10 and width = 5.
+Calculate and print the area of a rectangle.
+(Hint: area = length × width)
+
+Task 19
+Create a named function findPerimeter() using length = 10 and width = 5.
+Calculate and print the perimeter of a rectangle.
+(Hint: perimeter = 2 × (length + width))
+
+Task 20
+Create a named function isPositive() using num = 12.
+Check whether the number is positive and print the result.
+
+
+================================================================================
+TOPIC 5: FUNCTION EXPRESSIONS — Anonymous Functions
+================================================================================
+
+Task 21
+Store an anonymous function in a variable and print "Hello Students".
+
+Task 22
+Create a function expression using num1 = 8 and num2 = 4. Add them and print the result.
+
+Task 23
+Create a function expression that returns the square of num = 6.
+
+
+================================================================================
+TOPIC 6: ARROW FUNCTIONS
+================================================================================
+
+Task 24
+Write an arrow function that prints "Welcome".
+
+Task 25
+Write an arrow function using num1 = 3 and num2 = 4. Multiply them and print the result.
+
+Task 26
+Write an arrow function using num = 60. Check whether the number is greater than 50
+and print the result.
+
+
+================================================================================
+TOPIC 7: IIFE — Immediately Invoked Function Expression
+================================================================================
+
+Task 27
+Write an IIFE that prints "IIFE Executed Successfully".
+
+Task 28
+Write an IIFE that adds 10 and 20 and prints the result.
+
+
+================================================================================
+TOPIC 8: SYNCHRONOUS & ASYNCHRONOUS — setTimeout
+================================================================================
+
+Task 29
+Write a synchronous program that prints in this order:
+  - First
+  - Second
+  - Third
+
+Task 30
+Write a program using setTimeout() that prints:
+  - Start
+  - End
+  - Hello (after 2 seconds)
+
+
+================================================================================
+TOPIC 9: PARAMETER TYPES — No Param, One Param, Default, Rest
+================================================================================
+
+Task 31
+Write a function without parameters that prints "Hello".
+
+Task 32
+Write a function with one parameter. Pass name = "Rohan" and print the name.
+
+Task 33
+Write a function with two parameters using num1 = 12 and num2 = 8. Add them and print the result.
+
+Task 34
+Write a function with three parameters using a = 5, b = 15, and c = 10.
+Find and print the largest number.
+
+Task 35
+Write a function with a default parameter to greet a user.
+If no name is passed, use default name = "Guest".
+Print "Hello, Guest" or "Hello, [name]".
+
+Task 36
+Write a function with rest parameters (...numbers) using values 2, 4, and 6.
+Find and print the sum of all numbers.
+
+
+================================================================================
+TOPIC 10: RETURN VALUE TYPES — Number, String, Boolean, Array, Object
+================================================================================
+
+Task 37
+Write a function using num1 = 10 and num2 = 20. Return their sum (do not print inside the function).
+Print the returned value outside the function.
+
+Task 38
+Write a function that returns the string "Welcome". Print the returned value.
+
+Task 39
+Write a function using num = 14. Return true if the number is even, otherwise return false.
+Print the returned value.
+
+Task 40
+Write a function that returns an array of five numbers: [1, 2, 3, 4, 5].
+Print the returned array.
+
+Task 41
+Write a function that returns an object: { name: "Ravi", age: 18 }.
+Print the returned object.
+
+Task 42
+Write a function using num1 = 7 and num2 = 3 that only prints the sum using console.log()
+and does not use return.
+
+
+================================================================================
+TOPIC 11: MIXED PRACTICE — Combine What You Learned
+================================================================================
+
+Task 43
+Write a function that takes two parameters num1 = 30 and num2 = 18 and returns the greater number.
+
+Task 44
+Write an arrow function with default parameters num1 = 5 and num2 = 4.
+Return the product of the two numbers.
+
+Task 45
+Write an anonymous function that accepts name = "Sneha" as a parameter
+and returns the message "Welcome, Sneha".
+
+
+================================================================================
+TOPIC 12: PARAMETERS & RETURN — Four Types of Functions
+================================================================================
+
+--- Type 1: No Parameters, No Return Value ---
+
+Task 46
+Write a function that prints your name.
+
+Task 47
+Write a function that prints "Welcome to JavaScript".
+
+Task 48
+Write a function that prints the numbers from 1 to 5 using a loop.
+
+
+--- Type 2: Parameters, No Return Value ---
+
+Task 49
+Write a function that takes name = "Rahul" as a parameter and prints "Hello, Rahul".
+
+Task 50
+Write a function that takes num1 = 10 and num2 = 15 as parameters and prints their sum.
+
+Task 51
+Write a function that takes num1 = 8 and num2 = 20 as parameters and prints the larger number.
+
+
+--- Type 3: No Parameters, Return Value ---
+
+Task 52
+Write a function that returns the number 1. Print the returned value.
+
+Task 53
+Write a function that returns a random number using Math.random(). Print the returned value.
+
+
+--- Type 4: Parameters and Return Value ---
+
+Task 54
+Write a function that takes num1 = 25 and num2 = 10 as parameters and returns their sum.
+
+Task 55
+Write a function that takes num1 = 25 and num2 = 10 as parameters and returns their difference.
+
+
+================================================================================
+                              TOTAL TASKS: 55
+================================================================================
