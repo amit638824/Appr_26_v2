@@ -15,11 +15,11 @@ Assignment for All Students (Mandatory)
 4. Be ready for questions. Any topic may be asked to any student in the next class.
 5. Complete the assignment before the next class.
 6. Bring your handwritten notes and programs for checking.
-7. If anything is missing from your notes, complete Day 1 and Day 2 topics in
-   your notes.
+7. local storage & session storage  ka code html file me krna h 
+8.  Function ka code node js se run krna hai.
 
-Note: Incomplete work or failure to answer questions will be considered
-non-compliance with class requirements.
+**Note:** If you are facing any issues while writing the function code, please refer to the **Day 4 notes** for help.
+
 
 
 ================================================================================
