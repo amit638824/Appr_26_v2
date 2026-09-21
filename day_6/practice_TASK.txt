@@ -1,0 +1,337 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 3: FUNCTIONS
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+7. If anything is missing from your notes, complete Day 1 and Day 2 topics in
+   your notes.
+
+Note: Incomplete work or failure to answer questions will be considered
+non-compliance with class requirements.
+
+
+================================================================================
+TOPIC 1: LOCAL STORAGE — Basic Operations (setItem, getItem, removeItem, clear)
+================================================================================
+
+Task 01
+Store your name in localStorage using key "username" and value "Rahul" (or your name).
+(Example: localStorage.setItem("username", "Rahul");)
+
+Task 02
+Retrieve the value of "username" from localStorage using localStorage.getItem() and print it using console.log().
+
+Task 03
+Update the "username" in localStorage with a new name (e.g. "Rohit") and print the updated value.
+
+Task 04
+Remove the item "username" from localStorage using localStorage.removeItem().
+
+Task 05
+Add two items to localStorage ("city": "Delhi" and "country": "India"). Then use localStorage.clear() to remove all data.
+
+Task 06
+Use localStorage.length to check and print how many items are currently stored in localStorage.
+
+Task 07
+Store a number 100 in localStorage with key "score". Retrieve it and convert it back to a number using Number(), then print the result.
+(Hint: Values stored in localStorage are always strings.)
+
+
+================================================================================
+TOPIC 2: SESSION STORAGE — Basic Operations
+================================================================================
+
+Task 08
+Store a message "Welcome" in sessionStorage using key "greeting".
+(Example: sessionStorage.setItem("greeting", "Welcome");)
+
+Task 09
+Retrieve the value of "greeting" from sessionStorage using sessionStorage.getItem() and display it using console.log().
+
+Task 10
+Store an item "sessionId" with value "12345" in sessionStorage, and then remove it using sessionStorage.removeItem().
+
+Task 11
+Store two items in sessionStorage ("tab": "1", "status": "active"). Then clear all data using sessionStorage.clear().
+
+Task 12
+Store user login status in sessionStorage using key "isLoggedIn" and value "true".
+Retrieve it and use an if condition to print "User is logged in" if the value is "true".
+
+
+================================================================================
+TOPIC 3: EASY PRACTICAL PRACTICE — Local vs Session Storage
+================================================================================
+
+Task 13
+Write a program to store a user's theme preference ("dark" or "light") in localStorage.
+Retrieve it and print "Current Theme: " with the theme name.
+
+Task 14
+Write a program using sessionStorage to store the current form step (e.g. step = "Step 2").
+Print "Current Form Step: Step 2".
+
+Task 15
+Check if an item with key "token" exists in localStorage using localStorage.getItem("token").
+If it returns null, print "No token found, please login".
+
+
+================================================================================
+TOPIC 4: BASIC FUNCTIONS — First Simple Functions
+================================================================================
+
+Task 16
+Write a function that prints "Hello World" using console.log().
+
+Task 17
+Write a function that prints your name.
+(Example: console.log("Rahul");)
+
+Task 18
+Write a function using num1 = 10 and num2 = 5. Add them and print the result.
+
+Task 19
+Write a function using num1 = 20 and num2 = 8. Subtract them and print the result.
+
+Task 20
+Write a function using num1 = 6 and num2 = 7. Multiply them and print the result.
+
+
+================================================================================
+TOPIC 5: USER DEFINED FUNCTIONS — Create Your Own Functions
+================================================================================
+
+Task 21
+Create a user-defined function that prints "Learning JavaScript".
+
+Task 22
+Create a function that returns the square of num = 5.
+(Hint: 5 × 5 = 25)
+
+Task 23
+Create a function that returns the cube of num = 3.
+(Hint: 3 × 3 × 3 = 27)
+
+Task 24
+Create a function using num = 8. Check whether it is even or odd and print the result.
+
+Task 25
+Create a function using num1 = 15 and num2 = 22. Return the larger number.
+
+
+================================================================================
+TOPIC 6: NAMED FUNCTIONS — Functions with a Name
+================================================================================
+
+Task 26
+Create a named function greet() that prints "Good Morning".
+
+Task 27
+Create a named function showAge() that prints your age.
+(Example: console.log(20);)
+
+Task 28
+Create a named function findArea() using length = 10 and width = 5.
+Calculate and print the area of a rectangle.
+(Hint: area = length × width)
+
+Task 29
+Create a named function findPerimeter() using length = 10 and width = 5.
+Calculate and print the perimeter of a rectangle.
+(Hint: perimeter = 2 × (length + width))
+
+Task 30
+Create a named function isPositive() using num = 12.
+Check whether the number is positive and print the result.
+
+
+================================================================================
+TOPIC 7: FUNCTION EXPRESSIONS — Anonymous Functions
+================================================================================
+
+Task 31
+Store an anonymous function in a variable and print "Hello Students".
+
+Task 32
+Create a function expression using num1 = 8 and num2 = 4. Add them and print the result.
+
+Task 33
+Create a function expression that returns the square of num = 6.
+
+
+================================================================================
+TOPIC 8: ARROW FUNCTIONS
+================================================================================
+
+Task 34
+Write an arrow function that prints "Welcome".
+
+Task 35
+Write an arrow function using num1 = 3 and num2 = 4. Multiply them and print the result.
+
+Task 36
+Write an arrow function using num = 60. Check whether the number is greater than 50
+and print the result.
+
+
+================================================================================
+TOPIC 9: IIFE — Immediately Invoked Function Expression
+================================================================================
+
+Task 37
+Write an IIFE that prints "IIFE Executed Successfully".
+
+Task 38
+Write an IIFE that adds 10 and 20 and prints the result.
+
+
+================================================================================
+TOPIC 10: SYNCHRONOUS & ASYNCHRONOUS — setTimeout
+================================================================================
+
+Task 39
+Write a synchronous program that prints in this order:
+  - First
+  - Second
+  - Third
+
+Task 40
+Write a program using setTimeout() that prints:
+  - Start
+  - End
+  - Hello (after 2 seconds)
+
+
+================================================================================
+TOPIC 11: PARAMETER TYPES — No Param, One Param, Default, Rest
+================================================================================
+
+Task 41
+Write a function without parameters that prints "Hello".
+
+Task 42
+Write a function with one parameter. Pass name = "Rohan" and print the name.
+
+Task 43
+Write a function with two parameters using num1 = 12 and num2 = 8. Add them and print the result.
+
+Task 44
+Write a function with three parameters using a = 5, b = 15, and c = 10.
+Find and print the largest number.
+
+Task 45
+Write a function with a default parameter to greet a user.
+If no name is passed, use default name = "Guest".
+Print "Hello, Guest" or "Hello, [name]".
+
+Task 46
+Write a function with rest parameters (...numbers) using values 2, 4, and 6.
+Find and print the sum of all numbers.
+
+
+================================================================================
+TOPIC 12: RETURN VALUE TYPES — Number, String, Boolean, Array, Object
+================================================================================
+
+Task 47
+Write a function using num1 = 10 and num2 = 20. Return their sum (do not print inside the function).
+Print the returned value outside the function.
+
+Task 48
+Write a function that returns the string "Welcome". Print the returned value.
+
+Task 49
+Write a function using num = 14. Return true if the number is even, otherwise return false.
+Print the returned value.
+
+Task 50
+Write a function that returns an array of five numbers: [1, 2, 3, 4, 5].
+Print the returned array.
+
+Task 51
+Write a function that returns an object: { name: "Ravi", age: 18 }.
+Print the returned object.
+
+Task 52
+Write a function using num1 = 7 and num2 = 3 that only prints the sum using console.log()
+and does not use return.
+
+
+================================================================================
+TOPIC 13: MIXED PRACTICE — Combine What You Learned
+================================================================================
+
+Task 53
+Write a function that takes two parameters num1 = 30 and num2 = 18 and returns the greater number.
+
+Task 54
+Write an arrow function with default parameters num1 = 5 and num2 = 4.
+Return the product of the two numbers.
+
+Task 55
+Write an anonymous function that accepts name = "Sneha" as a parameter
+and returns the message "Welcome, Sneha".
+
+
+================================================================================
+TOPIC 14: PARAMETERS & RETURN — Four Types of Functions
+================================================================================
+
+--- Type 1: No Parameters, No Return Value ---
+
+Task 56
+Write a function that prints your name.
+
+Task 57
+Write a function that prints "Welcome to JavaScript".
+
+Task 58
+Write a function that prints the numbers from 1 to 5 using a loop.
+
+
+--- Type 2: Parameters, No Return Value ---
+
+Task 59
+Write a function that takes name = "Rahul" as a parameter and prints "Hello, Rahul".
+
+Task 60
+Write a function that takes num1 = 10 and num2 = 15 as parameters and prints their sum.
+
+Task 61
+Write a function that takes num1 = 8 and num2 = 20 as parameters and prints the larger number.
+
+
+--- Type 3: No Parameters, Return Value ---
+
+Task 62
+Write a function that returns the number 1. Print the returned value.
+
+Task 63
+Write a function that returns a random number using Math.random(). Print the returned value.
+
+
+--- Type 4: Parameters and Return Value ---
+
+Task 64
+Write a function that takes num1 = 25 and num2 = 10 as parameters and returns their sum.
+
+Task 65
+Write a function that takes num1 = 25 and num2 = 10 as parameters and returns their difference.
+
+
+================================================================================
+                               TOTAL TASKS: 65
+================================================================================
