@@ -1,0 +1,351 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 7: Modules
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+7. Module ka code Node.js se run karna hai.
+   Example: node app.js
+8. CommonJS (require / module.exports) aur ES Module (import / export)
+   ko ek hi file mein mix mat karo.
+
+**Note:** If you are facing any issues, please refer to the class notes for help.
+
+
+
+================================================================================
+TOPIC 1: COMMONJS — Single Export (module.exports)
+================================================================================
+
+Run all CommonJS files using Node.js.
+Example: node app.js
+
+Note: CommonJS uses require() to import and module.exports to export.
+Do not mix CommonJS (require) with ES Module (import) in the same file.
+
+
+Task 01
+Create a math.js file and export a single add() function using module.exports.
+(Example: module.exports = function add(a, b) { return a + b; })
+
+
+Task 02
+Create a greet.js file and export a single greet() function.
+The function should print "Hello Student" or greet a name.
+
+
+Task 03
+Create a user.js file and export a single name variable.
+(Example: module.exports = "Rahul";)
+
+
+Task 04
+Create a square.js file and export a single square() function.
+The function should return the square of a number.
+(Hint: square(5) should return 25)
+
+
+Task 05
+Create a student.js file and export a single student object containing name, age, and course.
+(Example: module.exports = { name: "Amit", age: 20, course: "JavaScript" };)
+
+
+Task 06
+Create a message.js file and export a single string "Hello JavaScript".
+Import it in another file and print it using console.log().
+
+
+Task 07
+Create a multiply.js file and export a single multiply() function.
+Import it using require() and calculate 8 × 9.
+Print the result. (Expected output: 72)
+
+
+Task 08
+Create a city.js file and export a single city name.
+Import it into app.js and print it.
+(Example: module.exports = "Delhi";)
+
+
+Task 09
+Create a calculator.js file and export only a divide() function.
+Import and use it in app.js to divide two numbers (e.g. 20 / 5).
+Print the result.
+
+
+Task 10
+Create a company.js file and export a single object containing name, location, and employees.
+Import it in app.js and print all three properties.
+
+
+================================================================================
+TOPIC 2: COMMONJS — Multiple Export
+================================================================================
+
+Note: For multiple exports, use:
+    module.exports = { add, subtract, multiply };
+OR:
+    exports.add = function() { ... };
+
+
+Task 11
+Create a math.js file and export three functions: add(), subtract(), and multiply().
+Import all three in app.js and use them with sample numbers.
+
+
+Task 12
+Create a user.js file and export name, age, and email using multiple exports.
+Import them in app.js and print all three values.
+
+
+Task 13
+Create a calculator.js file and export four functions: add(), subtract(), multiply(), and divide().
+Import all four in app.js and print the result of each operation.
+
+
+Task 14
+Create a student.js file and export name, course, marks, and grade.
+Import them in app.js and print a student report.
+
+
+Task 15
+Create a fruits.js file and export three variables: fruit1, fruit2, and fruit3.
+Import them in app.js and print all three fruit names.
+
+
+Task 16
+Create a geometry.js file and export functions for areaOfCircle(), areaOfSquare(), and areaOfRectangle().
+Import all three in app.js and calculate sample areas.
+(Hint: circle = πr², square = side × side, rectangle = length × width)
+
+
+Task 17
+Create a number.js file and export square(), cube(), and isEven() functions.
+Import them in app.js and test with a number (e.g. 4).
+
+
+Task 18
+Create a person.js file and export name, age, city, and a greet() function.
+Import all of them in app.js. Call greet() and print the other values.
+
+
+Task 19
+Create a product.js file and export productName, price, category, and a showProduct() function.
+Import them in app.js and call showProduct() to display product details.
+
+
+Task 20
+Create a complete CommonJS mini-project with math.js and app.js.
+math.js should have multiple exports (add, subtract, multiply, divide).
+app.js should import and use all of them.
+Print the result of each operation.
+
+
+================================================================================
+TOPIC 3: ES MODULE — Single Export (export default)
+================================================================================
+
+Run ES Module files using Node.js.
+To use ES Modules, add this in package.json:
+    { "type": "module" }
+
+Note: ES Module uses import / export.
+Single export uses: export default functionName;
+Import uses: import functionName from "./file.js";
+Always use .js extension in the import path.
+
+
+Task 21
+Create a greet.js file and export a single greetUser() function using export default.
+Import it into app.js and call it with a name.
+
+
+Task 22
+Create a square.js file and export a single calculateSquare() function.
+Import and use it in app.js to find the square of a number (e.g. 6).
+
+
+Task 23
+Create a maximum.js file and export a single findMaximum() function.
+Apply it to two numbers (e.g. 15 and 28) and print the larger number.
+
+
+Task 24
+Create a number.js file and export a single checkEven() function.
+Use it to check whether a number is even or odd and print the result.
+
+
+Task 25
+Create an area.js file and export a single calculateArea() function.
+Calculate the area of a circle using radius = 7.
+(Hint: area = 3.14 × radius × radius)
+
+
+Task 26
+Create a string.js file and export a single convertToUpperCase() function.
+Use it on a string (e.g. "javascript") and print the result.
+(Expected output: JAVASCRIPT)
+
+
+Task 27
+Create a percentage.js file and export a single calculatePercentage() function.
+Calculate marks percentage. (Example: obtained = 80, total = 100 → 80%)
+
+
+Task 28
+Create a message.js file and export a single generateMessage() function.
+Make it return a message (e.g. "Welcome to ES Modules") and print it in app.js.
+
+
+Task 29
+Create a minimum.js file and export a single findMinimum() function.
+Find the minimum among three numbers (e.g. 12, 5, 9) and print it.
+
+
+Task 30
+Create a cube.js file and export a single calculateCube() function.
+Calculate the cube of a number (e.g. 4).
+(Hint: 4 × 4 × 4 = 64)
+
+
+================================================================================
+TOPIC 4: ES MODULE — Multiple Export (Named Export)
+================================================================================
+
+Note: For multiple (named) exports, use:
+    export function add() { ... }
+    export const name = "Rahul";
+Import uses:
+    import { add, subtract } from "./math.js";
+
+
+Task 31
+In math.js, export calculateSum(), calculateDifference(), and calculateProduct() functions.
+Import all three in app.js and use them with sample numbers.
+
+
+Task 32
+In user.js, export getUserName(), getUserAge(), and getUserCity() functions.
+Import all three in app.js and print the returned values.
+
+
+Task 33
+In calculator.js, export performAddition(), performSubtraction(), performMultiplication(), and performDivision() functions.
+Import all four in app.js and print the result of each.
+
+
+Task 34
+In student.js, export getStudentName(), getStudentCourse(), and getStudentMarks() functions.
+Import all three in app.js and print a student summary.
+
+
+Task 35
+In number.js, export checkPositive(), checkNegative(), and checkZero() functions.
+Import them in app.js and test with different numbers (e.g. 5, -3, 0).
+
+
+Task 36
+In geometry.js, export findCircleArea(), findSquareArea(), and findRectangleArea() functions.
+Import all three in app.js and calculate sample areas.
+
+
+Task 37
+In string.js, export reverseText(), countCharacters(), and capitalizeText() functions.
+Import all three in app.js.
+Test with the string "hello".
+(Hint: reverse → olleh, count → 5, capitalize → Hello)
+
+
+Task 38
+In employee.js, export getEmployeeName(), getEmployeeSalary(), and getEmployeeDepartment() functions.
+Import all three in app.js and print employee details.
+
+
+Task 39
+In product.js, export getProductName(), getProductPrice(), and getProductCategory() functions.
+Import all three in app.js and print product details.
+
+
+Task 40
+In app.js, import 3 different functions from a module and call all three to display their output.
+You may reuse math.js or create a new module.
+
+
+================================================================================
+TOPIC 5: ES MODULE ALIASING — import { name as alias }
+================================================================================
+
+Note: Aliasing means importing a function/variable with a different name.
+Syntax:
+    import { add as sum } from "./math.js";
+Now you will call sum(), not add().
+
+
+Task 41
+math.js se add() function export karo aur app.js mein use sum naam se import karo.
+(Example: import { add as sum } from "./math.js";)
+sum(10, 20) call karke result print karo.
+
+
+Task 42
+user.js se userName export karo aur app.js mein use name naam se import karo.
+name ko console.log() se print karo.
+
+
+Task 43
+calculator.js se multiply() function ko product() alias ke saath import karo.
+product(6, 7) call karke result print karo. (Expected: 42)
+
+
+Task 44
+student.js se studentName aur studentAge export karo aur unhe name aur age alias ke saath import karo.
+Dono values print karo.
+
+
+Task 45
+math.js se calculateSquare() function ko square alias ke saath import karo.
+square(9) call karke result print karo. (Expected: 81)
+
+
+Task 46
+user.js se getUserName() aur getUserEmail() functions ko name aur email alias ke saath import karo.
+Dono functions call karke values print karo.
+
+
+Task 47
+geometry.js se calculateCircleArea() function ko circleArea alias aur calculateSquareArea() ko squareArea alias do.
+Dono functions call karke area print karo.
+
+
+Task 48
+product.js se productName, productPrice, aur productCategory export karo.
+Import karte waqt unke aliases name, price, aur category rakho.
+Teenon values print karo.
+
+
+Task 49
+math.js mein add() aur subtract() functions export karo.
+app.js mein unhe addition() aur minus() aliases ke saath import karo.
+Dono functions use karke results print karo.
+
+
+Task 50
+Ek module banao jisme 5 named exports hon (jaise add, subtract, multiply, divide, square).
+app.js mein un sabhi ko different aliases ke saath import karke use karo.
+(Example: add as sum, subtract as minus, multiply as product, divide as quotient, square as sq)
+
+
+================================================================================
+                               TOTAL TASKS: 50
+================================================================================
