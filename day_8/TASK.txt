@@ -1,0 +1,234 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         DAY 8: Array Methods
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+
+**Note:** If you are facing any issues, please refer to the class notes for help.
+
+
+
+================================================================================
+TOPIC 1: forEach()
+================================================================================
+
+Task 01
+Use forEach() to print all elements of [10, 20, 30, 40, 50].
+
+
+Task 02
+Use forEach() to print the square of each number in an array.
+
+
+Task 03
+Use forEach() to print student names one by one.
+
+
+Task 04
+Use forEach() to add 5 to each number in an array and print the result.
+
+
+================================================================================
+TOPIC 2: push() / pop()
+================================================================================
+
+Task 05
+Use push() to add "Mango" at the end of an array.
+
+
+Task 06
+Use push() to add 3 new numbers to an array.
+
+
+Task 07
+Use pop() to remove the last element of an array.
+
+
+Task 08
+Use pop() to remove the last element and print the removed element in the console.
+
+
+================================================================================
+TOPIC 3: unshift() / shift()
+================================================================================
+
+Task 09
+Use unshift() to add "Apple" at the beginning of an array.
+
+
+Task 10
+Use shift() to remove the first element of an array and print it.
+
+
+================================================================================
+TOPIC 4: includes() / indexOf()
+================================================================================
+
+Task 11
+Use includes() to check whether 30 is present in [10, 20, 30, 40].
+
+
+Task 12
+Use indexOf() to find the index of "JavaScript".
+
+
+Task 13
+Use indexOf() to check whether a given element is present in an array.
+
+
+================================================================================
+TOPIC 5: Array.isArray()
+================================================================================
+
+Task 14
+Use Array.isArray() to check whether let data = [1, 2, 3] is an array.
+
+
+Task 15
+Use Array.isArray() to check both an array and a normal object.
+
+
+================================================================================
+TOPIC 6: map()
+================================================================================
+
+Task 16
+Use map() to find the square of all numbers in [1, 2, 3, 4, 5].
+
+
+Task 17
+Use map() to double each number in [10, 20, 30, 40].
+
+
+Task 18
+Use map() to convert student names to uppercase.
+
+
+Task 19
+Use map() to increase prices by 10%.
+
+
+Task 20
+Use map() to convert each number in an array to a string.
+
+
+================================================================================
+TOPIC 7: filter()
+================================================================================
+
+Task 21
+Use filter() to get only the even numbers from an array.
+
+
+Task 22
+Use filter() to get only the odd numbers from an array.
+
+
+Task 23
+Use filter() to get students whose marks are greater than 50.
+
+
+Task 24
+Use filter() to get persons whose age is 18 or greater.
+
+
+Task 25
+Use filter() to create a new array of positive numbers.
+
+
+================================================================================
+TOPIC 8: reduce()
+================================================================================
+
+Task 26
+Use reduce() to find the sum of all numbers in an array.
+
+
+Task 27
+Use reduce() to multiply all numbers in an array.
+
+
+Task 28
+Use reduce() to find the maximum number in an array.
+
+
+Task 29
+Use reduce() to find the minimum number in an array.
+
+
+Task 30
+Use reduce() to calculate the total price of products in a shopping cart.
+
+
+================================================================================
+TOPIC 9: slice() / splice()
+================================================================================
+
+Task 31
+Use slice() to get the first 3 elements of an array.
+
+
+Task 32
+Use slice() to get the last 3 elements of an array.
+
+
+Task 33
+Use splice() to remove 2 elements from an array.
+
+
+Task 34
+Use splice() to add a new element at the second position of an array.
+
+
+================================================================================
+TOPIC 10: reverse() / sort() / concat()
+================================================================================
+
+Task 35
+Use reverse() to reverse an array.
+
+
+Task 36
+Use sort() to arrange names in alphabetical order.
+
+
+Task 37
+Use sort() to arrange numbers in ascending order.
+
+
+Task 38
+Use sort() to arrange numbers in descending order.
+
+
+Task 39
+Use concat() to combine 2 arrays.
+
+
+================================================================================
+TOPIC 11: Mixed Task
+================================================================================
+
+Task 40
+Given numbers = [10, 5, 20, 15, 30, 25], use filter(), map(), reduce(),
+sort(), and reverse() to:
+    - get numbers greater than 10
+    - find their squares
+    - find the total of the squares
+    - arrange the squares in descending order
+
+
+================================================================================
+                               TOTAL TASKS: 40
+================================================================================
