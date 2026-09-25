@@ -1,6 +1,6 @@
 ================================================================================
                     JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
-                    DAY 9: Array & String Methods (English Version)
+                             DAY 10: String Methods
 ================================================================================
 
 INSTRUCTIONS
@@ -16,288 +16,306 @@ Assignment for All Students (Mandatory)
 5. Complete the assignment before the next class.
 6. Bring your handwritten notes and programs for checking.
 
-**Note:** If you are facing any issues, please refer to the class notes for help.
+Note: If you are facing any issues, please refer to the class notes for help.
 
 
 ================================================================================
-TOPIC 1: entries()
+TOPIC 1: startsWith()
 ================================================================================
 
 Task 01
-Use entries() to print both the index and value of an array.
+Use startsWith() to check whether "JavaScript" starts with "Java".
 
 
 Task 02
-Use entries() to print only the elements at even indexes.
+Use startsWith() to check whether "Hello World" starts with "Hello".
 
 
 Task 03
-Use entries() to print the index and marks of students whose marks are 50 or more.
+Use startsWith() to check whether "Welcome to JavaScript" starts with "Welcome".
 
 
 ================================================================================
-TOPIC 2: every()
+TOPIC 2: endsWith()
 ================================================================================
 
 Task 04
-Use every() to check whether all numbers in the array are positive or not.
+Use endsWith() to check whether "JavaScript" ends with "Script".
 
 
 Task 05
-Use every() to check whether all numbers in the array are greater than 10 or not.
+Use endsWith() to check whether "Hello World" ends with "World".
 
 
 Task 06
-Use every() to check whether all students have marks of 40 or more.
+Use endsWith() to check whether "Welcome to JavaScript" ends with "JavaScript".
 
 
 ================================================================================
-TOPIC 3: some()
+TOPIC 3: search()
 ================================================================================
 
 Task 07
-Use some() to check whether there is any even number in the array.
+Use search() to find the position of "JavaScript" in "I love JavaScript".
 
 
 Task 08
-Use some() to check whether there is any number greater than 50 in the array.
+Use search() to find the position of "World" in "Hello World".
 
 
 Task 09
-Use some() to check whether any student has marks of 90 or more.
+Use search() to find the position of "easy" in "JavaScript is easy to learn".
 
 
 ================================================================================
-TOPIC 4: find()
+TOPIC 4: indexOf()
 ================================================================================
 
 Task 10
-Use find() to find the first even number in the array.
+Use indexOf() to find the position of "JavaScript" in "I love JavaScript".
 
 
 Task 11
-Use find() to find the first number that is greater than 50.
+Use indexOf() to find the first position of "Hello" in "Hello World Hello".
 
 
 Task 12
-Use find() to find the first student whose marks are 80 or more.
+Use indexOf() to find the position of "powerful" in "JavaScript is powerful".
 
 
 ================================================================================
-TOPIC 5: findIndex()
+TOPIC 5: lastIndexOf()
 ================================================================================
 
 Task 13
-Use findIndex() to find the index of the first even number.
+Use lastIndexOf() to find the last position of "Hello" in "Hello World Hello".
 
 
 Task 14
-Use findIndex() to find the index of the first number greater than 50.
+Use lastIndexOf() to find the last position of "JavaScript" in
+"JavaScript JavaScript".
 
 
 Task 15
-Use findIndex() to find the index of the student whose marks are 80 or more.
-
-
-================================================================================
-TOPIC 6: fill()
-================================================================================
-
-Task 16
-Use fill() to fill all elements of the array with 0.
-
-
-Task 17
-Use fill() to fill the elements from index 2 to index 5 with 100.
-
-
-Task 18
-Use fill() to fill the last 3 elements of the array with "JavaScript".
-
-
-================================================================================
-TOPIC 7: String — length
-================================================================================
-
-Task 19
-Use length to find the total number of characters present in a string.
-
-
-Task 20
-Use length to access the last character of a string.
-
-
-Task 21
-Use length to check how many characters are in a string.
-
-
-================================================================================
-TOPIC 8: toUpperCase()
-================================================================================
-
-Task 22
-Use toUpperCase() to convert "javascript" to uppercase.
-
-
-Task 23
-Use toUpperCase() to convert "hello world" to uppercase.
-
-
-Task 24
-Use toUpperCase() to convert all names present in an array to uppercase.
-
-
-================================================================================
-TOPIC 9: toLowerCase()
-================================================================================
-
-Task 25
-Use toLowerCase() to convert "JAVASCRIPT" to lowercase.
-
-
-Task 26
-Use toLowerCase() to convert "HELLO WORLD" to lowercase.
-
-
-Task 27
-Use toLowerCase() to convert all names present in an array to lowercase.
-
-
-================================================================================
-TOPIC 10: match()
-================================================================================
-
-Task 28
-Use match() to find "JavaScript" in "I love JavaScript".
-
-
-Task 29
-Use match() to find all matches of "apple" in "apple banana apple mango".
-
-
-Task 30
-Use match() to find all numbers in the given sentence.
-
-
-================================================================================
-TOPIC 11: slice()
-================================================================================
-
-Task 31
-Use slice() to extract the first 4 characters from "JavaScript".
-
-
-Task 32
-Use slice() to extract "World" from "Hello World".
-
-
-Task 33
-Use slice() to extract the last 3 characters of a string.
-
-
-================================================================================
-TOPIC 12: replace()
-================================================================================
-
-Task 34
-Use replace() to replace "JavaScript" with "Python" in "I love JavaScript".
-
-
-Task 35
-Use replace() to replace "World" with "Everyone" in "Hello World".
-
-
-Task 36
-Use replace() to replace the first "JavaScript" with "Python" in
-"I like JavaScript and JavaScript is easy".
-
-
-================================================================================
-TOPIC 13: replaceAll()
-================================================================================
-
-Task 37
-Use replaceAll() to replace all "JavaScript" with "Python" in
-"I like JavaScript. JavaScript is easy."
-
-
-Task 38
-Use replaceAll() to replace all "apple" with "orange" in
+Use lastIndexOf() to find the last position of "apple" in
 "apple banana apple mango apple".
 
 
-Task 39
-Use replaceAll() to replace all "Hello" with "Hi" in
-"Hello World. Hello Everyone. Hello JavaScript."
+================================================================================
+TOPIC 6: charAt()
+================================================================================
+
+Task 16
+Use charAt() to extract the first character of "JavaScript".
+
+
+Task 17
+Use charAt() to extract the 6th character of "Hello World".
+
+
+Task 18
+Use charAt() to extract the last character of "JavaScript".
 
 
 ================================================================================
-TOPIC 14: split()
+TOPIC 7: charCodeAt()
+================================================================================
+
+Task 19
+Use charCodeAt() to find the character code of "A".
+
+
+Task 20
+Use charCodeAt() to find the character code of the first character of
+"JavaScript".
+
+
+Task 21
+Use charCodeAt() to find the character code of the 3rd character of "Hello".
+
+
+================================================================================
+TOPIC 8: fromCharCode()
+================================================================================
+
+Task 22
+Use fromCharCode() to get the character from character code 65.
+
+
+Task 23
+Use fromCharCode() to create characters from 65, 66, and 67.
+
+
+Task 24
+Use fromCharCode() to create a word from 72, 101, 108, 108, and 111.
+
+
+================================================================================
+TOPIC 9: concat()
+================================================================================
+
+Task 25
+Use concat() to join "Hello" and "World".
+
+
+Task 26
+Use concat() to join "JavaScript" and "is Easy" to create a sentence.
+
+
+Task 27
+Use concat() to join three strings "HTML", "CSS", and "JavaScript" into one
+string.
+
+
+================================================================================
+TOPIC 10: repeat()
+================================================================================
+
+Task 28
+Use repeat() to repeat "Hello " 3 times.
+
+
+Task 29
+Use repeat() to repeat "JavaScript " 5 times.
+
+
+Task 30
+Use repeat() to repeat "*" 10 times to create a line.
+
+
+================================================================================
+TOPIC 11: substr()
+================================================================================
+
+Task 31
+Use substr() to extract the first 4 characters from "JavaScript".
+
+
+Task 32
+Use substr() to extract "World" from "Hello World".
+
+
+Task 33
+Use substr() to extract "Programming" from "JavaScript Programming".
+
+
+================================================================================
+TOPIC 12: substring()
+================================================================================
+
+Task 34
+Use substring() to extract "Java" from "JavaScript".
+
+
+Task 35
+Use substring() to extract "World" from "Hello World".
+
+
+Task 36
+Use substring() to extract "Programming" from "JavaScript Programming".
+
+
+================================================================================
+TOPIC 13: toString()
+================================================================================
+
+Task 37
+Use toString() to convert the number 100 into a string.
+
+
+Task 38
+Use toString() to convert the number 500 into a string and find its length.
+
+
+Task 39
+Use toString() to convert the array [10, 20, 30] into a string.
+
+
+================================================================================
+TOPIC 14: valueOf()
 ================================================================================
 
 Task 40
-Use split() to convert "JavaScript" into an array of individual characters.
+Use valueOf() to get the primitive string value of "JavaScript".
 
 
 Task 41
-Use split() to convert "I love JavaScript" into an array of words.
+Use valueOf() to print the actual string value of "Hello World".
 
 
 Task 42
-Use split() to convert "HTML-CSS-JavaScript-Bootstrap" into an array of
-separate elements based on "-".
+Use valueOf() to get the value of a string and store it in another variable.
 
 
 ================================================================================
-TOPIC 15: trim()
+TOPIC 15: trimStart()
 ================================================================================
 
 Task 43
-Use trim() to remove the extra spaces before and after " JavaScript ".
+Use trimStart() to remove the starting spaces from " JavaScript".
 
 
 Task 44
-Use trim() to print " Hello World " without extra spaces.
+Use trimStart() to print " Hello World" without starting spaces.
 
 
 Task 45
-Use trim() to remove extra spaces from " Hello javaScript " and then find its length.
+Use trimStart() to remove only the starting spaces from " JavaScript "
+and keep the ending spaces.
 
 
 ================================================================================
-TOPIC 16: includes()
+TOPIC 16: trimEnd()
 ================================================================================
 
 Task 46
-Use includes() to check whether "Script" exists in the string "JavaScript".
+Use trimEnd() to remove the ending spaces from "JavaScript ".
 
 
 Task 47
-Use includes() to check whether "learning" exists in "I love learning JavaScript".
+Use trimEnd() to print "Hello World " without ending spaces.
 
 
 Task 48
-Use includes() to check whether "Java" exists in "HTML, CSS, JavaScript, Bootstrap".
+Use trimEnd() to remove only the ending spaces from " JavaScript "
+and keep the starting spaces.
 
 
 ================================================================================
-TOPIC 17: Template Literals
+TOPIC 17: replaceAll()
 ================================================================================
 
 Task 49
-Use Template Literals (backticks ` `) to print "Welcome to JavaScript".
+Use replaceAll() to replace all "JavaScript" with "Python" in
+"JavaScript is easy. JavaScript is powerful."
 
 
 Task 50
-Use Template Literals to print the values of course and duration variables
-in one sentence.
+Use replaceAll() to replace all "cat" with "lion" in
+"cat dog cat bird cat".
 
 
 Task 51
-Use Template Literals to print the values of product, price, and quantity
-as a multi-line bill.
+Use replaceAll() to replace all "HTML" with "Bootstrap" in
+"HTML CSS HTML JavaScript HTML".
 
 
 ================================================================================
-                               TOTAL TASKS: 51
+TOPIC 18: Additional String Methods
+================================================================================
+
+Task 52
+Use trim() and toUpperCase() to convert " javascript " into "JAVASCRIPT".
+
+
+Task 53
+Use startsWith(), endsWith(), and includes() with the string
+"JavaScript is a powerful language" to check the following conditions:
+1. Check whether the string starts with "JavaScript".
+2. Check whether the string ends with "language".
+3. Check whether the string contains "powerful".
+
+
+================================================================================
+                               TOTAL TASKS: 53
 ================================================================================
