@@ -43,7 +43,7 @@ TOPIC 2: ACCESS PROPERTIES
 ================================================================================
 
 Task 04
-Create an object student with name = "Amit", age = 22, and city = "Delhi".
+Create an object student with name = "Rahul", age = 22, and city = "Delhi".
 Display name using dot notation and city using bracket notation.
 
 
@@ -116,27 +116,65 @@ Use destructuring to take out name and marks, then display both.
 
 
 ================================================================================
-TOPIC 7: ARRAY OF OBJECTS
+TOPIC 7: ARRAY OF OBJECTS — READ THIS FIRST
 ================================================================================
 
+An array of objects means one array, and each item inside it is an object.
+
+Example:
+  let students = [
+    { name: "Alice", age: 22 },
+    { name: "Bob", age: 25 },
+    { name: "Charlie", age: 23 }
+  ];
+
+How to read one value:
+  students[0]           → first object  { name: "Alice", age: 22 }
+  students[0].name      → "Alice"
+  students[2].age       → 23
+  students.length       → 3  (total objects)
+
+How to loop with forEach (very important):
+  students.forEach(function (student) {
+    console.log(student.name);
+  });
+
+forEach goes to every object one by one.
+Inside the function, student is the current object.
+
+You can also print more than one value:
+  console.log(student.name, student.age);
+
+Use a condition inside forEach to filter:
+  students.forEach(function (student) {
+    if (student.age > 22) {
+      console.log(student.name);
+    }
+  });
+
+
+Use this students array for Task 15, Task 16, and Task 17.
+
+  let students = [
+    { name: "Alice", age: 22, city: "Delhi" },
+    { name: "Bob", age: 25, city: "Pune" },
+    { name: "Charlie", age: 23, city: "Jaipur" },
+    { name: "Riya", age: 21, city: "Delhi" },
+    { name: "Rohit", age: 26, city: "Mumbai" }
+  ];
+
+
 Task 15
-Create an array students with three objects:
-  { name: "Alice", age: 22 }
-  { name: "Bob", age: 25 }
-  { name: "Charlie", age: 23 }
-Display the name of the first student.
+Create the students array given above.
+Display the name of the first student.          (students[0].name)
 
 
 Task 16
-Using the same students array from Task 15,
-display the age of the last student.
+Display the age of the last student.
 
 
 Task 17
-Create an array books with two objects:
-  { title: "HTML", pages: 100 }
-  { title: "CSS", pages: 150 }
-Display the title of the second book.
+Display the city of the third student.
 
 
 ================================================================================
@@ -161,5 +199,69 @@ that prints "Welcome, Neha". Call the method.
 
 
 ================================================================================
-                               TOTAL TASKS: 20
+TOPIC 9: forEach — 5 DIFFERENT DATA (console all keys)
+================================================================================
+
+In every task, use forEach and console.log all keys of each object.
+
+Example:
+  students.forEach(function (item) {
+    console.log(item.name);
+    console.log(item.age);
+    console.log(item.city);
+  });
+
+
+Task 21
+Use this students data. Use forEach and console all keys.
+
+  let students = [
+    { name: "Alice", age: 22, city: "Delhi" },
+    { name: "Bob", age: 25, city: "Pune" },
+    { name: "Charlie", age: 23, city: "Jaipur" }
+  ];
+
+
+Task 22
+Use this cars data. Use forEach and console all keys.
+
+  let cars = [
+    { brand: "Toyota", model: "Corolla", year: 2020 },
+    { brand: "Honda", model: "City", year: 2022 },
+    { brand: "Tata", model: "Nexon", year: 2023 }
+  ];
+
+
+Task 23
+Use this books data. Use forEach and console all keys.
+
+  let books = [
+    { title: "HTML", pages: 100, author: "John" },
+    { title: "CSS", pages: 150, author: "Riya" },
+    { title: "JavaScript", pages: 200, author: "Sumit" }
+  ];
+
+
+Task 24
+Use this products data. Use forEach and console all keys.
+
+  let products = [
+    { name: "Laptop", price: 40000, inStock: true },
+    { name: "Mouse", price: 500, inStock: false },
+    { name: "Keyboard", price: 1200, inStock: true }
+  ];
+
+
+Task 25
+Use this employees data. Use forEach and console all keys.
+
+  let employees = [
+    { name: "Rohit", salary: 25000, city: "Jaipur" },
+    { name: "Neha", salary: 30000, city: "Mumbai" },
+    { name: "Rahul", salary: 28000, city: "Delhi" }
+  ];
+
+
+================================================================================
+                               TOTAL TASKS: 25
 ================================================================================
