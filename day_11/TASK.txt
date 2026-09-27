@@ -1,0 +1,165 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                              DAY 11: Objects
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+
+Note: If you are facing any issues, please refer to the class notes for help.
+
+
+================================================================================
+TOPIC 1: CREATE AN OBJECT
+================================================================================
+
+Task 01
+Create an object person with firstName = "John", lastName = "Doe",
+and age = 30. Display the full object using console.log().
+
+
+Task 02
+Create an object car with brand = "Toyota", model = "Corolla",
+and year = 2020. Display car.brand using console.log().
+
+
+Task 03
+Create an object book with title = "JavaScript", pages = 200,
+and author = "Sumit". Display book["title"] using bracket notation.
+
+
+================================================================================
+TOPIC 2: ACCESS PROPERTIES
+================================================================================
+
+Task 04
+Create an object student with name = "Amit", age = 22, and city = "Delhi".
+Display name using dot notation and city using bracket notation.
+
+
+Task 05
+Create an object mobile with brand = "Samsung" and price = 15000.
+Display both properties using console.log().
+
+
+================================================================================
+TOPIC 3: OBJECT METHODS AND this
+================================================================================
+
+Task 06
+Create an object person with name = "Alice" and a method sayHello
+that prints "Hello, my name is Alice" using this.name.
+
+
+Task 07
+Create an object person with name = "John" and age = 30.
+Add a method introduce that prints:
+"Hi, my name is John and I am 30 years old."
+Use this.name and this.age.
+
+
+================================================================================
+TOPIC 4: ADD, UPDATE, DELETE
+================================================================================
+
+Task 08
+Create an object person with name = "John" and age = 30.
+Add a new property gender = "male" and display the object.
+
+
+Task 09
+Create an object person with name = "John" and age = 30.
+Update age to 31 and display the object.
+
+
+Task 10
+Create an object person with name = "John", age = 30,
+and isStudent = true. Delete isStudent and display the object.
+
+
+================================================================================
+TOPIC 5: for...in LOOP
+================================================================================
+
+Task 11
+Create an object person with name = "John", age = 30, and city = "New York".
+Use a for...in loop to display all keys.
+
+
+Task 12
+Create an object car with brand = "Honda", model = "City", and year = 2022.
+Use a for...in loop to display each key and its value.
+
+
+================================================================================
+TOPIC 6: OBJECT DESTRUCTURING
+================================================================================
+
+Task 13
+Create an object person with name = "John" and age = 30.
+Use destructuring to take out name and age, then display both.
+
+
+Task 14
+Create an object student with name = "Riya", marks = 85, and city = "Pune".
+Use destructuring to take out name and marks, then display both.
+
+
+================================================================================
+TOPIC 7: ARRAY OF OBJECTS
+================================================================================
+
+Task 15
+Create an array students with three objects:
+  { name: "Alice", age: 22 }
+  { name: "Bob", age: 25 }
+  { name: "Charlie", age: 23 }
+Display the name of the first student.
+
+
+Task 16
+Using the same students array from Task 15,
+display the age of the last student.
+
+
+Task 17
+Create an array books with two objects:
+  { title: "HTML", pages: 100 }
+  { title: "CSS", pages: 150 }
+Display the title of the second book.
+
+
+================================================================================
+TOPIC 8: SMALL OBJECT PROGRAMS
+================================================================================
+
+Task 18
+Create an object employee with name = "Rohit", salary = 25000,
+and city = "Jaipur". Display:
+"Rohit from Jaipur has salary 25000"
+
+
+Task 19
+Create an object product with name = "Laptop", price = 40000,
+and inStock = true. If inStock is true, display "Available",
+otherwise display "Out of stock".
+
+
+Task 20
+Create an object user with name = "Neha" and a method welcome
+that prints "Welcome, Neha". Call the method.
+
+
+================================================================================
+                               TOTAL TASKS: 20
+================================================================================
