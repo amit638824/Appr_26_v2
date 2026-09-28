@@ -35,7 +35,7 @@
             emailErr.innerHTML = ''
             phoneErr.innerHTML = ''
             let allow = true;
-            let nameReg = /^[a-zA-Z ]{2,18}$/;
+            let nameReg = /^[a-zA-Z ]{2,18}$/; //name me space bhi rhega
             if (nameReg.test(name.value) == false) {
                 nameErr.innerHTML = "Please Enter Valid Name"
                 allow = false
