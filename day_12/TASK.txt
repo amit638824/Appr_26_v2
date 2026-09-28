@@ -1,0 +1,185 @@
+================================================================================
+                    JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                      DAY 12: COMPLETE FORM VALIDATION
+================================================================================
+
+INSTRUCTIONS
+------------
+
+1. Create HTML forms for the given validation tasks.
+2. Use JavaScript to validate all form fields.
+3. Use Regular Expressions (RegEx) wherever mentioned.
+4. Display an appropriate error message when the input is invalid.
+5. Display a success message when all required inputs are valid.
+6. Do not use HTML5 validation attributes such as required, pattern, or
+   minlength for the main validation logic.
+7. Complete all tasks before the next class.
+
+
+================================================================================
+TOPIC: COMPLETE FORM VALIDATION
+================================================================================
+
+Task 01 — Student Registration Form
+
+- Student Name      /^[A-Za-z ]+$/
+- Roll Number       /^[0-9]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Course            /^[A-Za-z ]+$/
+
+
+Task 02 — User Registration Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Username          /^[A-Za-z0-9_]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+
+
+Task 03 — Employee Registration Form
+
+- Employee Name     /^[A-Za-z ]+$/
+- Employee ID       /^[0-9]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Department        /^[A-Za-z ]+$/
+
+
+Task 04 — Job Application Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Username          /^[A-Za-z][A-Za-z0-9_]*$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Website URL       /^https?:\/\/.+/
+
+
+Task 05 — College Admission Form
+
+- Student Name      /^[A-Za-z ]+$/
+- Father's Name     /^[A-Za-z ]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- PIN Code          /^[1-9][0-9]{5}$/
+- Course            /^[A-Za-z ]+$/
+
+
+Task 06 — Customer Registration Form
+
+- Customer Name     /^[A-Za-z ]+$/
+- Username          /^[A-Za-z0-9_]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[0-9]{10}$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+Task 07 — Bank Account Registration Form
+
+- Account Holder Name  /^[A-Za-z ]+$/
+- Account Number       /^[0-9]+$/
+- Email                /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number        /^[6-9][0-9]{9}$/
+- PIN Code             /^[0-9]{6}$/
+- Password             /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+
+
+Task 08 — User Profile Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Username          /^[A-Za-z][A-Za-z0-9_]*$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Date of Birth     /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-[0-9]{4}$/
+- Website           /^https:\/\/.+/
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+Task 09 — Online Course Registration Form
+
+- Student Name      /^[A-Za-z ]+$/
+- Username          /^[A-Za-z0-9_]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Course Name       /^[A-Za-z ]+$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+
+
+Task 10 — Hospital Patient Registration Form
+
+- Patient Name      /^[A-Za-z ]+$/
+- Patient ID        /^[0-9]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- City              /^[A-Za-z ]+$/
+- PIN Code          /^[1-9][0-9]{5}$/
+
+
+Task 11 — Complete Employee Registration Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Username          /^[A-Za-z][A-Za-z0-9_]*$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Employee ID       /^[0-9]+$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+- Website           /^https?:\/\/.+/
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+Task 12 — Complete User Registration Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Username          /^[A-Za-z][A-Za-z0-9_]*$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Date of Birth     /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-[0-9]{4}$/
+- PIN Code          /^[0-9]{6}$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+- Website           /^https?:\/\/.+/
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+Task 13 — Login Form
+
+- Username          /^[A-Za-z0-9_]+$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Username or Email usernameRegex.test(value) || emailRegex.test(value)
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+
+
+Task 14 — E-Commerce Customer Registration Form
+
+- Customer Name     /^[A-Za-z ]+$/
+- Username          /^[A-Za-z][A-Za-z0-9_]{4,14}$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- PIN Code          /^[1-9][0-9]{5}$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+Task 15 — Complete User Registration Form
+
+- Full Name         /^[A-Za-z ]+$/
+- Username          /^[A-Za-z][A-Za-z0-9_]*$/
+- Email             /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+- Mobile Number     /^[6-9][0-9]{9}$/
+- Date of Birth     /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-[0-9]{4}$/
+- PIN Code          /^[0-9]{6}$/
+- Password          /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$/
+- Confirm Password  confirmPassword === password
+- Website           /^https?:\/\/.+/
+- Address           /^[A-Za-z0-9 ,-]+$/
+
+
+================================================================================
+                               TOTAL TASKS: 15
+================================================================================
