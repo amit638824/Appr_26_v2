@@ -1,0 +1,297 @@
+================================================================================
+                     JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         MATH, DATE & OTP PRACTICE
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+
+Note: If you are facing any issues, please refer to the class notes for help.
+
+
+================================================================================
+TOPIC 1: Math Object Basics
+================================================================================
+
+Task 01
+Use Math.floor() to find the integer value of 15.89.
+
+
+Task 02
+Use Math.ceil() to find the next highest integer of 12.34.
+
+
+Task 03
+Use Math.round() to round the number 27.65.
+
+
+Task 04
+Use Math.trunc() to remove the decimal portion from 45.987.
+
+
+Task 05
+Use Math.abs() to find the positive value of -125.
+
+
+Task 06
+Use Math.sqrt() to find the square root of 144.
+
+
+Task 07
+Use Math.cbrt() to find the cube root of 125.
+
+
+Task 08
+Use Math.pow() to calculate 5³.
+
+
+Task 09
+Create five numbers and use Math.max() to print the largest number.
+
+
+Task 10
+Create five numbers and use Math.min() to print the smallest number.
+
+
+Task 11
+Create a variable containing -15.75 and print the result using Math.floor().
+
+
+Task 12
+Create a variable containing -8.25 and print the result using Math.ceil().
+
+
+Task 13
+Create three variables containing 12.4, 12.5, and 12.9. Use Math.round()
+on all three values and print the results.
+
+
+Task 14
+Create a variable containing -45.987 and use Math.trunc() to remove the
+decimal portion.
+
+
+Task 15
+Create two numbers, 25 and 80. Find their difference and use Math.abs()
+to make the result positive.
+
+
+================================================================================
+TOPIC 2: Math Object Problem Solving
+================================================================================
+
+Task 16
+Find and print the square roots of 25, 64, 81, and 100 using Math.sqrt().
+
+
+Task 17
+Find and print the cube roots of 8, 27, 64, and 216 using Math.cbrt().
+
+
+Task 18
+Calculate and print the following using Math.pow():
+
+- 2³
+- 5²
+- 10⁴
+- 3⁵
+
+
+Task 19
+Create an array containing [45, 78, 12, 90, 34, 67, 23]. Find and print
+both the maximum and minimum values.
+
+
+Task 20
+Create a variable radius = 10. Calculate and print the area of the circle
+using Math.PI.
+
+Formula:
+Area = Math.PI * radius * radius
+
+
+Task 21
+Create radius = 10 and calculate the circumference using Math.PI.
+
+Formula:
+Circumference = 2 * Math.PI * radius
+
+
+Task 22
+Create base = 4 and exponent = 5. Calculate the result using Math.pow().
+
+
+Task 23
+Find the square root of 625 using Math.sqrt().
+
+
+Task 24
+Find the cube root of 1000 using Math.cbrt().
+
+
+Task 25
+Create an array of numbers and find both the highest and lowest values
+using Math.max() and Math.min().
+
+
+================================================================================
+TOPIC 3: Random Number Practice
+================================================================================
+
+Task 26
+Use Math.random() to generate a random decimal number between 0 and 1.
+
+
+Task 27
+Generate a random integer between 1 and 10 using Math.random() and
+Math.floor().
+
+
+Task 28
+Generate a random integer between 50 and 100 using Math.random() and
+Math.floor().
+
+
+Task 29
+Generate a random day between 1 and 31 using Math.random() and Math.floor().
+
+
+Task 30
+Generate a random month between 1 and 12 using Math.random() and Math.floor().
+
+
+================================================================================
+TOPIC 4: Date Object Practice
+================================================================================
+
+Task 31
+Create a Date object and print the current date and time.
+
+
+Task 32
+Use getFullYear() to print the current year.
+
+
+Task 33
+Use getMonth() to print the current month number.
+
+
+Task 34
+Use getDate() to print today's date.
+
+
+Task 35
+Use getDay() to print the current day number.
+
+
+Task 36
+Use getHours() to print the current hour.
+
+
+Task 37
+Use getMinutes() and getSeconds() to print the current minutes and seconds.
+
+
+Task 38
+Use getMilliseconds() to print the current milliseconds.
+
+
+Task 39
+Use toDateString() to print today's date in a readable format.
+
+
+Task 40
+Use toLocaleTimeString() to print the current local time.
+
+
+================================================================================
+TOPIC 5: Date and OTP Challenges
+================================================================================
+
+Task 41
+Print the current year, month, date, day, hour, minutes, and seconds using
+the appropriate Date methods.
+
+
+Task 42
+Create a Date object representing 15 August 2026 and print it using
+toDateString().
+
+
+Task 43
+Create a Date object for 25 December 2025 and print its year, month, date,
+and day.
+
+
+Task 44
+Create a birthYear variable and calculate the person's approximate age
+using the current year.
+
+
+Task 45
+Get the current year using getFullYear() and print it without manually
+entering the year.
+
+
+================================================================================
+TOPIC 6: OTP Generation Using Math Methods Only
+================================================================================
+
+Note: For Tasks 46–50, use only Math methods for OTP generation.
+Do not use string methods, arrays, Date methods, loops, or other functions.
+
+
+Task 46
+Use Math.random() and Math.floor() to generate a random 4-digit OTP.
+
+Example:
+OTP: 5832
+
+
+Task 47
+Use Math.random() and Math.floor() to generate a random 6-digit OTP.
+
+Example:
+OTP: 728491
+
+
+Task 48
+Use Math.random(), Math.floor(), and Math.pow() to generate a random
+4-digit OTP.
+
+The OTP should be between 1000 and 9999.
+
+
+Task 49
+Generate two random 6-digit OTPs using only Math.random() and Math.floor().
+Print both OTPs separately.
+
+Example:
+OTP 1: 483921
+OTP 2: 715604
+
+
+Task 50
+Generate five random 4-digit OTPs using only Math.random() and Math.floor().
+
+Example:
+OTP 1: 4821
+OTP 2: 7395
+OTP 3: 1564
+OTP 4: 9283
+OTP 5: 6047
+
+
+================================================================================
+                              TOTAL TASKS: 50
+================================================================================
