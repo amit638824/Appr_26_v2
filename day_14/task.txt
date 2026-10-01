@@ -1,0 +1,289 @@
+JAVASCRIPT PROMISE PRACTICE TASKS
+===============================
+
+TOPIC: JAVASCRIPT PROMISES
+LEVEL: Beginner to Intermediate
+TOTAL TASKS: 15
+
+INSTRUCTIONS
+------------
+1. Har task ko khud JavaScript mein solve karo.
+2. Code ko VS Code ya browser console mein run karke output check karo.
+3. Promise ke concepts ko sirf read mat karo; khud code likho.
+4. Jahan required ho, console.log() se output clearly show karo.
+5. Error handling ke liye .catch() ya try...catch ka use karo.
+6. Har task mein given requirements ko follow karo.
+
+
+SECTION 1: PROMISE BASICS
+=========================
+
+TASK 1: Create Your First Promise
+----------------------------------
+Topic: Promise creation, resolve()
+
+Ek Promise create karo jo "Task completed successfully" value ke saath
+resolve ho.
+
+Requirements:
+- new Promise() ka use karo.
+- resolve() ke through message bhejo.
+- Promise ko console.log() karo.
+- Promise ki state observe karo.
+
+
+TASK 2: Handle a Successful Promise
+------------------------------------
+Topic: then()
+
+Ek Promise create karo jo "Data fetched successfully" ke saath resolve ho.
+
+Requirements:
+- Promise create karo.
+- .then() ka use karke result receive karo.
+- Result ko console.log() karo.
+- Output mein sirf resolved message clearly print hona chahiye.
+
+
+TASK 3: Handle a Rejected Promise
+----------------------------------
+Topic: reject(), catch()
+
+Ek Promise create karo jo "Something went wrong" ke saath reject ho.
+
+Requirements:
+- reject() ka use karo.
+- .then() mein success result handle karo.
+- .catch() mein error handle karo.
+- Error message console mein print karo.
+
+
+TASK 4: Promise with setTimeout
+-------------------------------
+Topic: Asynchronous Promise
+
+Ek getUser() function banao jo Promise return kare.
+
+Requirements:
+- Promise ke andar setTimeout() use karo.
+- 2 seconds ka delay rakho.
+- 2 seconds ke baad ek user object resolve karo.
+- Object mein id aur name properties hon.
+- getUser().then() se user object print karo.
+
+
+SECTION 2: PROMISE METHODS
+==========================
+
+TASK 5: Use finally() for Cleanup
+---------------------------------
+Topic: then(), catch(), finally()
+
+Ek payment Promise banao jo "Payment successful" ke saath resolve ho.
+
+Requirements:
+- .then() mein success message print karo.
+- .catch() bhi add karo.
+- .finally() mein "Request completed" print karo.
+- Observe karo ki finally() success ke baad execute hota hai.
+
+
+TASK 6: Promise Chaining
+------------------------
+Topic: then() chaining
+
+Promise.resolve(5) se chaining create karo.
+
+Requirements:
+- First then() mein number ko 2 se multiply karo.
+- Returned value next then() mein receive karo.
+- Second then() mein 10 add karo.
+- Final result ko print karo.
+- Har then() se value return karna compulsory hai.
+
+
+TASK 7: Fix the Missing return
+------------------------------
+Topic: Promise chaining
+
+Neeche diye pattern ki problem identify karke correct code likho:
+
+Promise.resolve(10)
+  .then((num) => {
+    num * 2;
+  })
+  .then((result) => {
+    console.log(result);
+  });
+
+Requirements:
+- Explain karo ki result undefined kyon aa raha hai.
+- Code ko return statement ke saath correct karo.
+- Correct output print karo.
+
+
+SECTION 3: ASYNC / AWAIT
+========================
+
+TASK 8: Convert Promise to async/await
+--------------------------------------
+Topic: async, await
+
+Ek getData() function banao jo 1 second ke delay ke baad
+"Data received" resolve kare.
+
+Requirements:
+- getData() Promise return kare.
+- showData() naam ka async function banao.
+- await ka use karo.
+- Result ko console.log() karo.
+
+
+TASK 9: async/await Error Handling
+----------------------------------
+Topic: try...catch
+
+Ek async function banao jisme rejected Promise ko await karo.
+
+Requirements:
+- try block mein await Promise.reject() use karo.
+- catch block mein error receive karo.
+- Error ko console.log() karo.
+- Success wali line ko error ke case mein execute nahi hona chahiye.
+
+
+SECTION 4: PROMISE STATIC METHODS
+=================================
+
+TASK 10: Promise.all()
+----------------------
+Topic: Parallel Promises
+
+Teen fulfilled Promises banao:
+- User
+- Products
+- Orders
+
+Requirements:
+- Promise.all() ka use karo.
+- Teeno Promises ko ek saath pass karo.
+- Results ko array ke form mein print karo.
+- Result ka order input array ke order jaisa hona chahiye.
+
+
+TASK 11: Promise.all() with Rejection
+-------------------------------------
+Topic: Promise.all(), catch()
+
+Teen Promises banao jisme:
+- First Promise resolve ho.
+- Second Promise reject ho.
+- Third Promise resolve ho.
+
+Requirements:
+- Promise.all() ka use karo.
+- .then() mein results print karo.
+- .catch() mein rejection handle karo.
+- Observe karo ki ek rejection ki wajah se Promise.all() reject hota hai.
+
+
+TASK 12: Promise.allSettled()
+-----------------------------
+Topic: Promise.allSettled()
+
+Do Promises banao:
+- First Promise fulfilled ho.
+- Second Promise rejected ho.
+
+Requirements:
+- Promise.allSettled() ka use karo.
+- Har Promise ka status print karo.
+- Fulfilled Promise ke liye value observe karo.
+- Rejected Promise ke liye reason observe karo.
+
+
+TASK 13: Promise.race()
+-----------------------
+Topic: Promise.race()
+
+Do Promises banao:
+- Slow Promise: 2 seconds baad "Slow"
+- Fast Promise: 500 milliseconds baad "Fast"
+
+Requirements:
+- Promise.race() ka use karo.
+- Winner ko console.log() karo.
+- Observe karo ki sabse pehle settle hone wala Promise result deta hai.
+
+
+TASK 14: Promise.any()
+----------------------
+Topic: Promise.any()
+
+Teen Promises banao:
+- First Promise reject ho.
+- Second Promise resolve ho.
+- Third Promise reject ho.
+
+Requirements:
+- Promise.any() ka use karo.
+- Result ko console.log() karo.
+- Observe karo ki rejected Promises ko ignore karke first fulfilled Promise
+  ka result milta hai.
+
+
+SECTION 5: PRACTICAL PROMISE CHALLENGE
+======================================
+
+TASK 15: API Call with Complete Error Handling
+----------------------------------------------
+Topic: fetch(), async/await, try...catch, finally
+
+Ek async function loadPost() banao jo API se post data fetch kare.
+
+API:
+https://jsonplaceholder.typicode.com/posts/1
+
+Requirements:
+- fetch() ke saath await ka use karo.
+- response.ok check karo.
+- Agar response.ok false ho to new Error() throw karo.
+- response.json() ko await karo.
+- Post ka title console.log() karo.
+- catch() ya try...catch se error handle karo.
+- finally() mein "Request completed" print karo.
+- Network error aur HTTP error ke handling ka difference observe karo.
+
+
+QUICK REVISION
+==============
+
+Promise States:
+- Pending
+- Fulfilled
+- Rejected
+
+Important Methods:
+- then()
+- catch()
+- finally()
+- Promise.resolve()
+- Promise.reject()
+- Promise.all()
+- Promise.allSettled()
+- Promise.race()
+- Promise.any()
+
+Important Rule:
+- then() se value return karoge to next then() ko milegi.
+- async function hamesha Promise return karta hai.
+- await ke saath error handling ke liye try...catch use karo.
+- Independent Promises ko parallel chalane ke liye Promise.all() useful hai.
+- Partial results chahiye ho to Promise.allSettled() use karo.
+- Sabse pehla settle result chahiye ho to Promise.race() use karo.
+- Pehla successful result chahiye ho to Promise.any() use karo.
+
+PRACTICE RULE
+=============
+Har task ka code khud likho.
+Pehle output predict karo, phir code run karke verify karo.
