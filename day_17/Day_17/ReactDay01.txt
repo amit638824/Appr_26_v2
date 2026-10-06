@@ -1,0 +1,69 @@
+================================================================================
+                     JAVASCRIPT PRACTICE TASKS — CODING QUESTIONS
+                         MATH, DATE & OTP PRACTICE
+================================================================================
+
+INSTRUCTIONS
+------------
+
+Assignment for All Students (Mandatory)
+---------------------------------------
+1. Prepare clear and neat handwritten notes.
+2. No excuses — whether you attended the first class or not, everyone must
+   complete the notes.
+3. Cover all topics discussed in class.
+4. Be ready for questions. Any topic may be asked to any student in the next class.
+5. Complete the assignment before the next class.
+6. Bring your handwritten notes and programs for checking.
+
+Note: If you are facing any issues, please refer to the class notes for help.
+
+REACT JS PROJECT PRACTICE — PROJECT NAMES
+
+PROJECT 01
+Student Result Management System
+
+PROJECT 02
+Shopping Cart Application
+
+PROJECT 03
+Personal Expense Tracker
+
+PROJECT 04
+Student Attendance Management System
+
+PROJECT 05
+Online Quiz Application
+
+PROJECT 06
+To-Do List Management Application
+
+PROJECT 07
+Employee Management System
+
+PROJECT 08
+Weather Dashboard Application
+
+PROJECT 09
+Movie Search Application
+
+PROJECT 10
+E-Commerce Product Management System
+
+PROJECT 11
+Hotel Room Booking Application
+
+PROJECT 12
+Student Registration Portal
+
+PROJECT 13
+Library Management System
+
+PROJECT 14
+Food Ordering Application
+
+PROJECT 15
+Mini Student Management Portal
+
+================================================================================
+TOTAL PROJECTS: 15

@@ -1,0 +1,160 @@
+JAVASCRIPT OBJECTS – PRACTICE TASKS Day 3 Practice Sheet
+
+Instructions: - Solve all 30 tasks using JavaScript. - Write clean,
+readable code. - Use console.log() wherever output is required. - Do not
+use built-in shortcuts unless the task specifically asks for them. -
+Focus on understanding objects, object properties, for…in, object
+methods, arrays of objects, and shallow/deep copy.
+
+============================================================ SECTION 1:
+CREATING OBJECTS
+============================================================
+
+Topic: Object Literal, new Object(), Object.create()
+
+1.  Create an object named student using an object literal. Add the
+    properties name, age, course, and city. Print the complete object.
+
+2.  Create a car object using an object literal with brand, model,
+    color, and year. Print each property separately using dot notation.
+
+3.  Create an object named book using new Object(). Add title, author,
+    price, and pages as properties. Display all four values.
+
+4.  Create an object named employee using new Object(). Add name,
+    department, salary, and experience. Print the employee’s department
+    and salary.
+
+5.  Create a prototype object named animal with a method speak() that
+    prints “Animal makes a sound”. Create a new object using
+    Object.create(animal) and call speak().
+
+============================================================ SECTION 2:
+ACCESSING OBJECT PROPERTIES
+============================================================
+
+Topic: Dot Notation and Bracket Notation
+
+6.  Create a person object with name, age, and city. Access name using
+    dot notation and age using bracket notation.
+
+7.  Create an object with the key “first name” and value “Rahul”. Access
+    and print the value using bracket notation.
+
+8.  Create an object named product with name, price, category, and
+    “product code”. Print all values using appropriate property access
+    methods.
+
+9.  Create an object named student with properties name, age, marks, and
+    city. Change the marks property and print the updated object.
+
+10. Create an object named mobile with brand, model, price, and color.
+    Store the property name “price” in a variable and use bracket
+    notation to print its value.
+
+============================================================ SECTION 3:
+for…in LOOP ============================================================
+
+Topic: Iterating over Object Keys
+
+11. Create a person object with name, age, and city. Use a for…in loop
+    to print every key.
+
+12. Create a person object with name, age, and city. Use a for…in loop
+    to print each key and its corresponding value in this format: key :
+    value
+
+13. Create a car object with brand, model, year, and color. Use for…in
+    to display all properties and values.
+
+14. Create an object named marks with subjects as keys and marks as
+    values. Use for…in to print every subject and its marks.
+
+15. Create an object named employee with name, department, salary, and
+    experience. Use for…in to count how many properties the object
+    contains.
+
+16. Create an object with at least five properties. Use for…in and
+    bracket notation to print only the values of the object.
+
+============================================================ SECTION 4:
+OBJECT.keys(), Object.values(), Object.entries(), Object.is(),
+Object.hasOwn()
+============================================================
+
+Topic: Object Utility Methods
+
+17. Create a user object with name, age, and city. Use Object.keys() to
+    print an array containing all keys.
+
+18. Create a product object with name, price, category, and stock. Use
+    Object.values() to print all values.
+
+19. Create a student object with name, age, course, and marks. Use
+    Object.entries() to print all key-value pairs.
+
+20. Create an object with two numeric properties. Use Object.keys() and
+    Object.values() separately and display both results.
+
+21. Create an object named car with brand, model, and color. Use
+    Object.hasOwn() to check whether the object has the properties
+    “brand” and “year”. Print both results.
+
+22. Use Object.is() to compare 10 and 10. Then compare 0 and -0. Print
+    the results.
+
+23. Use Object.is() to compare two different strings with the same value
+    and two different objects containing the same properties. Print the
+    results and observe the difference.
+
+24. Create a student object and use Object.entries() with a loop to
+    print each property in the format: property = value
+
+============================================================ SECTION 5:
+ARRAY OF OBJECTS
+============================================================
+
+Topic: Objects inside Arrays
+
+25. Create an array named students containing three objects. Each object
+    should have name, age, and marks. Print the name of the first
+    student and the marks of the third student.
+
+26. Create an array of four product objects. Each product should have
+    name, price, and category. Use a loop to print the name and price of
+    every product.
+
+27. Create an array of three employee objects containing name,
+    department, and salary. Use a loop to print each employee’s name and
+    department.
+
+28. Create an array of five student objects. Use a loop to print the
+    names of all students whose marks are greater than or equal to 60.
+
+============================================================ SECTION 6:
+SHALLOW COPY AND DEEP COPY
+============================================================
+
+Topic: Copying Objects
+
+29. Create an object obj1 containing a name property and a nested
+    address object with a city property. Create obj2 using the spread
+    operator. Change obj2.address.city and print obj1.address.city.
+    Observe whether the original object changes.
+
+30. Create an object obj1 containing name, age, and a nested address
+    object. Create a deep copy using: JSON.parse(JSON.stringify(obj1))
+    Change a property inside the copied address and print both obj1 and
+    obj2 to prove that the original object remains unchanged.
+
+============================================================ CHALLENGE
+CHECKLIST ============================================================
+
+Before submitting, make sure you can explain: - How to create an object
+using an object literal. - How new Object() works. - Why Object.create()
+is used. - The difference between dot notation and bracket notation. -
+Why bracket notation is required for keys containing spaces. - What a
+for…in loop returns. - The difference between Object.keys(),
+Object.values(), and Object.entries(). - What Object.is() checks. - What
+Object.hasOwn() checks. - How to access objects stored inside an
+array. - The difference between a shallow copy and a deep copy.
