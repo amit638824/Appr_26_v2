@@ -1,0 +1,588 @@
+================================================================================
+REACT JS PRACTICE TASKS — EXTERNAL CSS 5 EASY PROJECTS
+================================================================================
+
+INSTRUCTIONS
+
+Assignment for All Students (Mandatory)
+
+1.  Prepare clear and neat handwritten notes.
+2.  Complete all 5 projects.
+3.  For every project, use ONLY App.jsx and App.css.
+4.  Do not create extra components or extra CSS files.
+5.  Import App.css inside App.jsx using: import “./App.css”;
+6.  Use className to connect JSX elements with CSS classes.
+7.  Do not use inline style={{ }} for these projects.
+8.  Write clean and readable code.
+9.  Install bootstrap in your project and import in your code.
+10.  Run every project and check the browser output.
+11. If you get an error, find the error, correct it, and revise the
+    mistake.
+12. Bring your notes and programs for checking.
+13. Be ready to explain how App.jsx and App.css are connected.
+
+IMPORTANT
+
+Each project should contain only:
+
+src/ App.jsx App.css
+
+The main concept is:
+
+App.jsx —> import “./App.css” —> className=“className” —> App.css styles
+the class
+
+================================================================================
+COMPLETE NOTES: EXTERNAL CSS IN REACT
+================================================================================
+
+1. What is External CSS?
+
+External CSS means writing CSS in a separate .css file and importing
+that file into a React component.
+
+Example:
+
+App.jsx
+
+import “./App.css”;
+
+function App() { return (
+Hello React
+); }
+
+export default App;
+
+App.css
+
+.heading { color: green; font-size: 28px; text-align: center; }
+
+The JSX file contains the structure/content and the CSS file contains
+the styling.
+
+2. Why use External CSS?
+
+-   Keeps JSX code clean.
+-   Keeps CSS separate from JavaScript.
+-   Makes styling easier to manage.
+-   Allows CSS classes to be reused.
+-   This is a common way to style React applications.
+
+3. Importing CSS
+
+Write this at the top of App.jsx:
+
+import “./App.css”;
+
+The file name and path must be correct.
+
+4. className in React
+
+HTML normally uses:
+
+class=“heading”
+
+React uses:
+
+className=“heading”
+
+Example:
+
+Welcome
+CSS:
+
+.heading { color: blue; }
+
+5. Important CSS Properties
+
+color
+
+Changes the text color.
+
+Example: color: red;
+
+font-size
+
+Changes the size of text.
+
+Example: font-size: 30px;
+
+text-align
+
+Controls horizontal text alignment.
+
+Example: text-align: center;
+
+font-style
+
+Changes the style of text.
+
+Example: font-style: italic;
+
+6. Basic External CSS Pattern
+
+App.jsx:
+
+import “./App.css”;
+
+function App() { return (
+      <h1 className="title">My Heading</h1>
+      <p className="text">My paragraph</p>
+    </div>
+
+); }
+
+export default App;
+
+App.css:
+
+.box { text-align: center; }
+
+.title { color: green; font-size: 30px; }
+
+.text { color: #555; font-style: italic; }
+
+7. JSX and CSS Connection
+
+The connection happens in two steps:
+
+Step 1: Import the CSS file.
+
+import “./App.css”;
+
+Step 2: Use className.
+
+Hello
+Then App.css finds .title and applies the styling.
+
+================================================================================
+PROJECT 1: STUDENT PROFILE CARD
+================================================================================
+
+Project Name: StudentProfile
+
+Goal: Create a simple student profile using React and External CSS.
+
+App.jsx should display: - Student Profile heading - Student name -
+Course - College - Short introduction
+
+App.css should style the content.
+
+Task 01 Create the App.jsx file and import “./App.css”.
+
+Task 02 Create a div with className=“profile”.
+
+Task 03 Add an h1 with the text “Student Profile”.
+
+Task 04 Add an h2 with a student name.
+
+Task 05 Add a paragraph showing the course.
+
+Task 06 Add a paragraph showing the college.
+
+Task 07 Add a paragraph containing a short student introduction.
+
+Task 08 Create a .profile CSS class and use text-align: center.
+
+Task 09 Style the h1 with color and font-size.
+
+Task 10 Style the introduction with font-style: italic.
+
+PROJECT 1 REVISION
+
+1.  Where do we import App.css?
+2.  What is the React version of HTML class?
+3.  Which CSS property changes text color?
+4.  Which property makes text italic?
+5.  Which property centers text?
+6.  Which file contains JSX?
+7.  Which file contains CSS?
+
+================================================================================
+PROJECT 2: FOOD MENU
+================================================================================
+
+Project Name: FoodMenu
+
+Goal: Create a simple food menu using External CSS.
+
+Display: - My Food Menu - Pizza - Burger - Sandwich - Food price for
+each item
+
+Task 11 Create a div with className=“menu”.
+
+Task 12 Create an h1 with the text “My Food Menu”.
+
+Task 13 Add an h2 for Pizza.
+
+Task 14 Add a paragraph describing Pizza.
+
+Task 15 Add a paragraph showing Pizza price.
+
+Task 16 Add an h2 for Burger.
+
+Task 17 Add a paragraph showing Burger price.
+
+Task 18 Add an h2 for Sandwich and a paragraph showing its price.
+
+Task 19 Create a .menu CSS class and center all menu content.
+
+Task 20 Create a .price CSS class. Give the price a different color,
+larger font-size, and italic font-style.
+
+PROJECT 2 REVISION
+
+1.  Why do we use className=“price”?
+2.  What CSS selector styles className=“price”?
+3.  How do you increase the size of the price?
+4.  How do you make the price italic?
+5.  Why should App.css be imported?
+
+================================================================================
+PROJECT 3: BOOK STORE
+================================================================================
+
+Project Name: BookStore
+
+Goal: Create a simple book store page using External CSS.
+
+Display at least two books.
+
+Each book should have: - Book title - Author - Price - Short description
+
+Task 21 Create a div with className=“books”.
+
+Task 22 Create an h1 with “My Book Store”.
+
+Task 23 Add the book title “The Alchemist”.
+
+Task 24 Add the author “Paulo Coelho”.
+
+Task 25 Add a price for the book.
+
+Task 26 Add a short description for the book.
+
+Task 27 Add a second book with title, author, price, and description.
+
+Task 28 Create a .books CSS class and use text-align: center.
+
+Task 29 Style the book titles using color and font-size.
+
+Task 30 Create a .description class and make the description italic.
+
+PROJECT 3 REVISION
+
+1.  How do you apply CSS to a book title?
+2.  What is the difference between h1 and p?
+3.  Which property changes text size?
+4.  Which property changes text color?
+5.  Which property makes the description italic?
+
+================================================================================
+PROJECT 4: FITNESS TRAINER
+================================================================================
+
+Project Name: FitnessTrainer
+
+Goal: Create a simple fitness trainer profile.
+
+Display: - Fitness Trainer - Trainer name - Experience - Programs -
+Motivation message
+
+Task 31 Create a div with className=“fitness”.
+
+Task 32 Create an h1 with “Fitness Trainer”.
+
+Task 33 Add an h2 containing the trainer name.
+
+Task 34 Add a paragraph showing trainer experience.
+
+Task 35 Add an h2 with “Programs”.
+
+Task 36 Add paragraphs for: Weight Training Cardio Yoga
+
+Task 37 Add a motivation message in a paragraph.
+
+Task 38 Create a .fitness CSS class with text-align: center.
+
+Task 39 Style h1 and h2 using different colors and font sizes.
+
+Task 40 Create a .message CSS class and make the motivation message
+italic.
+
+PROJECT 4 REVISION
+
+1.  What is the purpose of className=“message”?
+2.  How do you center the complete content?
+3.  How do you change the motivation text color?
+4.  How do you increase its font size?
+5.  How do you make it italic?
+
+================================================================================
+PROJECT 5: TRAVEL PLACES
+================================================================================
+
+Project Name: TravelExplorer
+
+Goal: Create a simple travel destination page.
+
+Display: - Beautiful Places - Paris - Goa - Dubai - Country - Best time
+to visit - Travel quote
+
+Task 41 Create a div with className=“travel”.
+
+Task 42 Create an h1 with “Beautiful Places”.
+
+Task 43 Add an h2 with “Paris”.
+
+Task 44 Add the country name France.
+
+Task 45 Add the best time to visit Paris.
+
+Task 46 Add an italic travel quote.
+
+Task 47 Add Goa with its country, best time, and quote.
+
+Task 48 Add Dubai with its country, best time, and quote.
+
+Task 49 Create a .travel CSS class and center the content.
+
+Task 50 Create a .quote CSS class. Give it a different color, larger
+font-size, and font-style: italic.
+
+PROJECT 5 REVISION
+
+1.  What is External CSS?
+2.  Why is App.css separate from App.jsx?
+3.  What is className?
+4.  What does text-align: center do?
+5.  What does font-size do?
+6.  What does font-style: italic do?
+7.  How do you connect App.jsx with App.css?
+
+================================================================================
+COMMON ERROR REVISION
+================================================================================
+
+ERROR 01: Wrong CSS import
+
+Wrong:
+
+import “App.css”;
+
+Correct:
+
+import “./App.css”;
+
+Reason: “./” tells React to look for App.css in the current folder.
+
+ERROR 02: Using class instead of className
+
+Wrong:
+
+Hello
+Correct:
+
+Hello
+Reason: React JSX uses className instead of class.
+
+ERROR 03: CSS class selector missing dot
+
+Wrong:
+
+title { color: red; }
+
+Correct:
+
+.title { color: red; }
+
+Reason: A CSS class selector starts with a dot.
+
+ERROR 04: Wrong CSS property spelling
+
+Wrong:
+
+font-sizee: 30px;
+
+Correct:
+
+font-size: 30px;
+
+ERROR 05: Missing semicolon
+
+Wrong:
+
+color: red
+
+Correct:
+
+color: red;
+
+ERROR 06: CSS class name does not match JSX
+
+JSX:
+
+Hello
+CSS:
+
+.title { color: blue; }
+
+Problem: The JSX uses heading but CSS uses title.
+
+Correct:
+
+.heading { color: blue; }
+
+ERROR 07: Forgetting to import CSS
+
+If App.jsx contains className but App.css is not imported, the external
+CSS may not be applied.
+
+Correct:
+
+import “./App.css”;
+
+ERROR 08: Wrong file name
+
+If the file is named App.css, write:
+
+import “./App.css”;
+
+Do not write:
+
+import “./app.css”;
+
+on systems where file names are case-sensitive.
+
+ERROR 09: Wrong JSX closing tag
+
+Wrong:
+
+Hello
+Correct:
+
+Hello
+ERROR 10: Forgetting to export App
+
+Correct:
+
+export default App;
+
+ERROR 11: Putting CSS inside App.jsx
+
+For this practice, do not put the CSS rules inside App.jsx.
+
+Keep:
+
+App.jsx
+
+React/JSX code
+
+App.css
+
+CSS code
+
+ERROR 12: Using inline CSS
+
+Do not use this for these projects:
+
+Use:
+
+Hello
+and App.css:
+
+.title { color: red; }
+
+================================================================================
+ERROR FINDING REVISION CHECKLIST
+================================================================================
+
+When the design is not working, check in this order:
+
+1.  Is the file really named App.css?
+2.  Is App.css in the same src folder as App.jsx?
+3.  Did you write import “./App.css”;?
+4.  Did you use className instead of class?
+5.  Does the className exactly match the CSS class?
+6.  Did you put a dot before the CSS class name?
+7.  Did you spell color correctly?
+8.  Did you spell font-size correctly?
+9.  Did you use semicolons?
+10. Are all JSX tags closed?
+11. Did you write export default App?
+12. Did you save both App.jsx and App.css?
+13. Check the browser and terminal for the exact error message.
+
+================================================================================
+FINAL QUICK REVISION
+================================================================================
+
+Question 01 What is External CSS?
+
+Answer: CSS written in a separate .css file and imported into the React
+component.
+
+Question 02 How do you import App.css?
+
+Answer: import “./App.css”;
+
+Question 03 What is used instead of class in React JSX?
+
+Answer: className
+
+Question 04 How do you select a class in CSS?
+
+Answer: Use a dot before the class name.
+
+Example: .title { }
+
+Question 05 Which property changes text color?
+
+Answer: color
+
+Question 06 Which property changes text size?
+
+Answer: font-size
+
+Question 07 Which property centers text?
+
+Answer: text-align: center;
+
+Question 08 Which property makes text italic?
+
+Answer: font-style: italic;
+
+Question 09 Where should JSX code be written?
+
+Answer: App.jsx
+
+Question 10 Where should External CSS code be written?
+
+Answer: App.css
+
+Question 11 Can we use inline style in these projects?
+
+Answer: No. Use External CSS and className.
+
+Question 12 What is the basic connection between React and CSS?
+
+Answer: App.jsx imports App.css and JSX elements use className values
+that match CSS class selectors.
+
+================================================================================
+FINAL PRACTICE CHECKLIST
+================================================================================
+
+[ ] Project 1 - StudentProfile completed [ ] Project 2 - FoodMenu
+completed [ ] Project 3 - BookStore completed [ ] Project 4 -
+FitnessTrainer completed [ ] Project 5 - TravelExplorer completed
+
+[ ] App.jsx used [ ] App.css used [ ] External CSS imported [ ]
+className used [ ] color practiced [ ] font-size practiced [ ]
+text-align practiced [ ] font-style practiced [ ] No inline style used [
+] Errors revised [ ] All projects tested in browser [ ] Notes completed
+[ ] Revision questions prepared
+
+================================================================================
+END OF REACT EXTERNAL CSS PRACTICE
+================================================================================
