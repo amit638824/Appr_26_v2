@@ -1,0 +1,18 @@
+TASK: Create a Landing Page for Any One Website
+
+Choose ANY ONE of the following websites and create a similar landing page using React:
+
+1. Myntra — https://www.myntra.com/
+2. Airbnb — https://www.airbnb.co.in/
+3. Techpile — https://www.techpile.in/
+
+Instructions:
+- Choose only one website from the list.
+- Observe its landing page design, layout, colours, navigation, and main sections.
+- Build a similar landing page using React, HTML, and CSS.
+- Make the page responsive for desktop and mobile screens.
+- Use reusable React components where appropriate.
+- Use your own code and suitable images/assets or public folder.
+
+Deliverable:
+Submit the source code for your React landing page.
