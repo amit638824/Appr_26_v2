@@ -1,0 +1,127 @@
+# React useState Practice — 10 Tasks
+
+## Common Instructions
+
+1. Create a React functional component.
+2. Use `useState()` to manage the state.
+3. Use event handlers such as `onClick`.
+4. Use the functional state update pattern where appropriate: `setCount((prev) => prev + 1)`.
+5. Use conditional statements to control the behavior.
+6. Use Bootstrap classes to style buttons and content.
+7. Display the current state value on the screen.
+8. Do not modify the state variable directly.
+
+---
+
+### Task 1: Simple Counter
+
+Create a counter with `+` and `-` buttons.
+
+- Initial count: `0`
+- Increment the count by 1.
+- Decrement the count by 1.
+- The count must never go below 0.
+
+### Task 2: Counter with Maximum Limit
+
+Create a counter with `+` and `-` buttons.
+
+- Initial count: `10`
+- Minimum value: `0`
+- Maximum value: `10`
+- Prevent incrementing above 10.
+- Prevent decrementing below 0.
+
+### Task 3: Step Counter
+
+Create a counter with three buttons: `+1`, `+5`, and `-1`.
+
+- Initial count: `0`
+- The `+1` button increases the count by 1.
+- The `+5` button increases the count by 5.
+- The `-1` button decreases the count by 1.
+- The count must never become negative.
+
+### Task 4: Reset Counter
+
+Create a counter with `+`, `-`, and `Reset` buttons.
+
+- Initial count: `0`
+- Increment and decrement the count.
+- The Reset button sets the count back to 0.
+- The count must never become negative.
+
+### Task 5: Even and Odd Counter
+
+Create a counter with `+` and `-` buttons.
+
+- Initial count: `0`
+- Display the current count.
+- Show `Even Number` when the count is even.
+- Show `Odd Number` when the count is odd.
+- Prevent the count from going below 0.
+
+### Task 6: Positive, Negative, or Zero
+
+Create a counter with `+` and `-` buttons.
+
+- Initial count: `0`
+- Display `Positive Number` when the count is greater than 0.
+- Display `Negative Number` when the count is less than 0.
+- Display `Zero` when the count equals 0.
+
+### Task 7: Counter with Color Changes
+
+Create a counter with `+` and `-` buttons.
+
+- Initial count: `0`
+- Display the count in green when it is greater than 0.
+- Display the count in red when it is less than 0.
+- Display the count in black when it equals 0.
+- Allow the count to increase and decrease without limits.
+
+### Task 8: Show and Hide Counter
+
+Create a counter with `+`, `-`, and `Show/Hide` buttons.
+
+- Initial count: `0`
+- Increment and decrement the count.
+- Clicking Show/Hide toggles the visibility of the count.
+- When hidden, display `Counter Hidden`.
+- The counter value must remain unchanged when hidden.
+
+### Task 9: Multiple Counters
+
+Create three independent counters: Counter A, Counter B, and Counter C.
+
+- Each counter starts at `0`.
+- Each counter has its own `+` and `-` buttons.
+- Changing one counter must not affect the others.
+- Prevent each counter from going below 0.
+- Display all three counter values.
+
+### Task 10: Shopping Cart Quantity
+
+Create a shopping cart quantity selector.
+
+- Product name: `Wireless Headphones`
+- Price per item: ₹1,500
+- Initial quantity: `1`
+- Add `+` and `-` buttons to change the quantity.
+- Quantity must never go below 1.
+- Display the selected quantity.
+- Calculate and display the total price dynamically.
+- Example: Quantity 3 = ₹4,500.
+
+---
+
+## Submission Checklist
+
+- [ ] Complete all 10 tasks.
+- [ ] Use `useState()` correctly.
+- [ ] Use `onClick` event handlers.
+- [ ] Apply conditional rendering where required.
+- [ ] Use Bootstrap classes for styling.
+- [ ] Handle minimum and maximum limits correctly.
+- [ ] Ensure state updates work without directly modifying state.
+- [ ] Test every button before submitting.

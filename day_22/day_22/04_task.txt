@@ -1,0 +1,181 @@
+REACT API TABLE PRACTICE — 20 TASKS
+====================================
+
+GENERAL INSTRUCTIONS
+--------------------
+1. Create a React functional component for each task.
+2. Use the provided API URL to fetch data. Do not hardcode API data.
+3. Use Bootstrap classes to create a responsive table.
+4. Use the .map() method to display each object as a table row.
+5. Use a unique key for each row.
+6. Display the specified object properties in separate table columns.
+7. If the API provides an image URL, display it using an <img> tag with a suitable height and width.
+8. Display a meaningful heading above the table.
+9. Display a loading message while data is being fetched.
+10. Handle errors using .catch() or try...catch.
+11. Use array methods such as .filter(), .find(), .reduce(), .sort(), .slice(), .some(), .every(), .includes(), .findIndex(), and .forEach() wherever appropriate to the task.
+12. Use .length to display the total number of records where required.
+13. Use optional chaining (?.), nullish coalescing (??), template literals, and the spread operator (...) where appropriate.
+14. Keep the code clean, readable, and properly structured.
+15. Do not force every array method into every task. Use the methods relevant to the requirements.
+
+SECTION A — BEGINNER: BASIC API TABLES
+======================================
+
+TASK 01 — #Ekart Products List
+API: https://dummyjson.com/products
+Create a Bootstrap table with these columns:
+Sr.No, Title, Brand, Rating, Price, Thumbnail.
+Display the total number of products above the table.
+Practice: .map(), .length
+
+TASK 02 — User Details List
+API: https://dummyjson.com/users
+Create a table with:
+ID, First Name, Last Name, Email, Age, Gender, Profile Image.
+Practice: .map(), optional chaining (?.), nullish coalescing (??)
+
+TASK 03 — Blog Posts List
+API: https://jsonplaceholder.typicode.com/posts
+Create a table with:
+Post ID, User ID, Title, Body.
+Display the total number of posts.
+Practice: .map(), .length, .slice() to show the first 10 posts.
+
+TASK 04 — Todo List
+API: https://dummyjson.com/todos
+Create a table with:
+Todo ID, Todo Text, User ID, Completed Status.
+Show completed and pending tasks clearly.
+Practice: .map(), .filter(), .length
+
+TASK 05 — Product Categories
+API: https://api.escuelajs.co/api/v1/categories
+Create a table with:
+Category ID, Category Name, Category Image.
+Practice: .map(), .slice(), fallback values with ??.
+
+SECTION B — INTERMEDIATE: SEARCHING AND FILTERING
+=================================================
+
+TASK 06 — Product Price Filter
+API: https://fakestoreapi.com/products
+Create a table with:
+ID, Title, Category, Price, Rating, Product Image.
+Display only products costing more than $50.
+Practice: .filter(), .map()
+
+TASK 07 — Search Products by Title
+API: https://dummyjson.com/products
+Create a table with:
+ID, Title, Brand, Price, Rating.
+Filter products whose title includes a given search word. Use a variable for the search word.
+Practice: .filter(), .includes(), .map()
+
+TASK 08 — Find a Specific User
+API: https://jsonplaceholder.typicode.com/users
+Create a table showing the matching user:
+ID, Name, Username, Email, Phone, Website.
+Find the user by ID and display the result as a one-row table.
+Practice: .find(), .map() or conditional rendering
+
+TASK 09 — Comments List
+API: https://jsonplaceholder.typicode.com/comments
+Create a table with:
+Comment ID, Post ID, Name, Email, Comment Body.
+Display only comments whose email contains a specified text.
+Practice: .filter(), .includes(), .map()
+
+TASK 10 — Random User Directory
+API: https://randomuser.me/api/?results=10
+Create a table with:
+First Name, Last Name, Email, Country, Phone, Profile Picture.
+Remember: the array is inside the results property.
+Practice: .map(), optional chaining (?.), nullish coalescing (??)
+
+SECTION C — INTERMEDIATE: SORTING AND CALCULATIONS
+==================================================
+
+TASK 11 — Sort Products by Price
+API: https://dummyjson.com/products
+Create a table with:
+ID, Title, Brand, Price, Rating.
+Display products from lowest price to highest price without mutating the original state array.
+Practice: .sort(), spread operator (...), .map()
+
+TASK 12 — Shopping Cart Summary
+API: https://dummyjson.com/carts
+Create a table with:
+Cart ID, Total Products, Total Quantity, Total Amount, Discounted Total.
+Display the number of carts.
+Practice: .map(), .length
+
+TASK 13 — Calculate Total Product Price
+API: https://fakestoreapi.com/products
+Create a table with:
+ID, Title, Price, Category.
+Below the table, display the sum of all product prices.
+Practice: .reduce(), .map()
+
+TASK 14 — Product Rating Checker
+API: https://fakestoreapi.com/products
+Create a table with:
+ID, Title, Price, Rating, Rating Count.
+Display products with a rating of 4 or higher.
+Practice: .filter(), .map()
+
+TASK 15 — Recipe List
+API: https://dummyjson.com/recipes
+Create a table with:
+Recipe ID, Name, Cuisine, Rating, Preparation Time, Recipe Image.
+Display only the first 8 recipes and show whether any recipe has a rating above 4.5.
+Practice: .slice(), .some(), .map()
+
+SECTION D — ADVANCED: ARRAY CONDITIONS AND NESTED DATA
+=====================================================
+
+TASK 16 — Photo Gallery Table
+API: https://jsonplaceholder.typicode.com/photos
+Create a table with:
+Photo ID, Album ID, Title, Thumbnail.
+Display only the first 20 photos.
+Practice: .slice(), .map()
+
+TASK 17 — Albums List
+API: https://jsonplaceholder.typicode.com/albums
+Create a table with:
+Album ID, User ID, Album Title.
+Check whether every album has a positive ID.
+Practice: .every(), .map()
+
+TASK 18 — Product Reviews Dashboard
+API: https://dummyjson.com/products/1
+Create a table for the product's reviews with:
+Reviewer Name, Reviewer Email, Rating, Review Comment, Review Date.
+The reviews are nested inside the product object. Handle missing reviews safely.
+Practice: .map(), optional chaining (?.), nullish coalescing (??)
+
+TASK 19 — Online Store Products
+API: https://api.escuelajs.co/api/v1/products
+Create a table with:
+ID, Title, Price, Category Name, Product Image.
+Use .forEach() to log each product title for practice, and use .map() to render the table.
+Practice: .forEach(), .map(), template literals
+
+TASK 20 — User Posts Dashboard
+API: https://jsonplaceholder.typicode.com/posts?userId=1
+Create a table with:
+Post ID, User ID, Title, Body.
+Use .findIndex() to locate the index of a post with a chosen ID, and display the index if found.
+Practice: .findIndex(), .map(), .length
+
+SUBMISSION CHECKLIST
+====================
+[ ] All 20 tasks are implemented as separate React functional components.
+[ ] Data is fetched from the given API, not hardcoded.
+[ ] Tables use Bootstrap styling and are responsive.
+[ ] Table rows are rendered with .map() and have unique keys.
+[ ] Loading and error states are handled.
+[ ] Relevant array methods are used correctly.
+[ ] Images have suitable dimensions and alt text.
+[ ] Headings and record counts are displayed where requested.
