@@ -1,0 +1,87 @@
+REACT ROUTER DOM - PRACTICE TASKS
+Topic: BrowserRouter, Routes, Route, and Link
+Total Tasks: 15
+
+INSTRUCTIONS:
+1. Complete each task using React functional components.
+2. Use react-router-dom for routing.
+3. Use <BrowserRouter>, <Routes>, <Route>, and <Link> where appropriate.
+4. Add a 404 page for unknown paths when asked.
+5. Keep each page/component simple and test every route in the browser.
+
+
+
+1. Basic Routing
+Home, About, Contact, Services, Products
+
+=================================================
+
+2. Navigation Menus Using Link
+Home, About, Portfolio, Blog, Contact
+
+=================================================
+
+3. Reusable Page Components
+Home, About, Services, Team, Testimonials
+
+=================================================
+
+4. Services, Products, and FAQ Pages
+Services, Products, FAQ, Pricing, Support
+
+=================================================
+
+5. Handling Unknown Routes with a 404 Page
+Home, About, Contact, Services, NotFound
+
+=================================================
+
+6. NotFound Components
+Home, Dashboard, Profile, Settings, NotFound
+
+=================================================
+
+7. Nested Routing Using Outlet
+Dashboard, Profile, Settings, Notifications, Reports
+
+=================================================
+
+8. Dynamic Routing Using URL Parameters
+Products, Product Details, Users, User Profile, Blog Details
+
+=================================================
+
+9. Navigation Using useNavigate
+Login, Register, Home, Dashboard, Logout
+
+=================================================
+
+10. Active Navigation Links Using NavLink
+Home, About, Services, Portfolio, Contact
+
+=================================================
+
+11. Protected Routes for Authenticated Users
+Login, Register, Dashboard, Admin, User Profile
+
+=================================================
+
+12. Query Parameters Using useSearchParams
+Search, Products, Categories, Filter, Results
+
+=================================================
+
+13. Programmatic Back and Forward Navigation
+Home, About, Services, Products, Contact
+
+==================================================
+14. Shared Layout with Navbar and Footer
+Home, About, Services, Blog, Contact
+
+====================================================
+15. Complete Multi-Page React Application
+Home, About, Services, Products, Product Details, FAQ, Contact, Login, Dashboard, NotFound
+
+==================================================================================================================
+END OF 15 TASKS
+==============================================================================================================

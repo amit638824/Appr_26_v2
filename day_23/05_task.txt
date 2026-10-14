@@ -1,0 +1,43 @@
+DAY 4 – REACT useEffect PRACTICE TASKS
+Topic: Component Lifecycle with useEffect
+Instructions:
+- Complete each task in a React functional component.
+- Use console.log() to observe when effects run.
+- Use the dependency array correctly.
+- Import useEffect and useState from React where needed.
+
+SECTION 1: COMPONENT DID MOUNT
+
+Task 1. Log on Initial Render
+Create an App component that displays a heading "Welcome to React".
+Use useEffect with an empty dependency array ([]) to log:
+"Component didMount: App loaded"
+The message should log only when the component mounts (in development, React Strict Mode may run effects twice).
+
+Task 2. Show the Initial Time
+Create an App component that displays "Check the console".
+Use useEffect with an empty dependency array to log the current date and time when the component first mounts.
+
+SECTION 2: COMPONENT DID UPDATE
+
+Task 3. Track a Counter Update
+Create a counter starting at 0 with a button that increments the counter by 1.
+Use useEffect with [count] as its dependency array to log:
+"Component didUpdate: count changed"
+The effect should run after the initial mount and whenever count changes.
+
+SECTION 3: COMPONENT WILL UNMOUNT
+
+Task 4. Cleanup on Unmount
+Create a component named TimerMessage that displays "Timer is active".
+Use useEffect to log "TimerMessage mounted" when it mounts.
+Return a cleanup function that logs "TimerMessage unmounted" when the component is removed.
+In App, add a button to show or hide TimerMessage.
+
+SECTION 4: COMBINE LIFECYCLE BEHAVIOUR
+
+Task 5. Observe Mount, Update, and Unmount
+Create a component named LifecycleDemo with a counter and a button to increment it.
+Use one useEffect with [count] to log whenever the count changes.
+Use another useEffect with an empty dependency array to log when the component mounts and a cleanup function to log when it unmounts.
+In App, provide a button to show or hide LifecycleDemo and observe the console messages.
