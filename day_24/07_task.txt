@@ -1,0 +1,142 @@
+DAY 4 - REACT ROUTER DOM PRACTICE TASKS Topics: useParams,
+useSearchParams, useNavigate, useLocation Total Questions: 30 Total
+Sections: 4
+
+INSTRUCTIONS 1. Read each task carefully and write the complete code. 2.
+Use React functional components and react-router-dom. 3. Follow the
+component and file structure shown in the reference pictures. 4. Use
+Bootstrap classes where required. 5. Keep each component in a separate
+file inside the components folder when appropriate. 6. Run the project
+and test every route in the browser.
+
+============================================================ SECTION 1:
+useParams() Topic: Dynamic Route Parameters Tasks: 1-7
+============================================================
+
+Task 1: Create a Dynamic.jsx component. Import useParams from
+react-router-dom, read the id parameter from the URL, and display it
+inside an h1 tag.
+
+Task 2: In App.jsx, import BrowserRouter, Routes, and Route. Add a
+dynamic route with path=“/:id” and render the Dynamic component. Test it
+with /101 and /hello.
+
+Task 3: Create a Product.jsx component and configure the route
+“/product/:id”. Use useParams() to display the product ID.
+
+Task 4: Create a User.jsx component with the route “/user/:username”.
+Display the username from the URL in a heading.
+
+Task 5: Create a route “/student/:id” and a Student.jsx component. Use
+the route ID to find and display the matching student’s name and class
+from an array of sample students.
+
+Task 6: Create a route “/category/:categoryName/item/:itemId”. Use
+useParams() to display both categoryName and itemId.
+
+Task 7: Improve the dynamic component so it checks the route parameter
+against sample data. If the ID does not exist, display “Data Not Found”
+instead of undefined.
+
+============================================================ SECTION 2:
+useSearchParams() Topic: Query String Parameters Tasks: 8-15
+============================================================
+
+Task 8: Create a Contact.jsx component. Import useSearchParams from
+react-router-dom and read the “name” query parameter from a URL such as
+/contact?name=Rahul.
+
+Task 9: Update Contact.jsx to read three query parameters: name, class,
+and gender. Display them together inside an h1 tag, following the
+reference picture.
+
+Task 10: Configure the “/contact” route in App.jsx. Open
+/contact?name=Aman&class=12&gender=male and display all three values.
+
+Task 11: Add fallback text for missing query parameters. If name, class,
+or gender is not provided, display “Not Provided” for that value.
+
+Task 12: Create a Search.jsx component that reads a “term” query
+parameter from a URL such as /search?term=javascript and displays the
+search term.
+
+Task 13: Use setSearchParams() to update the query string when a user
+selects a class from a dropdown. Display the selected class on the page.
+
+Task 14: Create an array of products and use a “category” query
+parameter to show only products in the selected category. If category is
+missing, show all products.
+
+Task 15: Create a page that reads name, class, and gender from the URL.
+Update only the class query parameter while keeping name and gender
+unchanged.
+
+============================================================ SECTION 3:
+useNavigate() Topic: Programmatic Navigation Tasks: 16-22
+============================================================
+
+Task 16: Create a Home.jsx component. Import useNavigate from
+react-router-dom and initialize navigate using useNavigate().
+
+Task 17: Inside Home.jsx, create a redirect function that calls
+navigate(“/contact”). Add a “Go to Contact” button and connect it to the
+function, as shown in the reference picture.
+
+Task 18: In App.jsx, configure routes for Home, About, and Contact. Test
+that clicking “Go to Contact” changes the page to Contact without a full
+page reload.
+
+Task 19: Add a button to Home.jsx that navigates to “/about”. Use a
+separate function for this navigation.
+
+Task 20: Create Back and Forward buttons. Use navigate(-1) and
+navigate(1) to move through browser history.
+
+Task 21: Create a list of sample products. Add a button for each product
+that navigates to “/product/” using that product’s ID.
+
+Task 22: Create a simple login form with sample credentials. If the
+credentials are correct, use navigate() to open “/about”; otherwise,
+display an error message.
+
+============================================================ SECTION 4:
+useLocation() Topic: Current Route and URL Information Tasks: 23-30
+============================================================
+
+Task 23: Create an About.jsx component. Import useLocation from
+react-router-dom and read the current location using useLocation().
+
+Task 24: Destructure pathname from the location object and display it
+inside an h1 tag, following the reference picture.
+
+Task 25: Configure the About route in App.jsx. Open /about and verify
+that the page displays /about.
+
+Task 26: Create a reusable CurrentPath.jsx component that displays the
+current pathname. Render it on Home, About, and Contact pages.
+
+Task 27: Use useLocation() to display pathname, search, and hash as
+separate values. Test the page with a URL such as /about?from=home#team.
+
+Task 28: From Home.jsx, navigate to About using navigate(“/about”, {
+state: { message: “Hello from Home” } }). In About.jsx, use
+useLocation() to read and display location.state.message.
+
+Task 29: Create a Navbar.jsx component using Link from react-router-dom.
+Add Home, About, and Contact links, and use Bootstrap navbar classes
+similar to the reference picture. Keep the Navbar visible while the
+route content changes.
+
+Task 30: FINAL TASK - Combine All Four Hooks: Create a React application
+with App.jsx, Navbar.jsx, Home.jsx, About.jsx, Contact.jsx, and
+Dynamic.jsx. - Use BrowserRouter, Routes, and Route in App.jsx. - Add
+routes for “/”, “/about”, “/contact”, and “/:id”. - Use Link in
+Navbar.jsx to navigate between Home, About, and Contact. - Use
+useNavigate() in Home.jsx to add a “Go to Contact” button. - Use
+useLocation() in About.jsx to display the current pathname. - Use
+useSearchParams() in Contact.jsx to read name, class, and gender from
+the query string. - Use useParams() in Dynamic.jsx to display the route
+ID. - Import Bootstrap CSS and use Bootstrap styling. - Test every route
+and query string in the browser.
+
+END OF PRACTICE SHEET
