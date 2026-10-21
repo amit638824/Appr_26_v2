@@ -1,0 +1,124 @@
+DAY 6 - PROPS DRILLING + useRef HOOK PRACTICE TASKS
+
+Topics: Props Drilling, useRef Hook
+Total Questions: 30
+Total Sections: 4
+
+---
+
+INSTRUCTIONS
+
+1. Read each task carefully and write the complete code.
+2. Use React functional components.
+3. Import and use "useRef" from React wherever required.
+4. Use props to pass data from Parent Component to Child Component.
+5. Practice Props Drilling by passing data through multiple component levels.
+6. Keep separate components inside the "components" folder when appropriate.
+7. Use "ref.current" to access DOM elements and input values.
+8. Use "useEffect()" with useRef wherever DOM manipulation after rendering is required.
+9. Use Bootstrap classes for forms, buttons, cards, and layouts wherever required.
+10. Run the project and test every task in the browser. Check the console wherever console.log() is used.
+
+============================================================
+SECTION 1: PROPS DRILLING
+Topic: Passing Data Between Components
+Tasks: 1–7
+============================================================
+
+Task 1: Create App.jsx and Child.jsx components. In App.jsx, create a variable "num = 10". Pass num to Child.jsx using props and display its value inside an h1 tag.
+
+Task 2: Create two variables "num = 10" and "test = 20" in App.jsx. Pass both values to Child.jsx and display them separately.
+
+Task 3: Create a state variable using "useState(10)" in App.jsx. Pass the state value to Child.jsx through props and display it.
+
+Task 4: Create a student object containing name, class, and roll number. Pass the complete object from App.jsx to Child.jsx and display all its properties.
+
+Task 5: Create an array containing HTML, CSS, JavaScript, and React. Pass the array to Child.jsx and display all values using "map()".
+
+Task 6: Create App.jsx, Child.jsx, and GrandChild.jsx. Pass a username from App.jsx to Child.jsx and then from Child.jsx to GrandChild.jsx. Display the username inside GrandChild.jsx.
+
+Task 7: Create a function in App.jsx that displays an alert message. Pass the function to Child.jsx using props and call it when a button inside Child.jsx is clicked.
+
+============================================================
+SECTION 2: useRef HOOK
+Topic: DOM Access and Form Control
+Tasks: 8–15
+============================================================
+
+Task 8: Create an h1 element containing "useRef Hook". Create a reference using "useRef(null)" and attach it to the h1 element.
+
+Task 9: Use "useEffect()" and "useRef()" to change the color of the "useRef Hook" heading to red after the component renders.
+
+Task 10: Create an input field and attach a ref to it. Inside useEffect(), set the input value to "Ankit" using "inputRef.current.value".
+
+Task 11: Create a text input. Use useRef() and useEffect() to change its type from "text" to "password".
+
+Task 12: Create an input field and a "Focus Input" button. When the button is clicked, focus the input using "inputRef.current.focus()".
+
+Task 13: Create a text input and a Submit button. Use useRef() to read the input value when the button is clicked and print it in the console.
+
+Task 14: Create two input fields for Name and Email. Create separate refs for both inputs. On clicking Submit, read both values and display them using "console.log({name, email})".
+
+Task 15: Create an input field with a "Clear" button. Use useRef() to set "inputRef.current.value = ''" when the button is clicked.
+
+============================================================
+SECTION 3: PROPS DRILLING + useRef
+Topic: Passing Refs and Controlling Child Components
+Tasks: 16–22
+============================================================
+
+Task 16: Create an input ref inside App.jsx. Pass the ref to Child.jsx through props and attach it to an input field inside Child.jsx.
+
+Task 17: Create an input inside Child.jsx. Pass its ref from App.jsx and create a button in App.jsx that focuses the child input.
+
+Task 18: Create Name and Email refs inside App.jsx. Pass both refs to Form.jsx. Attach the refs to Name and Email input fields and read their values on Submit.
+
+Task 19: Create App.jsx, Child.jsx, and GrandChild.jsx. Create a ref in App.jsx and pass it through Child.jsx to GrandChild.jsx. Attach the ref to an input inside GrandChild.jsx.
+
+Task 20: Create a heading inside Child.jsx. Pass a heading ref from App.jsx to Child.jsx. Add a button in App.jsx that changes the heading color to red using the ref.
+
+Task 21: Create a password input inside Child.jsx. Pass its ref from App.jsx. Create "Show Password" and "Hide Password" buttons that change the input type using "ref.current.type".
+
+Task 22: Create a reusable CustomInput.jsx component. Pass "label", "placeholder", and "inputRef" as props. Use CustomInput twice in App.jsx for Name and Email fields.
+
+============================================================
+SECTION 4: PRACTICAL PROJECTS
+Topic: Props Drilling + useRef Integration
+Tasks: 23–30
+============================================================
+
+Task 23: Create a Student Registration Form with Name, Roll Number, and Class fields. Use useRef() to read all input values when the form is submitted.
+
+Task 24: Pass the submitted student information from App.jsx to StudentDetails.jsx using props and display the student details inside a Bootstrap card.
+
+Task 25: Create a Login Form with Username and Password fields. Use useRef() to read both values. If both fields are filled, pass the username to Dashboard.jsx through props.
+
+Task 26: Create a Contact Form containing Name, Email, and Message fields. Use refs to read the form values and pass the submitted data to a child component for display.
+
+Task 27: Create a Search component with an input field. Use useRef() to read the search value when the Search button is clicked. Pass the search term to Results.jsx using props.
+
+Task 28: Create a Product Order Form. Pass product information from App.jsx to Product.jsx using props. Use useRef() to read the quantity entered by the user.
+
+Task 29: Create a Feedback Form with Name and Feedback fields. Use useRef() to read the values. Pass the submitted information through App.jsx to FeedbackDetails.jsx and display it.
+
+Task 30: FINAL TASK - Complete Profile Management Application
+
+Create a complete React Profile Management application with the following requirements:
+
+- Create "App.jsx", "ProfileForm.jsx", "CustomInput.jsx", and "Profile.jsx".
+- Create Name, Email, and Phone input fields.
+- Create separate refs using "useRef()" for all three input fields.
+- Pass refs from App.jsx to ProfileForm.jsx through props.
+- Pass refs further to CustomInput.jsx where required.
+- Use props drilling between App, ProfileForm, and CustomInput.
+- Read Name, Email, and Phone values when the Submit button is clicked.
+- Store the submitted information and pass it to Profile.jsx through props.
+- Display the submitted profile information inside a Bootstrap card.
+- Add a "Focus Name" button that focuses the Name input using "nameRef.current.focus()".
+- Add a "Clear Form" button that clears all input fields using refs.
+- Use Bootstrap classes for the form, buttons, card, and responsive layout.
+- Run the application and verify props drilling, form submission, focus, and clear functionality.
+
+---
+
+END OF PRACTICE SHEET
