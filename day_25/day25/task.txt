@@ -1,0 +1,119 @@
+DAY 5 - AOS + RECHARTS PRACTICE TASKS
+
+Topics: AOS (Animate On Scroll), Recharts
+Total Questions: 30
+Total Sections: 4
+
+---
+
+INSTRUCTIONS
+
+1. Read each task carefully and write the complete code.
+2. Use React functional components.
+3. Install and use "aos", "recharts", and "bootstrap".
+4. Initialize AOS inside "useEffect()" wherever required.
+5. Use "data-aos" attributes to apply animations to elements.
+6. Use Recharts components to create charts with sample data.
+7. Follow a clean component and file structure. Keep separate components inside the "components" folder when appropriate.
+8. Use Bootstrap classes and custom CSS wherever required.
+9. Use "ResponsiveContainer" to make charts responsive.
+10. Run the project and test every task in the browser. Scroll the page to verify AOS animations and check the chart labels and values.
+
+============================================================
+SECTION 1: AOS
+Topic: Animation On Scroll
+Tasks: 1–7
+
+Task 1: Install AOS in your React project using "npm install aos". Import AOS and its CSS file into your application.
+
+Task 2: Initialize AOS inside "useEffect()" using "AOS.init()". Create a heading that displays "Welcome to React".
+
+Task 3: Create a yellow section with the heading "Fade Down". Apply "data-aos="fade-down"" to the section.
+
+Task 4: Create a dark section with the heading "Fade Up". Apply "data-aos="fade-up"" to the section.
+
+Task 5: Create two sections named "Fade Left" and "Fade Right". Apply "data-aos="fade-left"" and "data-aos="fade-right"", respectively.
+
+Task 6: Create four cards named HTML, CSS, JavaScript, and React. Apply different animations such as "zoom-in", "flip-up", "fade-up", and "fade-down".
+
+Task 7: Configure AOS with "duration: 1000", "once: true", and "offset: 100". Create five vertically arranged sections and verify their animations while scrolling.
+
+============================================================
+SECTION 2: RECHARTS
+Topic: Pie Chart and Bar Chart
+Tasks: 8–15
+
+Task 8: Install Recharts using "npm install recharts". Import "ResponsiveContainer", "PieChart", and "Pie" into "App.jsx".
+
+Task 9: Create a sample data array containing Group A (400), Group B (300), Group C (300), and Group D (200). Display this data using a Pie Chart.
+
+Task 10: Add the "label" prop to the "Pie" component so each group name appears on the chart.
+
+Task 11: Customize the Pie Chart by assigning different colors to each slice using the "Cell" component and a colors array.
+
+Task 12: Create a Bar Chart showing monthly sales: January (400), February (300), March (600), and April (500). Use "BarChart", "Bar", "XAxis", and "YAxis".
+
+Task 13: Add "Tooltip" and "CartesianGrid" to the Bar Chart. Verify that hovering over a bar displays the corresponding data.
+
+Task 14: Create a Line Chart showing student attendance over five days. Use "LineChart", "Line", "XAxis", "YAxis", and "Tooltip".
+
+Task 15: Place the Pie Chart and Bar Chart inside separate "ResponsiveContainer" components. Make both charts responsive to their parent containers.
+
+============================================================
+SECTION 3: AOS + RECHARTS
+Topic: Animated Charts
+Tasks: 16–22
+
+Task 16: Create a Pie Chart inside a section with "data-aos="zoom-in"". Display the four groups and their values.
+
+Task 17: Create a Bar Chart inside a section with "data-aos="fade-up"". Display monthly sales data.
+
+Task 18: Create a Line Chart inside a section with "data-aos="fade-left"". Display student attendance data.
+
+Task 19: Create a page with three animated cards showing Total Students, Total Teachers, and Total Courses. Apply different AOS animations to the cards.
+
+Task 20: Create a dashboard with a heading, a Pie Chart, and a Bar Chart. Animate the heading using "fade-down" and each chart container using a different animation.
+
+Task 21: Create a Student Performance Dashboard. Display an animated heading and a Bar Chart showing marks in Mathematics, Science, English, and Computer Science.
+
+Task 22: Create a vertically scrollable page containing a Pie Chart, Bar Chart, and Line Chart. Apply a different AOS animation to each chart section and verify that each section animates when it enters the viewport.
+
+============================================================
+SECTION 4: ADVANCED DASHBOARD PROJECTS
+Topic: AOS + Recharts Integration
+Tasks: 23–30
+
+Task 23: Create an Admin Dashboard with four animated summary cards: Total Users, Total Products, Total Orders, and Total Revenue.
+
+Task 24: Add a Pie Chart to the Admin Dashboard showing product category distribution. Use "dataKey="value"" and "label".
+
+Task 25: Add a Bar Chart to the Admin Dashboard showing monthly revenue. Include "XAxis", "YAxis", "Tooltip", and "CartesianGrid".
+
+Task 26: Create an E-Commerce Analytics page with a Pie Chart for product categories and a Bar Chart for monthly sales. Apply AOS animations to both chart containers.
+
+Task 27: Create a College Analytics Dashboard with animated cards for students, teachers, departments, and courses. Add a Pie Chart for department distribution and a Bar Chart for course enrollment.
+
+Task 28: Create a Hospital Analytics Dashboard with animated cards for patients, doctors, appointments, and beds. Add a Pie Chart for patient categories and a Line Chart for weekly appointments.
+
+Task 29: Create an interactive Sales Dashboard containing a Pie Chart and a Bar Chart. Add a dropdown that changes the displayed data based on the selected category. Animate the dashboard sections using AOS.
+
+Task 30: FINAL TASK - Complete Analytics Dashboard
+
+Create a complete responsive React analytics dashboard with the following requirements:
+
+- Create "App.jsx", "Navbar.jsx", "Dashboard.jsx", and reusable chart components inside the "components" folder.
+- Initialize AOS inside "useEffect()".
+- Create a responsive Bootstrap Navbar.
+- Add four animated summary cards.
+- Add a Pie Chart for category distribution.
+- Add a Bar Chart for monthly sales.
+- Add a Line Chart for weekly performance.
+- Use "ResponsiveContainer" for all charts.
+- Add "Tooltip", "XAxis", "YAxis", and other suitable chart components.
+- Apply different AOS animations to headings, cards, and chart containers.
+- Use custom CSS for spacing, colors, and responsiveness.
+- Test the dashboard in the browser and verify that all charts display the correct data and animations work while scrolling.
+
+---
+
+END OF PRACTICE SHEET
