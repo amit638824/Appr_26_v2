@@ -1,0 +1,172 @@
+# DAY 7 – REACT FORM HANDLING & VALIDATION
+## Practice Worksheet
+
+**Total Questions:** 30  
+**Total Sections:** 4
+
+### Topics Covered
+- Controlled Forms
+- `useState()`
+- Object State
+- Form Validation
+
+## General Instructions
+
+1. Read each task carefully and write the complete code.
+2. Use React functional components and `useState()`.
+3. Import Bootstrap CSS and use Bootstrap classes wherever required.
+4. Use `onChange` to update form values.
+5. Use controlled inputs with `value` and `onChange`.
+6. Use a single state object to manage multiple fields wherever specified.
+7. Use the spread operator (`...prev`) to update state without losing existing properties.
+8. Create separate functions such as `handleChange()`, `handleValidation()`, and `handleSubmit()` wherever required.
+9. Display error messages using conditional rendering and use `console.log()` for successful submissions wherever specified.
+10. Run the project and test every task in the browser.
+
+---
+
+# SECTION A: CONTROLLED FORMS
+**Topic: `useState()` and Input Handling**
+
+### Task 1: Basic Controlled Form
+Create a controlled form with Name and Email fields using separate `useState()` variables. Display both values in the console when the user types.
+
+### Task 2: Multiple State Variables
+Create a form with Name, Email, and Phone fields. Use three separate state variables and display all values using `console.log()`.
+
+### Task 3: Single State Object
+Create a form with Name and Email fields using a single state object:
+
+`{ name: "", email: "" }`
+
+Update both fields and display the complete object in the console.
+
+### Task 4: Dynamic State Update
+Create a form with Name, Email, and Phone fields. Store the values in one state object and create a `handleForm(key, value)` function to update individual fields using the spread operator.
+
+### Task 5: Display Form Values
+Create a controlled form with Name, Email, and Password fields using one state object. Display the current form values below the inputs as the user types.
+
+### Task 6: Submit Form
+Create a form with Name and Email fields. Add a Submit button that prints the entered data in the console only when clicked.
+
+### Task 7: Submit and Reset
+Create a form with Name, Email, and Phone fields. Add Submit and Reset buttons. Reset should clear every field.
+
+### Task 8: Gender Dropdown
+Create a controlled form with Name and Email fields. Add a dropdown for Gender and display all three values below the form.
+
+### Task 9: Registration Form
+Create a controlled registration form with Name, Email, Phone, and Course fields. Store all values in one state object and print them on submission.
+
+### Task 10: Reset Form Values
+Create a form with Name, Email, and Phone fields using a single state object. Add a Reset button that restores all values to empty strings.
+
+---
+
+# SECTION B: FORM VALIDATION
+**Topic: Validation Functions and Error Messages**
+
+### Task 11: Required Field Validation
+Create a form with Name and Email fields. Display the following messages below their respective inputs when they are empty:
+
+- Name is required field
+- Email is required field
+
+### Task 12: Separate Error States
+Create a form with Name and Email fields using separate error flags and error-message state variables. Clear previous errors before validating again.
+
+### Task 13: Multiple Field Validation
+Create a form with Name, Email, and Phone fields. Create a `handleValidation()` function to validate all three fields and display individual error messages.
+
+### Task 14: Using `.trim().length`
+Create a form with Name and Email fields. Use `.trim().length === 0` to check required fields. Return `true` when valid and `false` otherwise. Print the form data only when validation succeeds.
+
+### Task 15: Registration Form Validation
+Create a registration form with Name, Email, and Phone fields. Validate all required fields before submission. Display errors for empty fields and log the form object only when valid.
+
+---
+
+# SECTION C: SINGLE STATE OBJECT + VALIDATION
+**Topic: Object State, Dynamic Updates, and Error Handling**
+
+### Task 16: Dynamic Input Handling
+Create a form with Name and Email fields. Store both values in one state object. Use `handleChange()` with `e.target.name` and `e.target.value` to update the appropriate field using the spread operator.
+
+### Task 17: State Object with Errors
+Create a form with Name and Email fields using a single state object that also contains an `errors` object. Display individual error messages below each input.
+
+### Task 18: Form Values and Validation Errors
+Create a form with Name, Email, and Phone fields. Store form values and validation errors in a single state object. Create `handleValidation()` to check all fields and return the error object.
+
+### Task 19: Complete Validation Flow
+Create a controlled form with Name and Email fields. Implement `handleChange()`, `handleValidation()`, and `handleSubmit()`. Update errors when validation fails and print the values when validation succeeds.
+
+### Task 20: Validation with Reset
+Create a form with Name, Email, and Phone fields using a single state object. Validate all fields, display individual error messages, and add a Reset button that clears the values and errors.
+
+---
+
+# SECTION D: ADVANCED FORM PROJECTS
+**Topic: Practical Form Handling and Validation**
+
+### Task 21: Student Registration Form
+Create a Student Registration Form with Name, Roll Number, Class, and Course fields. Use one state object and validate that all fields are filled before submission.
+
+### Task 22: Login Form
+Create a Login Form with Email and Password fields. Validate both fields and display an error if either is empty.
+
+### Task 23: Password Confirmation
+Create a Registration Form with Name, Email, Password, and Confirm Password fields. Validate required fields and check that both passwords match.
+
+### Task 24: Contact Form
+Create a Contact Form with Name, Email, and Message fields. Display individual validation errors and print the submitted data when all fields are valid.
+
+### Task 25: Form with Gender Dropdown
+Create a form with Name, Email, Phone, and Gender fields. Use one state object and a dropdown for Gender. Validate all fields before submission.
+
+### Task 26: Product Order Form
+Create a Product Order Form with Customer Name, Product, Quantity, and Price fields. Calculate the total price and display the order details after submission.
+
+### Task 27: Student Marks Calculator
+Create a Student Marks Form with Name, Roll Number, and marks for three subjects. Calculate the total and percentage when the form is submitted.
+
+### Task 28: Profile Update Form
+Create a Profile Update Form with Name, Email, Phone, and Address fields. Add an Edit/Reset feature that clears all fields when Reset is clicked.
+
+### Task 29: Registration with Success Message
+Create a Registration Form with Name, Email, Phone, Course, and Password fields. Validate every required field and show a success message only when all fields are valid.
+
+### Task 30: Final Task – Complete Form Management Application
+
+Create a complete form management application using React.
+
+**Requirements:**
+
+1. Create `App.jsx` and import `useState` and Bootstrap CSS.
+2. Create Name, Email, Phone, Course, and Password fields.
+3. Store all form values and validation errors in a single state object.
+4. Create a `handleChange()` function using `e.target.name` and `e.target.value`.
+5. Update fields using the spread operator.
+6. Create a `handleValidation()` function to check all required fields.
+7. Validate email format and ensure the password meets a minimum length of eight characters.
+8. Display individual error messages using conditional rendering.
+9. Create a `handleSubmit()` function that validates the form before submission.
+10. Display a success message and the submitted non-sensitive details when validation succeeds.
+11. Never display the password in the submitted profile.
+12. Add a Reset button that clears all fields and errors.
+13. Use Bootstrap classes for a responsive layout.
+14. Test the following scenarios:
+    - Empty fields
+    - Invalid email
+    - Short password
+    - Successful submission
+    - Reset functionality
+
+---
+
+## END OF PRACTICE WORKSHEET
+
+**Day 7 – React Form Handling & Validation**
+
+**Learning Goal:** By completing these 30 tasks, you will practise controlled inputs, state management, object updates, form submission, validation, error handling, and practical registration and login forms.
