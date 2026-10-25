@@ -1,0 +1,700 @@
+DAY 8 – REACT HOOK FORM + YUP VALIDATION
+Practice Worksheet
+Total Questions: 70
+Total Sections: 7
+Topics Covered: React Hook Form, Yup Validation, Image Upload, File Size Validation, Multiple Images, Form Reset, Error Handling, Real-World Forms.
+General Instructions
+1. Read each task carefully and write the complete React code.
+2. Use React functional components.
+3. Use useForm() from react-hook-form.
+4. Use yup and yupResolver for form validation.
+5. Use register() to connect inputs with React Hook Form.
+6. Use handleSubmit() to validate and submit form data.
+7. Use formState.errors to display individual error messages.
+8. Use reset() to clear form values after submission or when the Reset button is clicked.
+9. Import Bootstrap CSS and use Bootstrap classes for responsive layouts.
+10. Display validation errors below their respective inputs using conditional rendering.
+11. Use console.log() to display submitted form data wherever specified.
+12. For image tasks, validate file type, maximum size and file count using Yup.
+13. Show image previews wherever required and clean up object URLs when they are no longer needed.
+14. Use accept on file inputs to guide file selection, but validate files in Yup and on the server as well.
+15. Test every task in the browser with valid and invalid inputs.
+
+SECTION A: BASIC REACT HOOK FORM
+Topic: useForm(), register(), handleSubmit(), reset()
+Task 1: Basic Registration Form
+Create a form with Name, Email and Password fields using React Hook Form and Yup.
+- Name: required, minimum 2 and maximum 18 characters.
+- Email: required and valid email format.
+- Password: required, minimum 8 and maximum 30 characters.
+- Display individual error messages.
+- Log the submitted data and reset the form.
+Task 2: Student Registration Form
+Create a form with Student Name, Roll Number, Email, Phone and Course fields.
+- All fields are required.
+- Email must be valid.
+- Phone must contain exactly 10 digits.
+- Display validation errors below each input.
+Task 3: Login Form
+Create a login form with Email and Password.
+- Email must be valid.
+- Password must contain at least 8 characters.
+- Add Login and Reset buttons.
+- Log the submitted data only when valid.
+Task 4: Contact Form
+Create a contact form with Full Name, Email, Subject and Message.
+- Name is required and must contain at least 2 characters.
+- Email must be valid.
+- Subject is required.
+- Message must contain at least 20 characters.
+Task 5: Employee Registration Form
+Create a form with Employee Name, Employee ID, Email, Phone, Department and Designation.
+- All fields are required.
+- Employee ID must contain at least 3 characters.
+- Phone must contain 10 digits.
+- Validate every field using Yup.
+Task 6: Password Change Form
+Create a form with Current Password, New Password and Confirm Password.
+- All fields are required.
+- New Password must contain at least 8 characters.
+- Confirm Password must match New Password.
+- Display a custom error if passwords do not match.
+Task 7: Feedback Form
+Create a feedback form with Name, Email, Rating and Comments.
+- Name and Email are required.
+- Rating must be between 1 and 5.
+- Comments must contain at least 10 characters.
+- Display a success message after valid submission.
+Task 8: Product Form
+Create a form with Product Name, Category, Price, Quantity and Description.
+- Product Name and Category are required.
+- Price must be greater than zero.
+- Quantity must be at least 1.
+- Description must contain at least 10 characters.
+Task 9: Newsletter Subscription Form
+Create a form with Name, Email and a Terms Acceptance checkbox.
+- Name and Email are required.
+- Email must be valid.
+- Terms Acceptance must be checked.
+- Reset all fields after successful submission.
+Task 10: Complete Personal Details Form
+Create a form with First Name, Last Name, Email, Phone, Date of Birth, Gender, Address, City, State and PIN Code.
+- All fields are required.
+- Email must be valid.
+- Phone must contain 10 digits.
+- PIN Code must contain 6 digits.
+- Gender must be selected from a dropdown.
+
+SECTION B: MULTIPLE FIELDS & ADVANCED VALIDATION
+Topic: Yup Schema, Custom Messages, Numbers, Dates, Dropdowns
+Task 11: College Admission Form
+Create a form with Student Name, Father's Name, Mother's Name, Date of Birth, Gender, Course, Branch, Semester, Email, Phone and Address.
+- All fields are required.
+- Email must be valid.
+- Phone must contain 10 digits.
+- Course, Branch and Semester must be selected from dropdowns.
+Task 12: Job Application Form
+Create a form with Applicant Name, Email, Phone, Position, Qualification, Experience, Expected Salary and Portfolio URL.
+- Name, Email, Phone and Position are required.
+- Experience must be nonnegative.
+- Expected Salary must be greater than zero.
+- Portfolio URL must be valid when provided.
+Task 13: Doctor Appointment Form
+Create a form with Patient Name, Age, Gender, Phone, Email, Doctor, Appointment Date, Time Slot and Symptoms.
+- All fields are required.
+- Age must be a positive number.
+- Appointment Date must not be in the past.
+- Doctor and Time Slot must be selected.
+Task 14: Travel Booking Form
+Create a form with Passenger Name, Email, Phone, Source, Destination, Departure Date, Return Date, Number of Travellers and Travel Class.
+- All fields are required.
+- Source and Destination must be different.
+- Departure Date must not be in the past.
+- Return Date must be on or after Departure Date.
+- Number of Travellers must be at least 1.
+Task 15: Employee Salary Form
+Create a form with Employee Name, Employee ID, Department, Basic Salary, Allowance, Deductions and Joining Date.
+- All fields are required.
+- Salary and Allowance must be nonnegative.
+- Deductions must be nonnegative.
+- Display the calculated net salary after valid submission.
+Task 16: Conditional Address Form
+Create a form with Name, Country, State, City, PIN Code and Address.
+- Name, Country, City and Address are required.
+- State is required when Country is India.
+- PIN Code must contain 6 digits when Country is India.
+- Use Yup conditional validation with .when().
+Task 17: Social Profile Form
+Create a form with Name, Email, Phone, Website URL, LinkedIn URL and GitHub URL.
+- Name and Email are required.
+- Email must be valid.
+- Optional URLs must be valid when entered.
+- Display individual error messages.
+Task 18: Business Registration Form
+Create a form with Business Name, Owner Name, Email, Phone, Business Type, GST Number, PAN Number and Address.
+- All fields are required.
+- Email and Phone must be valid.
+- Validate PAN and GST formats using .matches().
+- Display custom validation messages.
+Task 19: Event Registration Form
+Create a form with Participant Name, Email, Phone, Event, Ticket Type, Number of Attendees and Comments.
+- Name, Email, Phone and Event are required.
+- Ticket Type must be selected.
+- Number of Attendees must be at least 1.
+- Comments are optional but limited to 200 characters.
+Task 20: Advanced Account Registration
+Create a form with Full Name, Username, Email, Phone, Password, Confirm Password, Date of Birth, Gender and Terms Acceptance.
+- All fields except Username are required only if your design specifies otherwise; in this task, Username is also required.
+- Username must contain 4–15 characters.
+- Password must contain at least 8 characters.
+- Confirm Password must match Password.
+- Date of Birth must be valid.
+- Terms Acceptance must be checked.
+
+SECTION C: IMAGE UPLOAD & IMAGE PREVIEW
+Topic: File Inputs, Yup .mixed(), File Type, File Size, Preview
+Common image instructions for Section C
+- Use register() for file inputs.
+- Use Yup .mixed() and .test() to validate files.
+- Display a clear error for missing files, invalid formats or oversized files.
+- Use URL.createObjectURL() for image previews.
+- Clear previews when the file changes or the form resets.
+- Treat the size limits below as task requirements.
+Task 21: User Profile Form with Image
+Create a form with Name, Email, Phone and Profile Photo.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 2 MB
+- Allowed formats: JPG, JPEG, PNG
+Instructions:
+- Display the selected profile photo.
+- Validate image type and size.
+- Display errors below the file input.
+- Log the form data after valid submission.
+Task 22: Student ID Card Form
+Create a form with Student Name, Roll Number, Course, College Name, Blood Group and Student Photo.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 2 MB
+- Allowed formats: JPG, PNG
+Instructions:
+- Show a preview of the selected photo.
+- Create a student ID card preview containing the entered details.
+- Validate all fields and the image.
+Task 23: Teacher Profile Form
+Create a form with Teacher Name, Subject, Qualification, Experience, Email, Phone and Teacher Photo.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 3 MB
+- Allowed formats: JPG, JPEG, PNG
+Instructions:
+- Display the teacher photo preview.
+- Experience must be nonnegative.
+- Validate the image and all required fields.
+Task 24: Product Upload Form
+Create a form with Product Name, Category, Price, Stock, Description and Product Image.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 5 MB
+- Allowed formats: JPG, JPEG, PNG, WebP
+Instructions:
+- Show the product image preview.
+- Price must be greater than zero.
+- Stock must be at least zero.
+- Validate the image and product details.
+Task 25: E-commerce Product Gallery
+Create a form with Product Name, Brand, Price, Discount, Stock, SKU, Description and Product Images.
+
+Image requirements:
+- Minimum images: 1
+- Maximum images: 3
+- Maximum size: 5 MB per image
+- Maximum combined size: 15 MB
+- Allowed formats: JPG, PNG, WebP
+Instructions:
+- Display previews of all selected images.
+- Validate file count, individual size and combined size.
+- Show an error if any file is invalid.
+- Reset the images and previews with the form.
+Task 26: Restaurant Registration with Logo
+Create a form with Restaurant Name, Owner Name, Email, Phone, Cuisine, Address, Opening Time, Closing Time and Restaurant Logo.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 3 MB
+- Allowed formats: JPG, JPEG, PNG
+Instructions:
+- Show a restaurant logo preview.
+- Validate the image and all required fields.
+- Validate that Closing Time is later than Opening Time.
+Task 27: Doctor Registration with Photo
+Create a form with Doctor Name, Specialization, Qualification, Experience, Consultation Fee, Hospital Name, Phone, Email and Doctor Photo.
+
+Image requirements:
+- Required images: 1
+- Maximum size: 3 MB
+- Allowed formats: JPG, JPEG, PNG
+Instructions:
+- Show the doctor photo preview.
+- Experience must be nonnegative.
+- Consultation Fee must be greater than zero.
+- Validate all required fields.
+Task 28: Job Application with Resume
+Create a form with Name, Email, Phone, Skills, Experience, Portfolio URL and Resume.
+
+File requirements:
+- Required files: 1
+- Maximum size: 5 MB
+- Allowed format: PDF only
+Instructions:
+- Display the selected resume filename.
+- Validate the PDF format and file size.
+- Validate the remaining fields using Yup.
+- Reset the selected file when Reset is clicked.
+Task 29: KYC Profile Form
+Create a form with Full Name, Date of Birth, Address, ID Type, ID Number, Profile Photo and ID Document.
+
+File requirements:
+- Profile photo: 1 image, maximum 2 MB.
+- ID document: 1 file, maximum 5 MB.
+- Photo formats: JPG, PNG.
+- Document formats: JPG, PNG, PDF.
+Instructions:
+- Display the profile photo preview.
+- Display the ID document filename.
+- Validate both files independently.
+- Display separate errors for each file.
+Task 30: Multiple Image Gallery
+Create a form with Gallery Name, Description, Category and Gallery Images.
+
+Image requirements:
+- Minimum images: 1
+- Maximum images: 5
+- Maximum size: 5 MB per image
+- Maximum combined size: 25 MB
+- Allowed formats: JPG, JPEG, PNG, WebP
+Instructions:
+- Display previews of all selected images.
+- Validate file count, file type and file size.
+- Display individual error messages.
+- Clear all selected images and previews when the form resets.
+
+SECTION D: DROPDOWNS, RADIO BUTTONS & CHECKBOXES
+Topic: Controlled Selections with React Hook Form and Yup
+Task 31: Course Registration Form
+Create a form with Name, Email, Course, Semester and Study Mode.
+- Course and Semester must be dropdowns.
+- Study Mode must use Online and Offline radio buttons.
+- All fields are required.
+- Validate selections using Yup.
+Task 32: Employee Details Form
+Create a form with Name, Department, Designation, Employment Type and Skills.
+- Department and Designation must be dropdowns.
+- Employment Type must use radio buttons.
+- Skills must use checkboxes.
+- At least one skill must be selected.
+Task 33: Student Admission Form
+Create a form with Name, Course, Branch, Semester, Gender, Hobbies and Declaration.
+- Use dropdowns for Course, Branch and Semester.
+- Use radio buttons for Gender.
+- Use checkboxes for Hobbies.
+- Require at least one hobby and the declaration checkbox.
+Task 34: Travel Preferences Form
+Create a form with Name, Destination, Travel Class, Meal Preference and Transport Options.
+- Destination and Meal Preference must be dropdowns.
+- Travel Class must use radio buttons.
+- Transport Options must use checkboxes.
+- Require at least one transport option.
+Task 35: Food Order Form
+Create a form with Customer Name, Phone, Food Category, Dish, Size, Add-ons and Quantity.
+- Food Category and Dish must be dropdowns.
+- Size must use radio buttons.
+- Add-ons must use checkboxes.
+- Quantity must be at least 1.
+Task 36: Laptop Order Form
+Create a form with Customer Name, Brand, RAM, Storage, Accessories and Delivery Address.
+- Brand, RAM and Storage must be dropdowns.
+- Accessories must use checkboxes.
+- Customer Name and Delivery Address are required.
+- Validate all selected options.
+Task 37: Medical Appointment Form
+Create a form with Patient Name, Doctor, Department, Appointment Date, Time Slot and Appointment Type.
+- Doctor, Department and Time Slot must be dropdowns.
+- Appointment Type must use radio buttons.
+- All fields are required.
+- Appointment Date must not be in the past.
+Task 38: Job Application Preferences
+Create a form with Name, Position, Skills, Experience Level, Work Mode and Expected Salary.
+- Position must be a dropdown.
+- Skills must use checkboxes.
+- Experience Level and Work Mode must use radio buttons.
+- At least one skill must be selected.
+Task 39: Event Registration Form
+Create a form with Name, Email, Event, Ticket Type, Meal Preference and Workshops.
+- Event and Ticket Type must be dropdowns.
+- Meal Preference must use radio buttons.
+- Workshops must use checkboxes.
+- Validate all required selections.
+Task 40: Website Settings Form
+Create a form with Site Name, Theme, Language, Notifications, Visibility and Terms Acceptance.
+- Theme and Language must be dropdowns.
+- Notifications must use checkboxes.
+- Visibility must use radio buttons.
+- Require Site Name and Terms Acceptance.
+
+SECTION E: ADVANCED YUP VALIDATION
+Topic: .matches(), .oneOf(), .when(), .test(), Custom Rules
+Task 41: Strong Password Registration
+Create a form with Name, Email, Password and Confirm Password.
+- Password must contain at least 8 characters.
+- Require an uppercase letter, lowercase letter, number and special character.
+- Confirm Password must match Password.
+- Display custom errors for every rule.
+Task 42: Age Verification Form
+Create a form with Name, Date of Birth and Email.
+- All fields are required.
+- Date of Birth must be valid.
+- Applicant must be at least 18 years old.
+- Use a custom Yup .test() for age validation.
+Task 43: Password Reset Form
+Create a form with Email, New Password, Confirm Password and Terms Acceptance.
+- Email must be valid.
+- Password must meet the strong-password rules.
+- Confirm Password must match.
+- Terms Acceptance must be checked.
+Task 44: Salary and Deductions Form
+Create a form with Employee Name, Employee ID, Basic Salary, Allowance, Deductions and Bank Account Number.
+- All fields are required.
+- Salary and Allowance must be nonnegative.
+- Deductions cannot exceed Basic Salary plus Allowance.
+- Validate the account number according to a defined digit-length rule.
+Task 45: Exam Registration Form
+Create a form with Name, Roll Number, Email, Subjects, Exam Centre and Exam Date.
+- All fields are required.
+- At least one subject must be selected.
+- Exam Centre must be selected from a dropdown.
+- Exam Date must not be in the past.
+Task 46: Business Verification Form
+Create a form with Business Name, Owner Name, Email, Phone, GST Number, PAN Number, Address and Business Logo.
+
+Image requirements:
+- Required logo: 1 image.
+- Maximum size: 3 MB.
+- Allowed formats: JPG, PNG.
+Instructions:
+- Validate GST and PAN patterns.
+- Validate the business logo and show its preview.
+- Display errors below each invalid field.
+Task 47: Website and Social Links Form
+Create a form with Name, Website URL, LinkedIn URL, GitHub URL and Email.
+- Name and Email are required.
+- Website, LinkedIn and GitHub URLs are optional.
+- If a URL is entered, it must be valid.
+- Use Yup .url() and conditional validation.
+Task 48: Conditional Employment Form
+Create a form with Name, Employment Status, Company Name, Job Title, Experience and Salary.
+- Name and Employment Status are required.
+- Company Name and Job Title are required if employed.
+- Experience must be nonnegative.
+- Use .when() to validate employment-related fields.
+Task 49: Insurance Application Form
+Create a form with Applicant Name, Age, Email, Phone, Insurance Type, Coverage Amount, Nominee Name and Nominee Relation.
+- All fields are required.
+- Age must be a positive integer.
+- Coverage Amount must be greater than zero.
+- Validate the nominee details.
+Task 50: Multi-step Registration Form
+Create a three-step registration form.
+- Step 1: Name, Email and Phone.
+- Step 2: Address, City, State and PIN Code.
+- Step 3: Username, Password and Confirm Password.
+- Validate the current step before moving forward.
+- Add Previous, Next and Submit buttons.
+- Submit only after every step is valid.
+
+SECTION F: REAL-WORLD FORMS WITH IMAGES
+Topic: Multiple Fields, File Validation, Preview, Real-World Applications
+Task 51: E-commerce Seller Registration
+Create a form with Owner Name, Shop Name, Email, Phone, Password, Business Address, GST Number, PAN Number, Bank Account Number and Shop Logo.
+
+Image requirements:
+- Required logo: 1 image.
+- Maximum size: 3 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Show a logo preview.
+- Validate all required fields.
+- Validate GST and PAN patterns.
+- Never display the password in submitted details.
+Task 52: Healthcare Patient Registration
+Create a form with Patient Photo, Patient Name, Age, Gender, Phone, Email, Blood Group, Allergies, Current Medicines, Doctor, Appointment Date and Medical Report.
+
+File requirements:
+- Patient photo: 1 image, maximum 2 MB.
+- Medical report: 1 file, maximum 5 MB.
+- Photo formats: JPG, PNG.
+- Report formats: PDF, JPG, PNG.
+Instructions:
+- Show the patient photo preview.
+- Display the medical report filename.
+- Validate both files independently.
+- Require the essential patient details.
+Task 53: College Admission Application
+Create a form with Student Photo, Name, Father's Name, Mother's Name, Date of Birth, Gender, Category, Course, Branch, 10th Marks, 12th Marks, Address and Documents.
+
+File requirements:
+- Student photo: 1 image, maximum 2 MB.
+- Documents: maximum 3 files, 5 MB per file and 15 MB total.
+- Photo formats: JPG, PNG.
+- Document formats: PDF, JPG, PNG.
+Instructions:
+- Display the student photo preview.
+- Validate the file count and total file size.
+- Marks must be between 0 and 100.
+- Validate all required details.
+Task 54: Job Portal Profile Form
+Create a form with Profile Photo, Full Name, Email, Phone, Current Job Title, Skills, Experience, Education, Expected Salary, Portfolio URL and Resume.
+
+File requirements:
+- Profile photo: 1 image, maximum 2 MB.
+- Resume: 1 PDF, maximum 5 MB.
+- Formats: JPG/PNG for photo and PDF for resume.
+Instructions:
+- Show the profile photo preview.
+- Display the resume filename.
+- Validate URLs and required fields.
+- Validate both uploaded files.
+Task 55: Restaurant Menu Management Form
+Create a form with Restaurant Logo, Dish Image, Dish Name, Category, Price, Discount, Ingredients, Food Type and Availability.
+
+File requirements:
+- Restaurant logo: 1 image, maximum 3 MB.
+- Dish image: 1 image, maximum 5 MB.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Display both image previews.
+- Price must be greater than zero.
+- Discount must be between 0 and 100.
+- Use radio buttons for Veg/Non-Veg and a checkbox or switch for Availability.
+Task 56: Real Estate Property Form
+Create a form with Owner Name, Property Title, Property Type, Price, Area, Bedrooms, Bathrooms, Address, Description and Property Images.
+
+Image requirements:
+- Minimum images: 1.
+- Maximum images: 5.
+- Maximum size: 5 MB per image and 25 MB total.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Display all selected image previews.
+- Validate image count and size.
+- Price and Area must be greater than zero.
+- Validate the property details.
+Task 57: Vehicle Sale Form
+Create a form with Seller Name, Phone, Email, Brand, Model, Manufacturing Year, Fuel Type, Kilometres Driven, Price, Description and Vehicle Images.
+
+Image requirements:
+- Minimum images: 1.
+- Maximum images: 5.
+- Maximum size: 5 MB per image and 25 MB total.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Display image previews.
+- Validate the manufacturing year and price.
+- Kilometres Driven must be nonnegative.
+- Require at least one vehicle image.
+Task 58: Freelancer Service Form
+Create a form with Freelancer Photo, Name, Email, Service Title, Category, Skills, Hourly Rate, Experience, Portfolio URL and Work Samples.
+
+File requirements:
+- Profile photo: 1 image, maximum 2 MB.
+- Work samples: maximum 3 images, 5 MB each and 15 MB total.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Display previews for the profile photo and work samples.
+- Validate hourly rate and experience.
+- Validate optional portfolio URLs.
+- Validate file counts and sizes.
+Task 59: Hotel Booking Form
+Create a form with Guest Name, Email, Phone, Guest Count, Room Type, Check-in, Check-out, Special Requests and ID Proof.
+
+File requirements:
+- Required ID proof: 1 file, maximum 5 MB.
+- Formats: PDF, JPG, PNG.
+Instructions:
+- Display the selected filename.
+- Guest Count must be at least 1.
+- Check-out must be later than Check-in.
+- Validate the file format and size.
+Task 60: Digital Library Book Form
+Create a form with Book Cover, Book Title, Author, ISBN, Category, Publication Year, Language, Price, PDF Upload and Description.
+
+File requirements:
+- Book cover: 1 image, maximum 3 MB.
+- Book PDF: 1 file, maximum 10 MB.
+- Cover formats: JPG, PNG, WebP.
+- Book format: PDF only.
+Instructions:
+- Show the book cover preview.
+- Display the PDF filename.
+- Validate the ISBN according to the chosen format.
+- Validate price and publication year.
+
+SECTION G: ADVANCED PROJECTS
+Topic: Complete Applications, Multiple Images, Reset, Submission and Validation
+Task 61: Complete User Registration Application
+Create a registration application with Profile Image, Full Name, Username, Email, Phone, Date of Birth, Gender, Address, Password, Confirm Password, Hobbies and Terms Acceptance.
+
+Image requirements:
+- Profile image: 1 image, maximum 2 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Show the image preview.
+- Username must contain 4–15 characters.
+- Validate password strength and password confirmation.
+- Require at least one hobby.
+- Reset fields, errors and image preview together.
+Task 62: Admin Dashboard Add User Form
+Create an admin form with Profile Photo, Name, Email, Phone, Role, Department, Status, Joining Date and Permissions.
+
+Image requirements:
+- Profile photo: 1 image, maximum 2 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Use dropdowns for Role, Department and Status.
+- Use checkboxes for Permissions.
+- Require at least one permission.
+- Show the image preview and validate all required fields.
+Task 63: Student Management System Form
+Create a form with Student Photo, Name, Roll Number, Enrollment Number, Course, Branch, Semester, Subjects, Marks, Attendance, Email and Phone.
+
+Image requirements:
+- Student photo: 1 image, maximum 2 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Display the photo preview.
+- Marks must be between 0 and 100.
+- Attendance must be between 0 and 100.
+- Require at least one subject.
+- Validate the complete student record.
+Task 64: Healthcare Patient Record Form
+Create a form with Patient Photo, Name, Age, Gender, Blood Group, Allergies, Current Medicines, Doctor, Medical Reports and Emergency Contact.
+
+File requirements:
+- Patient photo: 1 image, maximum 2 MB.
+- Medical reports: maximum 3 files, 5 MB per file and 15 MB total.
+- Formats: JPG, PNG, PDF.
+Instructions:
+- Show the patient photo preview.
+- Display medical report filenames.
+- Validate file types, count and size.
+- Validate patient details before submission.
+Task 65: Complete E-commerce Product Management
+Create a form with Product Images, Name, SKU, Category, Brand, Price, Discount, Stock, Sizes, Colors, Specifications, Description and Publish Status.
+
+Image requirements:
+- Minimum images: 1.
+- Maximum images: 5.
+- Maximum size: 5 MB per image and 25 MB total.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Display all image previews.
+- Validate image count and size.
+- Price must be greater than zero.
+- Discount must be between 0 and 100.
+- Require at least one size and color when applicable.
+Task 66: Social Media Post Form
+Create a form with Caption, Multiple Images, Hashtags, Location, Audience, Comments Enabled and Scheduled Date.
+
+Image requirements:
+- Minimum images: 0.
+- Maximum images: 5.
+- Maximum size: 5 MB per image and 25 MB total.
+- Formats: JPG, PNG, WebP.
+Instructions:
+- Show previews of selected images.
+- Caption must contain at least 1 character.
+- Audience must be selected.
+- Validate image count and size.
+- Allow a text-only post without images.
+Task 67: Company Recruitment Form
+Create a form with Company Logo, Company Name, Job Title, Department, Location, Salary Range, Skills, Qualification, Experience, Application Deadline and Job Description.
+
+Image requirements:
+- Company logo: 1 image, maximum 3 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Display the company logo preview.
+- Validate salary range and experience.
+- Require at least one skill.
+- Application Deadline must not be in the past.
+Task 68: Online Examination Registration
+Create a form with Student Photo, Name, Roll Number, Course, Subject Selection, Exam Centre, Exam Date, Signature Image and Declaration.
+
+Image requirements:
+- Student photo: 1 image, maximum 2 MB.
+- Signature: 1 image, maximum 1 MB.
+- Formats: JPG, PNG.
+Instructions:
+- Display photo and signature previews.
+- Require at least one subject.
+- Validate the exam date.
+- Require the declaration checkbox.
+- Validate each image independently.
+Task 69: Restaurant Partner Registration
+Create a form with Owner Photo, Restaurant Logo, Restaurant Name, Owner Details, Email, Phone, Address, Cuisine, Menu PDF, FSSAI Number and Bank Details.
+
+File requirements:
+- Owner photo: 1 image, maximum 2 MB.
+- Restaurant logo: 1 image, maximum 3 MB.
+- Menu PDF: 1 file, maximum 5 MB.
+- Image formats: JPG, PNG.
+- Menu format: PDF.
+Instructions:
+- Display previews for the owner photo and logo.
+- Display the menu filename.
+- Validate all required fields and file sizes.
+- Validate file formats and the chosen FSSAI-number format.
+Task 70: Final Task — Complete Form Management Application
+Create a complete React Hook Form + Yup application with the following fields:
+- Profile Image
+- Full Name
+- Username
+- Email
+- Phone
+- Date of Birth
+- Gender
+- Course
+- Address
+- Password
+- Confirm Password
+- Hobbies
+- Terms Acceptance
+Image requirements:
+- Profile image: exactly 1 image.
+- Maximum size: 2 MB.
+- Allowed formats: JPG, JPEG, PNG.
+Requirements:
+1. Create App.jsx and import useForm, yupResolver, Yup and Bootstrap CSS.
+2. Create a Yup schema with custom validation messages.
+3. Connect every field using register().
+4. Use handleSubmit() to validate the form before submission.
+5. Validate the email format and 10-digit phone number.
+6. Require a password of at least 8 characters and matching Confirm Password.
+7. Validate the profile image type and size.
+8. Show the profile image preview.
+9. Display individual errors using formState.errors.
+10. Require at least one hobby and the Terms Acceptance checkbox.
+11. Show a success message only after valid submission.
+12. Display submitted non-sensitive details, but never display the password.
+13. Add a Reset button that clears all values, errors, selected files and previews.
+14. Use Bootstrap classes to make the form responsive.
+15. Test empty fields, invalid email, short password, mismatched passwords, invalid image, successful submission and reset functionality.
+
+END OF PRACTICE WORKSHEET
+Day 8 – React Hook Form + Yup Validation
+
+Learning Goal: By completing these 70 tasks, you will practise form registration, Yup schema validation, custom error messages, image previews, file-size and file-type validation, multiple-file uploads, conditional validation, form resets and complete real-world React forms.
