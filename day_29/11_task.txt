@@ -1,0 +1,149 @@
+POSTMAN API TESTING PRACTICE — 20 TASKS Topic: REST API Testing with
+Postman and JSON Server Level: Beginner to Intermediate
+
+INSTRUCTIONS 1. Start JSON Server using: npx json-server db.json 2. Base
+URL: http://localhost:3000 3. Available endpoints: /user, /products,
+/employees, /students, /orders, /posts 4. Use the correct HTTP method
+for each task. 5. For POST, PUT, and PATCH requests, select Body → raw →
+JSON in Postman. 6. Verify the response status, response body, and data
+after each request. 7. Some tasks create, update, or delete data.
+Restore db.json before repeating tasks if needed.
+
+TERMINAL RUN COMMAND : npx json-server filename.json --port 3000
+
+NOTICE Use the sample db.json created for this practice. Some query
+syntax can vary by JSON Server version. For tasks that modify or delete
+data, check the endpoint and record ID before sending the request.
+
+------------------------------------------------------------------------
+
+SECTION 1: GET REQUESTS Topic: Retrieve Data
+
+Task 1: Get All Users Method: GET Endpoint: /user Instruction: Send a
+request to retrieve all users. Verify that the response contains the
+user records.
+
+Task 2: Get a Single User Method: GET Endpoint: /user/1 Instruction:
+Retrieve the user whose ID is 1. Verify the user’s name, email, and
+phone.
+
+Task 3: Get All Products Method: GET Endpoint: /products Instruction:
+Retrieve all products. Check that each product includes its ID, name,
+price, category, and stock.
+
+Task 4: Get a Specific Employee Method: GET Endpoint: /employees/E102
+Instruction: Retrieve employee E102. Verify the employee’s name, email,
+department, and salary.
+
+Task 5: Get a Specific Order Method: GET Endpoint: /orders/O102
+Instruction: Retrieve order O102. Verify its userId, productId,
+quantity, total, and status.
+
+------------------------------------------------------------------------
+
+SECTION 2: POST REQUESTS Topic: Create New Records
+
+Task 6: Create a New User Method: POST Endpoint: /user Instruction: Add
+a new user with a name, email, and phone number. Verify that the new
+record appears in the response and database.
+
+Sample Body: { “name”: “Vikash”, “email”: “vikash@example.com”, “phone”:
+9876501234 }
+
+Task 7: Add a New Product Method: POST Endpoint: /products Instruction:
+Add a product with name, price, category, and stock. Verify the created
+product in the response.
+
+Task 8: Register a New Student Method: POST Endpoint: /students
+Instruction: Add a student with name, age, course, and marks. Verify
+that the student record is created.
+
+Task 9: Create a New Order Method: POST Endpoint: /orders Instruction:
+Create an order with userId, productId, quantity, total, and status.
+Verify the values returned by the API.
+
+------------------------------------------------------------------------
+
+SECTION 3: PUT, PATCH, AND DELETE REQUESTS Topic: Update and Remove
+Records
+
+Task 10: Replace a User Record Method: PUT Endpoint: /user/1
+Instruction: Replace the user record with ID 1. Send the complete user
+object, including name, email, and phone. Verify the updated record.
+
+Task 11: Update Product Stock Method: PATCH Endpoint: /products/101
+Instruction: Change the stock of product 101 to 20 without intentionally
+changing its other fields.
+
+Sample Body: { “stock”: 20 }
+
+Task 12: Update Employee Salary Method: PATCH Endpoint: /employees/E101
+Instruction: Change employee E101’s salary to 50000. Verify the new
+salary in the response.
+
+Sample Body: { “salary”: 50000 }
+
+Task 13: Delete a Student Method: DELETE Endpoint: /students/S103
+Instruction: Delete student S103. Send a follow-up GET request to verify
+that the record is no longer available.
+
+Task 14: Delete a Product Method: DELETE Endpoint: /products/103
+Instruction: Delete product 103. Retrieve all products afterward and
+confirm that the deleted product is no longer listed.
+
+------------------------------------------------------------------------
+
+SECTION 4: QUERY PARAMETERS Topic: Filter, Search, and Sort Data
+
+Task 15: Filter Users by Name Method: GET Endpoint: /user?name=Ram
+Instruction: Retrieve users whose name is Ram. Verify that the returned
+records match the filter.
+
+Task 16: Filter Products by Category Method: GET Endpoint:
+/products?category=Electronics Instruction: Retrieve products in the
+Electronics category. Check the category of every returned product.
+
+Task 17: Find Low-Priced Products Method: GET Endpoint:
+/products?price_lte=10000 Instruction: Retrieve products priced at 10000
+or less. Verify each returned product’s price.
+
+Task 18: Sort Products by Price Method: GET Endpoint:
+/products?_sort=price Instruction: Retrieve products sorted by price.
+Check whether the prices are ordered as expected. If your JSON Server
+version uses different sort syntax, consult its documentation.
+
+------------------------------------------------------------------------
+
+SECTION 5: AUTOMATED TESTING IN POSTMAN Topic: Validate Status Codes and
+Response Data
+
+Task 19: Validate the GET Status Code Method: GET Endpoint: /user
+Instruction: Open the Tests or Scripts area in Postman and add a test
+that verifies the response status code is 200.
+
+Sample Test Script: pm.test(“Status code is 200”, function () {
+pm.response.to.have.status(200); });
+
+Task 20: Validate Product Response Data Method: GET Endpoint:
+/products/101 Instruction: Add Postman tests to verify that the product
+name is Laptop and the price is 55000.
+
+Sample Test Script: pm.test(“Product details are correct”, function () {
+const data = pm.response.json();
+
+    pm.expect(data.name).to.eql("Laptop");
+    pm.expect(data.price).to.eql(55000);
+
+});
+
+------------------------------------------------------------------------
+
+COMPLETION CHECKLIST [ ] Tasks 1–5: GET requests completed [ ] Tasks
+6–9: POST requests completed [ ] Tasks 10–14: PUT, PATCH, and DELETE
+requests completed [ ] Tasks 15–18: Query parameter requests completed [
+] Tasks 19–20: Automated tests completed
+
+
+=========================================================================
+                       END OF PRACTICE SHEET
+=========================================================================
