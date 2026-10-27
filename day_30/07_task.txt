@@ -1,0 +1,25 @@
+NOTICE: React API Testing Practice Project
+
+Hello Everyone,
+
+You are required to build a Postman-style API Testing Web App using React, Vite, and JSON Server.
+
+PROJECT REQUIREMENTS
+
+1. Complete all  assigned tasks.
+2. Use React for the UI and JSON Server as the backend.
+3. Create a db.json file containing user, products, employees, students, and orders data.
+4. Practice only GET and POST API methods.
+5. Connect the React UI to http://localhost:3000.
+6. Implement a request builder, JSON body editor, response viewer, error handling, and automated API testing.
+7. Ensure all API requests work correctly with real data.
+
+Complete the project step by step and test each task before moving to the next one. The UI should be clean, responsive, and easy to use.
+
+IMPORTANT
+
+Do not use fake or hardcoded API responses. All requests must communicate with JSON Server.
+
+Please complete all tasks and be prepared to demonstrate your working project.
+
+Thank you.
