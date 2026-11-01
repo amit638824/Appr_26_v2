@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova — Admin Dashboard</title>
+<style>
+:root{--blue:#4f7df3;--blue-dark:#3868df;--blue-soft:#edf3ff;--ink:#182338;--muted:#7b8799;--line:#e8edf5;--canvas:#f6f8fc;--white:#fff;--sidebar:252px;--top:72px;--shadow:0 8px 28px rgba(31,55,96,.055)}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--ink);font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}
+.topbar{height:var(--top);position:fixed;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:0 30px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.top-left,.top-actions,.brand,.searchbox,.user-menu{display:flex;align-items:center}.top-left{gap:18px}.brand{gap:11px;text-decoration:none;color:var(--ink);font-size:18px;font-weight:750;letter-spacing:-.5px}.brand-logo{height:36px;width:36px;border-radius:11px;background:linear-gradient(145deg,#6c94ff,#3f6fe7);display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;box-shadow:0 5px 12px #4f7df333}.searchbox{height:38px;width:min(310px,30vw);gap:9px;padding:0 12px;background:#f7f9fc;border:1px solid var(--line);border-radius:9px;color:var(--muted)}.searchbox input{width:100%;border:0;outline:0;background:transparent;color:var(--ink);font-size:13px}.searchbox kbd{font-size:10px;border:1px solid #e1e6ef;border-radius:4px;padding:1px 5px;color:#9aa4b3;white-space:nowrap}.top-actions{gap:18px}.icon-button{height:37px;width:37px;border:1px solid var(--line);border-radius:9px;background:#fff;color:#68758a;display:grid;place-items:center;position:relative}.icon-button:hover{background:#f7f9ff;color:var(--blue)}.notification-dot{position:absolute;right:7px;top:7px;height:6px;width:6px;background:#f16b78;border:1px solid white;border-radius:50%}.user-menu{gap:10px;padding-left:16px;border-left:1px solid var(--line);position:relative}.avatar{height:36px;width:36px;border-radius:50%;display:grid;place-items:center;background:#e8efff;color:#3d66c7;font-weight:750}.user-copy{line-height:1.25}.user-copy strong{display:block;font-size:12px}.user-copy span{font-size:11px;color:var(--muted)}.dropdown{display:none;position:absolute;right:0;top:48px;width:165px;padding:7px;background:white;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}.dropdown.open{display:block}.dropdown button{width:100%;text-align:left;padding:9px;border:0;border-radius:7px;background:white;color:#536176;font-size:12px}.dropdown button:hover{background:#f4f7ff;color:var(--blue)}
+.menu-toggle{display:none;border:1px solid var(--line);background:white;border-radius:8px;height:36px;width:38px;color:var(--ink);font-size:18px}
+.sidebar{position:fixed;z-index:25;top:var(--top);bottom:0;left:0;width:var(--sidebar);padding:25px 15px 18px;background:#fff;border-right:1px solid var(--line);transition:width .2s,transform .2s;overflow-y:auto}.side-label{padding:0 12px;margin:0 0 11px;color:#a0aabb;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.nav-button{width:100%;height:44px;display:flex;align-items:center;gap:13px;padding:0 13px;margin:4px 0;border:0;border-radius:9px;background:transparent;color:#66748a;text-align:left;font-size:13px;font-weight:560;transition:background .16s,color .16s;position:relative}.nav-button:hover{background:#f6f8fd;color:var(--blue)}.nav-button.active{background:var(--blue-soft);color:var(--blue);font-weight:700}.nav-button.active:before{content:"";position:absolute;left:-15px;top:9px;bottom:9px;width:3px;border-radius:0 4px 4px 0;background:var(--blue)}.nav-icon{width:20px;display:inline-grid;place-items:center;font-size:17px}.sidebar-bottom{position:absolute;bottom:18px;left:15px;right:15px;padding:14px;border-radius:10px;background:#f7f9fe;color:#68758a;font-size:11px}.sidebar-bottom strong{display:block;color:#35445d;font-size:12px;margin-bottom:3px}
+.main-content{margin-left:var(--sidebar);padding:calc(var(--top) + 30px) 32px 36px;min-height:100vh;transition:margin-left .2s}.content-panel{max-width:1500px;margin:auto}.page-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:23px}.eyebrow{margin:0 0 6px;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:1.25px;text-transform:uppercase}h1{margin:0;font-size:26px;line-height:1.2;letter-spacing:-.8px}.subtitle{margin:7px 0 0;color:var(--muted);font-size:13px}.date-pill{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#69768a;font-size:11px;white-space:nowrap}
+.grid{display:grid;gap:17px}.four{grid-template-columns:repeat(4,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:20px;box-shadow:var(--shadow);min-width:0}.card-title{margin:0 0 5px;font-size:14px;font-weight:700}.card-desc{margin:0;color:var(--muted);font-size:12px}.stat-card{padding:18px 19px}.stat-top{display:flex;align-items:center;justify-content:space-between}.stat-icon{height:36px;width:36px;border-radius:10px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center;font-size:17px}.stat-name{color:#8490a2;font-size:11px;font-weight:600}.stat-value{font-size:26px;font-weight:760;letter-spacing:-.8px;margin:12px 0 4px}.trend{font-size:10px;color:#1b9a70;font-weight:700}.trend.down{color:#e06b78}.muted{color:var(--muted)}.section-space{margin-top:18px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.section-head h2{margin:0;font-size:14px}.small-link{border:0;background:none;color:var(--blue);font-size:11px;font-weight:700}
+.hero{padding:25px 27px;border:1px solid #e1eaff;border-radius:14px;background:linear-gradient(110deg,#f0f5ff,#fff 75%);display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:18px}.hero h2{margin:0;font-size:20px;letter-spacing:-.5px}.hero p{margin:7px 0 0;color:#73819a;font-size:12px}.hero-mark{height:66px;width:66px;border-radius:18px;background:#e0eaff;color:#4777e9;display:grid;place-items:center;font-size:30px}
+.activity-list{list-style:none;margin:0;padding:0}.activity-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #f0f2f7;font-size:12px}.activity-list li:last-child{border:0}.activity-left{display:flex;align-items:center;gap:10px}.activity-bullet{width:8px;height:8px;border-radius:50%;background:#6c91f1}.time{color:#a0a9b7;font-size:10px;white-space:nowrap}
+.chart{height:190px;display:flex;align-items:flex-end;gap:12px;padding:17px 6px 0;border-bottom:1px solid var(--line);background:repeating-linear-gradient(to bottom,transparent 0,transparent 45px,#f0f3f8 46px)}.bar-group{height:100%;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:7px}.bar{width:min(24px,75%);border-radius:5px 5px 0 0;background:linear-gradient(180deg,#83a5ff,#4f7df3)}.bar-label{font-size:10px;color:#9aa4b3}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:450px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #eff2f7;font-size:11px}th{color:#9aa4b3;font-weight:700;text-transform:uppercase;letter-spacing:.6px;font-size:9px}td{color:#536176}.status{display:inline-block;padding:4px 8px;border-radius:20px;background:#eaf8f2;color:#26966e;font-size:9px;font-weight:700}
+.profile-head{display:flex;align-items:center;gap:15px;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:20px}.profile-avatar{height:62px;width:62px;border-radius:18px;display:grid;place-items:center;background:#e8efff;color:#4772d9;font-size:22px;font-weight:800}.profile-head h2{margin:0 0 4px;font-size:16px}.profile-head p{margin:0;color:var(--muted);font-size:12px}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.field-label{display:block;margin-bottom:5px;color:#9aa4b3;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.8px}.field-value{font-size:12px;color:#354258}
+.service-icon{height:40px;width:40px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue);border-radius:11px;font-size:18px;margin-bottom:15px}.service-card{transition:transform .18s,border-color .18s}.service-card:hover{transform:translateY(-3px);border-color:#d5e1ff}.service-card h2{margin:0 0 7px;font-size:14px}.service-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}.primary-btn,.secondary-btn{padding:9px 14px;border-radius:8px;font-size:11px;font-weight:700;border:1px solid transparent}.primary-btn{background:var(--blue);color:#fff}.primary-btn:hover{background:var(--blue-dark)}.secondary-btn{background:#fff;color:#52627a;border-color:var(--line)}.secondary-btn:hover{background:#f7f9ff}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.form-field{display:flex;flex-direction:column;gap:6px}.form-field.full{grid-column:1/-1}.form-field label{font-size:11px;color:#65738a;font-weight:700}.form-field input,.form-field textarea{width:100%;padding:11px 12px;border:1px solid #e2e8f1;border-radius:8px;outline:0;background:#fbfcfe;color:var(--ink);font-size:12px}.form-field input:focus,.form-field textarea:focus{border-color:#91adf8;box-shadow:0 0 0 3px #edf3ff}.form-field textarea{min-height:105px;resize:vertical}.success-message{display:none;margin-top:12px;padding:10px 12px;background:#eaf8f2;color:#23845f;border-radius:8px;font-size:11px}
+.collapsed .sidebar{width:76px}.collapsed .main-content{margin-left:76px}.collapsed .side-label,.collapsed .nav-text,.collapsed .sidebar-bottom{display:none}.collapsed .sidebar{padding-left:12px;padding-right:12px}.collapsed .nav-button{justify-content:center;padding:0}.collapsed .nav-button.active:before{left:-12px}
+.overlay{display:none}
+@media(max-width:1100px){.four{grid-template-columns:repeat(2,minmax(0,1fr))}.main-content{padding-left:22px;padding-right:22px}.searchbox{width:230px}}
+@media(max-width:760px){:root{--top:64px}.topbar{padding:0 14px}.menu-toggle{display:block}.brand{font-size:16px}.searchbox{display:none}.top-actions{gap:9px}.user-copy{display:none}.user-menu{padding-left:9px}.sidebar{transform:translateX(-100%);width:252px;box-shadow:none}.sidebar.open{transform:translateX(0);box-shadow:10px 0 30px #1b2b4a22}.collapsed .sidebar{width:252px}.collapsed .side-label,.collapsed .nav-text,.collapsed .sidebar-bottom{display:block}.collapsed .nav-button{justify-content:flex-start;padding:0 13px}.collapsed .main-content{margin-left:0}.main-content{margin-left:0;padding:calc(var(--top) + 22px) 14px 25px}.four,.three,.two{grid-template-columns:repeat(2,minmax(0,1fr))}.page-heading{align-items:flex-start;flex-direction:column}.sidebar-bottom{position:static;margin-top:25px}.overlay.show{display:block;position:fixed;inset:var(--top) 0 0;background:#17243b44;z-index:22}}
+@media(max-width:480px){.four,.three,.two,.field-grid,.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.hero{padding:19px}.hero-mark{height:50px;width:50px}.stat-value{font-size:23px}.card{padding:17px}.date-pill{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Visual refresh: richer gradients, depth, and polished interaction states */
+:root{--blue:#6558e8;--blue-dark:#5144d2;--blue-soft:#f0efff;--ink:#18213b;--muted:#7d849b;--line:#e9eaf3;--canvas:#f5f6fc;--shadow:0 12px 34px rgba(37,42,92,.075)}
+body{background:radial-gradient(ellipse at 82% 0%,rgba(119,105,245,.09),transparent 34%),#f6f7fc}
+.topbar{padding:0 34px;background:rgba(255,255,255,.88);box-shadow:0 4px 22px rgba(38,42,88,.035);border-bottom-color:#ececf5}
+.brand-logo{background:linear-gradient(145deg,#8b7cff,#5145d5);box-shadow:0 7px 18px rgba(91,76,220,.28);border-radius:12px}
+.searchbox{background:#f7f7fc;border-color:#ececf5;border-radius:12px;height:40px}
+.icon-button{border-radius:11px;background:#fafaff;border-color:#ececf5;transition:all .2s}
+.icon-button:hover{transform:translateY(-2px);background:#f0efff;color:var(--blue);box-shadow:0 5px 13px rgba(91,76,220,.12)}
+.sidebar{background:linear-gradient(180deg,#201d43 0%,#292653 55%,#242044 100%);border:0;box-shadow:8px 0 30px rgba(28,25,67,.09);padding-top:29px}
+.side-label{color:#9995c4;letter-spacing:1.5px}
+.nav-button{color:#c3c1df;border-radius:11px;margin:6px 0;height:47px}
+.nav-button:hover{background:rgba(255,255,255,.09);color:#fff}
+.nav-button.active{background:linear-gradient(100deg,rgba(131,116,255,.30),rgba(131,116,255,.12));color:#fff;box-shadow:inset 0 0 0 1px rgba(180,170,255,.13)}
+.nav-button.active:before{left:-15px;background:#a99eff;box-shadow:0 0 12px #9d8fff}
+.nav-icon{font-size:18px;color:#aaa5dc}
+.nav-button.active .nav-icon{color:#fff}
+.sidebar-bottom{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.09);color:#bcb9dc;border-radius:12px;line-height:1.6}
+.sidebar-bottom strong{color:#fff}
+.main-content{padding:calc(var(--top) + 34px) 36px 42px}
+h1{font-size:30px;letter-spacing:-1.1px;color:#202544}
+.eyebrow{color:#7064e8;letter-spacing:1.6px}
+.card{border:1px solid rgba(231,232,244,.95);border-radius:17px;box-shadow:0 9px 30px rgba(37,42,92,.055);transition:transform .22s,box-shadow .22s,border-color .22s}
+.card:hover{box-shadow:0 15px 36px rgba(37,42,92,.09);border-color:#deddf7}
+.stat-card{padding:21px}
+.stat-icon,.service-icon{background:linear-gradient(145deg,#f0efff,#e7e5ff);color:#6558e8;border-radius:12px}
+.stat-value{font-size:29px;color:#242747;letter-spacing:-1.1px}
+.trend{color:#169b78}
+.hero{position:relative;overflow:hidden;padding:31px 34px;border:0;border-radius:20px;color:white;background:linear-gradient(112deg,#29245e 0%,#5145bd 52%,#8175f3 100%);box-shadow:0 15px 35px rgba(76,65,181,.2);min-height:150px}
+.hero:after{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:80px;top:-155px;box-shadow:0 0 0 28px rgba(255,255,255,.035),0 0 0 58px rgba(255,255,255,.025)}
+.hero .eyebrow{color:#c8c2ff}.hero h2{font-size:25px;letter-spacing:-.8px;color:white}.hero p{color:#d5d2ff}.hero-mark{z-index:1;height:78px;width:78px;border-radius:22px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.22);color:white;font-size:36px;backdrop-filter:blur(8px)}
+.chart{border-radius:12px 12px 0 0;background:repeating-linear-gradient(to bottom,transparent 0,transparent 45px,#f0eff8 46px)}
+.bar{background:linear-gradient(180deg,#a69cff,#6255e6);box-shadow:0 4px 10px rgba(98,85,230,.13)}
+.date-pill{border-color:#e8e7f4;border-radius:10px;background:#fff}
+.primary-btn{background:linear-gradient(110deg,#7569f0,#5548d8);box-shadow:0 5px 12px rgba(91,76,220,.18);border-radius:10px}
+.primary-btn:hover{background:linear-gradient(110deg,#6256e4,#473bc5);transform:translateY(-1px)}
+.secondary-btn{border-radius:10px}
+.service-card:hover{transform:translateY(-5px)}
+.activity-bullet{background:#7669ee;box-shadow:0 0 0 4px #f0efff}
+.status{background:#e9f8f2;color:#16865f}
+@media(max-width:900px){.main-content{padding-left:22px;padding-right:22px}}
+@media(max-width:600px){.main-content{padding-left:15px;padding-right:15px}.hero{padding:25px 22px}.hero h2{font-size:21px}.topbar{padding:0 15px}}
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="top-left">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <button class="icon-button desktop-collapse" id="collapseToggle" aria-label="Collapse sidebar" title="Collapse sidebar">☷</button>
+    <a class="brand" href="#" aria-label="Nova home"><span class="brand-logo">N</span><span>Nova<span style="color:var(--blue)">.</span></span></a>
+    <label class="searchbox"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search pages..."><kbd>⌘ K</kbd></label>
+  </div>
+  <div class="top-actions">
+    <button class="icon-button" id="notificationButton" aria-label="Notifications" title="Notifications">♧<span class="notification-dot"></span></button>
+    <div class="user-menu">
+      <button class="avatar" id="profileMenuButton" aria-label="Open profile menu" aria-expanded="false">JD</button>
+      <div class="user-copy"><strong>Jamie Davis</strong><span>Administrator</span></div>
+      <div class="dropdown" id="profileDropdown"><button type="button" data-profile-action="profile">My profile</button><button type="button" data-profile-action="settings">Account settings</button><button type="button" data-profile-action="logout">Sign out</button></div>
+    </div>
+  </div>
+</header>
+<aside class="sidebar" id="sidebar" aria-label="Main navigation">
+  <p class="side-label">Workspace</p>
+  <button class="nav-button active" data-page="home" aria-current="page"><span class="nav-icon">⌂</span><span class="nav-text">Home</span></button>
+  <button class="nav-button" data-page="dashboard"><span class="nav-icon">▦</span><span class="nav-text">Dashboard</span></button>
+  <button class="nav-button" data-page="profile"><span class="nav-icon">◉</span><span class="nav-text">Profile</span></button>
+  <button class="nav-button" data-page="services"><span class="nav-icon">◇</span><span class="nav-text">Services</span></button>
+  <button class="nav-button" data-page="about"><span class="nav-icon">ⓘ</span><span class="nav-text">About</span></button>
+  <button class="nav-button" data-page="contact"><span class="nav-icon">✉</span><span class="nav-text">Contact</span></button>
+  <div class="sidebar-bottom"><strong>Nova Workspace</strong>You're using the demo admin panel.</div>
+</aside>
+<div class="overlay" id="overlay"></div>
+<main class="main-content"><section class="content-panel" id="mainPanel" aria-live="polite"></section></main>
+<script>
+const pages={
+home:`
+<div class="hero"><div><p class="eyebrow">Your workspace</p><h2>Good morning, Jamie 👋</h2><p>Here’s what’s happening with your workspace today.</p></div><div class="hero-mark">✦</div></div>
+<div class="grid four">
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Total visitors</span><span class="stat-icon">◉</span></div><div class="stat-value">12,840</div><span class="trend">↑ 12.8% <span class="muted">vs last month</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Active projects</span><span class="stat-icon">▦</span></div><div class="stat-value">24</div><span class="trend">↑ 4.2% <span class="muted">vs last month</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">New messages</span><span class="stat-icon">✉</span></div><div class="stat-value">18</div><span class="trend">↑ 8.1% <span class="muted">vs last month</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Tasks completed</span><span class="stat-icon">✓</span></div><div class="stat-value">86%</div><span class="trend">↑ 2.4% <span class="muted">vs last month</span></span></article>
+</div>
+<div class="grid two section-space"><article class="card"><div class="section-head"><div><h2>Recent activity</h2><p class="card-desc">Latest updates from your workspace</p></div><button class="small-link" data-go="dashboard">View all</button></div><ul class="activity-list"><li><span class="activity-left"><i class="activity-bullet"></i>Profile information updated</span><span class="time">10 min ago</span></li><li><span class="activity-left"><i class="activity-bullet"></i>New service request received</span><span class="time">1 hour ago</span></li><li><span class="activity-left"><i class="activity-bullet"></i>Monthly report generated</span><span class="time">Yesterday</span></li><li><span class="activity-left"><i class="activity-bullet"></i>New team member added</span><span class="time">2 days ago</span></li></ul></article>
+<article class="card"><div class="section-head"><div><h2>Quick overview</h2><p class="card-desc">Your weekly progress</p></div><span class="date-pill">This week</span></div><div class="chart">${[42,66,52,82,61,93,73].map((v,i)=>`<div class="bar-group"><div class="bar" style="height:${v}%"></div><span class="bar-label">${["M","T","W","T","F","S","S"][i]}</span></div>`).join("")}</div></article></div>`,
+dashboard:`
+<div class="page-heading"><div><p class="eyebrow">Analytics</p><h1>Dashboard</h1><p class="subtitle">Monitor your key workspace metrics and recent performance.</p></div><span class="date-pill">◷ &nbsp; Last 7 days</span></div>
+<div class="grid four">
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Total revenue</span><span class="stat-icon">$</span></div><div class="stat-value">$24,680</div><span class="trend">↑ 10.4% <span class="muted">from last week</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">New users</span><span class="stat-icon">♙</span></div><div class="stat-value">1,284</div><span class="trend">↑ 8.2% <span class="muted">from last week</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Conversion rate</span><span class="stat-icon">↗</span></div><div class="stat-value">6.84%</div><span class="trend down">↓ 1.2% <span class="muted">from last week</span></span></article>
+<article class="card stat-card"><div class="stat-top"><span class="stat-name">Open tasks</span><span class="stat-icon">☷</span></div><div class="stat-value">32</div><span class="trend">↑ 5.6% <span class="muted">from last week</span></span></article>
+</div>
+<div class="grid two section-space"><article class="card"><div class="section-head"><div><h2>Weekly performance</h2><p class="card-desc">Activity overview for this week</p></div></div><div class="chart">${[35,55,48,78,64,90,72].map((v,i)=>`<div class="bar-group"><div class="bar" style="height:${v}%"></div><span class="bar-label">${["Mon","Tue","Wed","Thu","Fri","Sat","Sun"][i]}</span></div>`).join("")}</div></article>
+<article class="card"><div class="section-head"><div><h2>Recent activity</h2><p class="card-desc">Latest workspace events</p></div></div><ul class="activity-list"><li><span class="activity-left"><i class="activity-bullet"></i>New user registered</span><span class="time">09:42 AM</span></li><li><span class="activity-left"><i class="activity-bullet"></i>Invoice #1048 paid</span><span class="time">Yesterday</span></li><li><span class="activity-left"><i class="activity-bullet"></i>Project status updated</span><span class="time">Yesterday</span></li><li><span class="activity-left"><i class="activity-bullet"></i>New message received</span><span class="time">Mon</span></li></ul></article></div>
+<article class="card section-space"><div class="section-head"><div><h2>Recent transactions</h2><p class="card-desc">A quick view of the latest transactions</p></div><button class="small-link" type="button">View report</button></div><div class="table-wrap"><table><thead><tr><th>Customer</th><th>Reference</th><th>Date</th><th>Amount</th><th>Status</th></tr></thead><tbody><tr><td>Alex Morgan</td><td>#INV-1048</td><td>Oct 31, 2026</td><td>$420.00</td><td><span class="status">Paid</span></td></tr><tr><td>Taylor Smith</td><td>#INV-1047</td><td>Oct 30, 2026</td><td>$285.00</td><td><span class="status">Paid</span></td></tr><tr><td>Jordan Lee</td><td>#INV-1046</td><td>Oct 29, 2026</td><td>$610.00</td><td><span class="status">Paid</span></td></tr></tbody></table></div></article>`,
+profile:`
+<div class="page-heading"><div><p class="eyebrow">Account settings</p><h1>My Profile</h1><p class="subtitle">Manage your personal information and account details.</p></div><button class="primary-btn" id="editProfile">✎ &nbsp; Edit profile</button></div>
+<article class="card"><div class="profile-head"><div class="profile-avatar">JD</div><div><h2>Jamie Davis</h2><p>Administrator · Member since January 2025</p></div></div><div class="field-grid"><div><span class="field-label">Full name</span><span class="field-value">Jamie Davis</span></div><div><span class="field-label">Email address</span><span class="field-value">jamie.davis@example.com</span></div><div><span class="field-label">Phone number</span><span class="field-value">+91 98765 43210</span></div><div><span class="field-label">Location</span><span class="field-value">Lucknow, India</span></div><div><span class="field-label">Role</span><span class="field-value">Administrator</span></div><div><span class="field-label">Account status</span><span class="status">Active</span></div></div></article>
+<div class="grid two section-space"><article class="card"><h2 class="card-title">Personal details</h2><p class="card-desc">Your profile information is visible to workspace members.</p><p class="muted section-space" style="font-size:12px">Keep your details up to date so your team can reach you when needed.</p></article><article class="card"><h2 class="card-title">Security</h2><p class="card-desc">Your account is protected.</p><div class="section-space"><span class="status">Password protected</span></div><p class="muted section-space" style="font-size:12px">For a real application, connect this section to your account security settings.</p></article></div>`,
+services:`
+<div class="page-heading"><div><p class="eyebrow">What we provide</p><h1>Our Services</h1><p class="subtitle">Explore the tools and services available in your workspace.</p></div></div>
+<div class="grid three"><article class="card service-card"><div class="service-icon">✦</div><h2>Web Design</h2><p>Clean, accessible, responsive website experiences tailored to your goals.</p><button class="small-link" type="button" data-service="Web Design">View details →</button></article><article class="card service-card"><div class="service-icon">⌘</div><h2>Development</h2><p>Reliable frontend and backend development for modern digital products.</p><button class="small-link" type="button" data-service="Development">View details →</button></article><article class="card service-card"><div class="service-icon">◎</div><h2>Consulting</h2><p>Practical guidance to help plan, improve, and grow your digital projects.</p><button class="small-link" type="button" data-service="Consulting">View details →</button></article><article class="card service-card"><div class="service-icon">◈</div><h2>Analytics</h2><p>Understand performance with clear reporting and useful insights.</p><button class="small-link" type="button" data-service="Analytics">View details →</button></article><article class="card service-card"><div class="service-icon">♡</div><h2>Support</h2><p>Friendly assistance to help keep your website running smoothly.</p><button class="small-link" type="button" data-service="Support">View details →</button></article><article class="card service-card"><div class="service-icon">▤</div><h2>Maintenance</h2><p>Ongoing updates, improvements, and routine website care.</p><button class="small-link" type="button" data-service="Maintenance">View details →</button></article></div>`,
+about:`
+<div class="page-heading"><div><p class="eyebrow">Our story</p><h1>About Nova</h1><p class="subtitle">A simple workspace built around clarity, productivity, and good design.</p></div></div>
+<article class="card"><p class="eyebrow">Who we are</p><h2 style="font-size:20px;margin:0 0 10px">Making everyday work feel simpler.</h2><p class="muted" style="max-width:760px;font-size:13px;line-height:1.8">Nova is a sample admin workspace designed to bring important information and everyday tools together in one clear place. We believe great software should be easy to understand, comfortable to use, and focused on what matters.</p></article>
+<div class="grid two section-space"><article class="card"><div class="service-icon">◎</div><h2 class="card-title">Our mission</h2><p class="card-desc" style="line-height:1.8">To make digital work more organized and accessible through thoughtful design and useful tools.</p></article><article class="card"><div class="service-icon">✧</div><h2 class="card-title">Our vision</h2><p class="card-desc" style="line-height:1.8">To create a simpler, more connected experience where people can focus on meaningful progress.</p></article></div>
+<div class="grid three section-space"><article class="card"><div class="stat-value">6+</div><p class="card-desc">Useful sections</p></article><article class="card"><div class="stat-value">100%</div><p class="card-desc">Responsive layout goal</p></article><article class="card"><div class="stat-value">1</div><p class="card-desc">Unified workspace</p></article></div>`,
+contact:`
+<div class="page-heading"><div><p class="eyebrow">Get in touch</p><h1>Contact us</h1><p class="subtitle">Have a question or feedback? Send us a message.</p></div></div>
+<div class="grid two"><article class="card"><div class="section-head"><div><h2>Send a message</h2><p class="card-desc">Fill in the form and we’ll be in touch.</p></div></div><form id="contactForm" class="form-grid"><div class="form-field"><label for="contactName">Your name</label><input id="contactName" name="name" required minlength="2" placeholder="Jamie Davis"></div><div class="form-field"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" required placeholder="you@example.com"></div><div class="form-field full"><label for="contactSubject">Subject</label><input id="contactSubject" name="subject" required placeholder="How can we help?"></div><div class="form-field full"><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" required minlength="10" placeholder="Write your message..."></textarea></div><div class="form-field full"><button class="primary-btn" type="submit">Send message →</button></div></form><div class="success-message" id="successMessage" role="status">Thanks! Your message has been recorded in this demo.</div></article>
+<article class="card"><h2 class="card-title">Contact information</h2><p class="card-desc">You can also reach us through the details below.</p><ul class="activity-list section-space"><li><span class="activity-left"><i class="activity-bullet"></i>Email</span><span>hello@example.com</span></li><li><span class="activity-left"><i class="activity-bullet"></i>Phone</span><span>+91 98765 43210</span></li><li><span class="activity-left"><i class="activity-bullet"></i>Office</span><span>Lucknow, India</span></li></ul><div class="section-space" style="padding:15px;background:#f6f8fd;border-radius:9px"><strong style="font-size:12px">Support hours</strong><p class="card-desc" style="margin-top:5px">Monday – Friday<br>9:00 AM – 6:00 PM</p></div></article></div>`
+};
+const panel=document.getElementById('mainPanel'),sidebar=document.getElementById('sidebar'),overlay=document.getElementById('overlay'),menuToggle=document.getElementById('menuToggle'),profileDropdown=document.getElementById('profileDropdown');
+const buttons=[...document.querySelectorAll('.nav-button')];
+function showPage(name){
+  panel.classList.add('changing');
+  panel.innerHTML=pages[name]||pages.home;
+  buttons.forEach(b=>{const active=b.dataset.page===name;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+  closeMobileSidebar();
+  panel.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
+  panel.querySelectorAll('[data-service]').forEach(b=>b.addEventListener('click',()=>alert(b.dataset.service+' details can be connected here.')));
+  const form=document.getElementById('contactForm');
+  if(form)form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;document.getElementById('successMessage').style.display='block';form.reset()});
+  const edit=document.getElementById('editProfile');if(edit)edit.addEventListener('click',()=>alert('Connect this action to your profile edit form.'));
+  requestAnimationFrame(()=>panel.classList.remove('changing'));
+}
+buttons.forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function closeMobileSidebar(){sidebar.classList.remove('open');overlay.classList.remove('show');menuToggle.setAttribute('aria-expanded','false')}
+menuToggle.addEventListener('click',()=>{const open=sidebar.classList.toggle('open');overlay.classList.toggle('show',open);menuToggle.setAttribute('aria-expanded',String(open))});
+overlay.addEventListener('click',closeMobileSidebar);
+document.getElementById('collapseToggle').addEventListener('click',()=>document.body.classList.toggle('collapsed'));
+document.getElementById('profileMenuButton').addEventListener('click',e=>{e.stopPropagation();const open=profileDropdown.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',String(open))});
+document.addEventListener('click',()=>{profileDropdown.classList.remove('open');document.getElementById('profileMenuButton').setAttribute('aria-expanded','false')});
+profileDropdown.addEventListener('click',e=>{e.stopPropagation();const action=e.target.dataset.profileAction;if(action==='profile')showPage('profile');else if(action)alert(action==='logout'?'Demo sign-out action.':'Account settings can be added here.');profileDropdown.classList.remove('open')});
+document.getElementById('notificationButton').addEventListener('click',()=>alert('You are all caught up!'));
+document.getElementById('globalSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){const term=e.target.value.toLowerCase().trim();const match=buttons.find(b=>b.textContent.toLowerCase().includes(term));if(match){showPage(match.dataset.page);e.target.value=''}else alert('No matching section found.')}})
+document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();document.getElementById('globalSearch').focus()}if(e.key==='Escape')closeMobileSidebar()});
+showPage('home');
+</script>
+</body>
+</html>

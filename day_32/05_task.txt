@@ -1,0 +1,216 @@
+================================================================================
+                    REACT PRACTICE TASKS — CODING QUESTIONS
+                 TOPICS: useMemo, useCallback, React.memo, DYNAMIC ROUTING
+                              TOTAL TASKS: 35
+================================================================================
+
+INSTRUCTIONS
+------------
+
+1. Complete all 35 tasks using React functional components.
+2. Use JSX and import hooks from React where required.
+3. Use useMemo() to memoize calculated values.
+4. Use useCallback() to memoize function references.
+5. Use React.memo() to practice preventing unnecessary child component renders.
+6. Use React Router DOM for the dynamic routing tasks.
+7. Use console.log() where required to observe calculations and component renders.
+8. Test your application by clicking links and entering URLs directly.
+9. Keep components organized in separate files where appropriate.
+10. Write the code yourself and focus on understanding each concept.
+
+NOTE
+----
+Memoization is an optimization technique. These tasks are designed to help
+you understand when values, functions, and components are reused.
+
+
+================================================================================
+TOPIC 1: useMemo()
+================================================================================
+Topic: Memoizing Calculated Values
+
+Task 01
+Create a component with a number state starting at 5. Use useMemo() to
+calculate and display the square of the number. Add a button to increase
+the number.
+
+Task 02
+Create two states: count and number. Use useMemo() to calculate the square
+of number. Add a button that changes only count. Observe whether the
+square calculation runs again.
+
+Task 03
+Create an array of numbers from 1 to 10. Use useMemo() to create and
+display a new array containing only even numbers.
+
+Task 04
+Create an array of names: "Amit", "Rahul", "Ankit", "Priya", and "Arun".
+Use useMemo() to filter and display only the names that start with "A".
+
+Task 05
+Create a search input and a list of five product names. Use useMemo()
+to display only products whose names include the entered search text.
+
+Task 06
+Create an array of product objects containing name and price. Use
+useMemo() to calculate and display the total price of all products.
+
+Task 07
+Create an array of numbers. Use useMemo() to sort the numbers in
+ascending order and display the sorted array.
+
+Task 08
+Create two counter states, firstCount and secondCount. Use useMemo()
+to calculate and display their multiplication. Add separate buttons
+to update each counter.
+
+Task 09
+Create a component with a number input. Use useMemo() to calculate
+the factorial of the entered number and display the result.
+
+Task 10
+Create a list of student objects containing name and marks. Use
+useMemo() to filter and display students who scored 60 or more marks.
+
+
+================================================================================
+TOPIC 2: useCallback()
+================================================================================
+Topic: Memoizing Function References
+
+Task 11
+Create a counter starting at 0. Use useCallback() to create an
+increment function that increases the counter by 1.
+
+Task 12
+Create a button with a click handler that prints "Hello React" in
+the console. Wrap the click handler with useCallback().
+
+Task 13
+Create a Parent component with a counter and a Child component.
+Pass a function from Parent to Child using useCallback().
+
+Task 14
+Create a counter with separate increment and decrement functions.
+Use useCallback() to memoize both functions.
+
+Task 15
+Create an input field and a state to store its value. Use
+useCallback() to create the input change handler.
+
+Task 16
+Create a simple todo application. Use useCallback() to memoize
+the function that adds a new todo item to the list.
+
+Task 17
+Create a list of five items with a Delete button beside each item.
+Use useCallback() to memoize the function that deletes an item by ID.
+
+Task 18
+Create a counter with a Reset button. Use useCallback() to create
+a function that resets the counter to 0.
+
+Task 19
+Create a Parent component and pass two different functions to a
+Child component. Use useCallback() for both functions.
+
+Task 20
+Create a simple shopping cart with product names and prices.
+Use useCallback() to memoize the function that adds a product
+to the cart.
+
+
+================================================================================
+TOPIC 3: React.memo()
+================================================================================
+Topic: Preventing Unnecessary Child Component Re-renders
+
+Task 21
+Create Parent and Child components. Wrap the Child component
+with React.memo() and display a heading inside Child.
+
+Task 22
+Create a counter in the Parent component and a separate Child
+component that receives a fixed name prop. Wrap Child with
+React.memo() and observe its render using console.log().
+
+Task 23
+Pass a name prop from Parent to Child. Wrap Child with React.memo().
+Add a button that changes the name and observe when Child renders.
+
+Task 24
+Create two components named Counter and User. Wrap User with
+React.memo(). Update the counter and observe whether User renders again.
+
+Task 25
+Create two counter states in Parent. Pass only the second counter
+to a memoized Child component. Check whether changing the first
+counter causes Child to render again.
+
+Task 26
+Create a list of five users and a memoized UserCard component.
+Pass each user's name and email as props and display the user cards.
+
+Task 27
+Create a memoized Child component that receives a number prop.
+Add a button in Parent to change the number and observe the render.
+
+Task 28
+Create a memoized Child component with a button that calls a
+function passed from Parent. Update Parent state and observe
+when Child renders.
+
+Task 29
+Create a memoized Child component that receives two props:
+name and age. Add separate buttons to change each prop in Parent.
+
+Task 30
+Create a Parent component that passes an object as a prop to a
+memoized Child component. Re-render Parent using a counter button.
+Observe what happens when a new object is created on each render.
+
+
+================================================================================
+TOPIC 4: DYNAMIC ROUTING — REACT ROUTER DOM
+================================================================================
+Topic: BrowserRouter, Routes, Route, Link, useParams, Outlet, lazy, Suspense
+
+Task 31
+Create a React application with Home, About, and Contact components.
+Use BrowserRouter, Routes, and Route to configure the paths "/",
+"/about", and "/contact". Add navigation links using Link.
+
+Task 32
+Create a User Details page with a dynamic route "/user/:id".
+Create links for user IDs 1, 2, and 3. Use useParams() to read
+the ID from the URL and display it on the page.
+
+Task 33
+Create a product list containing five products with id, name, and price.
+Add a View Details link for every product. Configure the dynamic route
+"/product/:id" and use useParams() to display the selected product's
+name and price.
+
+Task 34
+Create a Dashboard page with three nested pages: Profile, Settings,
+and Orders. Configure nested routes and use Outlet to display the
+selected nested page inside Dashboard.
+
+Task 35
+Create Home, About, and Contact pages and load them using React.lazy().
+Wrap the routes with Suspense and display a loading message while
+a page component is loading.
+
+
+================================================================================
+COMPLETION CHECKLIST
+================================================================================
+
+[ ] Tasks 01–10: useMemo() completed
+[ ] Tasks 11–20: useCallback() completed
+[ ] Tasks 21–30: React.memo() completed
+[ ] Tasks 31–35: Dynamic Routing completed
+
+================================================================================
+                               TOTAL TASKS: 35
+================================================================================
