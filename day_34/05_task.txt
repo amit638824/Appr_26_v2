@@ -1,0 +1,377 @@
+Important – React Practice Tasks
+1. Complete all 20 useState and useContext tasks and all 10 useLayoutEffect tasks.
+2. Complete the tasks in the given order, starting from Task 1.
+3. Write the code yourself. Do not copy solutions directly.
+4. Practise every concept in your existing React project.
+5. Understand each Hook before moving to the next task.
+6. Test your code in the browser after completing each task.
+7. If you get an error, try to understand and fix it yourself first.
+8. Do not skip any task, even if it looks easy.
+9. Revise the concepts regularly.
+10. Your main goal is to understand the logic, not just complete the tasks.
+Final Goal
+Complete all 30 tasks with confidence and become comfortable using React Hooks!
+
+============================================================
+GENERAL INSTRUCTIONS
+============================================================
+
+1. Complete these tasks in your existing React project.
+2. Use your existing files: App.jsx, Child.jsx, UserContext.jsx, and main.jsx.
+3. Do not create a new Context for every task. Use the existing UserContext.
+4. Use useContext(UserContext) in components that need shared data.
+5. Use setData() to update the user information.
+6. When updating only one property of an object, use the spread operator so the other properties are not lost.
+7. Use setProducts() to add or remove products from the products array.
+8. Test each task in the browser after completing it.
+9. Try to solve each task yourself before asking for a solution.
+
+============================================================
+SECTION 1: UPDATING USER DATA
+============================================================
+
+File to practise in: Child.jsx
+Concepts: useContext, setData, object state updates, onClick
+
+Task 1: Change the User's Name
+Description:
+Create a button in Child.jsx. When the user clicks the button, update the name in the shared data object to "Rahul". The updated name should automatically appear in App.jsx.
+
+Task 2: Change the User's Branch
+Description:
+Create a button that changes the user's branch to "Mechanical Engineering". Make sure the new branch is displayed in App.jsx.
+
+Task 3: Create Separate Update Buttons
+Description:
+Create two separate buttons. The first button should update only the user's name to "Amit". The second button should update only the user's branch to "Civil Engineering". Clicking one button should not change the other property.
+
+Task 4: Update Name and Branch Together
+Description:
+Create one button that updates both the user's name and branch at the same time. For example, set the name to "Krishna" and the branch to "Computer Science".
+
+Task 5: Reset User Data
+Description:
+Create a Reset button. When clicked, it should restore the original user information:
+Name: Alok
+Branch: cse
+The original information should appear again in App.jsx.
+
+============================================================
+SECTION 2: INPUT FIELDS WITH CONTEXT
+============================================================
+
+File to practise in: Child.jsx
+Concepts: useState, useContext, input, onChange, onClick
+
+Task 6: Create a Name Input
+Description:
+Create an input field where the user can type a name. Store the typed value in a local state using useState. Do not update the Context data yet.
+
+Task 7: Update Name Using Input
+Description:
+Add an "Update Name" button. When clicked, it should take the value from the name input and update the name property in the shared Context data. The updated name should appear in App.jsx.
+
+Task 8: Create a Branch Input
+Description:
+Create another input field for the user's branch. Store its value using useState. Add a button that updates the branch property in Context when clicked.
+
+Task 9: Display Updated User Information
+Description:
+Make sure App.jsx displays the latest name and branch from UserContext. When either value is changed from Child.jsx, the displayed information in App.jsx should update automatically.
+
+Task 10: Clear the Input Fields
+Description:
+Create a "Clear" button. When clicked, it should empty both the name and branch input fields. This task should clear the input values; it does not need to reset the shared user data.
+
+============================================================
+SECTION 3: WORKING WITH PRODUCTS
+============================================================
+
+Files to practise in: UserContext.jsx, Child.jsx, and App.jsx
+Concepts: arrays, useState, useContext, setProducts, map, filter
+
+Task 11: Create a Product Input
+Description:
+Create an input field in Child.jsx where the user can type a product name. Store the typed product name in a local state using useState.
+
+Task 12: Add a Product
+Description:
+Create an "Add Product" button. When clicked, add the typed product name to the products array stored in UserContext. Use setProducts() to update the array without changing the original array directly.
+
+Task 13: Display All Products
+Description:
+In App.jsx, read the products array using useContext(UserContext). Use the map() method to display every product on the screen. Give each displayed item a unique key.
+
+Task 14: Delete a Product
+Description:
+Add a Delete button next to every product displayed in App.jsx. When clicked, only the selected product should be removed from the products array. Use the filter() method to create the updated array.
+
+Task 15: Show an Empty Products Message
+Description:
+When the products array has no items, display the message "No products available". When at least one product exists, display the product list instead of the empty message.
+
+============================================================
+SECTION 4: EXTRA CONTEXT API PRACTICE
+============================================================
+
+Files to practise in: UserContext.jsx, Child.jsx, and App.jsx
+Concepts: shared state, boolean state, conditional rendering
+
+Task 16: Create a Light and Dark Theme
+Description:
+Add a theme state in UserContext.jsx. Its initial value should be "light". Create a button that changes the theme between "light" and "dark". Display the current theme in App.jsx.
+
+Task 17: Share the Theme Across Components
+Description:
+Use the theme value from UserContext in both App.jsx and Child.jsx. When the theme changes, both components should receive the updated value. You can also change the background and text colors based on the selected theme.
+
+Task 18: Create Login and Logout Buttons
+Description:
+Add a login state in UserContext.jsx with an initial value of false. Create a Login button that changes the value to true and a Logout button that changes it back to false.
+
+Task 19: Display Login Messages
+Description:
+In App.jsx, use conditional rendering to display "Welcome Alok" when the login state is true. When the login state is false, display "Please Login". The message should change when the login or logout button is clicked.
+
+Task 20: Create a User Dashboard
+Description:
+Create a simple dashboard in App.jsx. It should display:
+- The user's name
+- The user's branch
+- The current login status
+- The selected theme
+- The total number of products
+
+Use the values from UserContext. Make sure the dashboard updates automatically whenever the shared data changes.
+
+============================================================
+END OF PRACTICE SHEET
+============================================================
+
+PRACTICE TIP:
+Complete the tasks in order. Tasks 1–5 practise updating object data.
+Tasks 6–10 practise input fields and local state.
+Tasks 11–15 practise working with arrays.
+Tasks 16–20 practise sharing more state through Context API.
+
+Do not worry if a task takes time. Try it yourself, test your code, and fix errors one by one.
+
+
+REACT PRACTICE TASKS
+Topic: useLayoutEffect
+Level: Beginner (Very Easy)
+Total Tasks: 10
+
+============================================================
+INTRODUCTION
+============================================================
+
+In these exercises, you will practise the React useLayoutEffect
+Hook with small and simple examples.
+
+useLayoutEffect is a React Hook that runs after React updates the
+DOM but before the browser paints the screen.
+
+You will practise:
+- Using useLayoutEffect
+- Understanding the dependency array
+- Using useState with useLayoutEffect
+- Using useRef to access DOM elements
+- Making simple changes to DOM elements
+- Measuring the width and height of an element
+
+============================================================
+GENERAL INSTRUCTIONS
+============================================================
+
+1. Create a small React component for each task, or practise one
+   task at a time in your existing project.
+2. Import useLayoutEffect from React.
+3. Use useState when you need to store a value that changes.
+4. Use useRef when you need to access an HTML element directly.
+5. Open the browser console to check console.log() messages.
+6. Complete the tasks in order, starting with Task 1.
+7. Do not worry about making the code perfect. Focus on understanding
+   what happens when each task runs.
+
+============================================================
+SECTION 1: BASIC useLayoutEffect PRACTICE
+============================================================
+
+Task 21: Print a Message in the Console
+
+Description:
+Create a simple React component. Inside the component, use
+useLayoutEffect to print the message "Hello React" in the browser
+console.
+
+What to practise:
+- Importing useLayoutEffect
+- Writing a useLayoutEffect Hook
+- Using console.log()
+
+Task 22: Run the Effect When the Component Mounts
+
+Description:
+Create a component and use useLayoutEffect with an empty dependency
+array ([]). Print "Component Mounted" in the console.
+
+Observe:
+The effect runs when the component is mounted. In React StrictMode
+during development, you may notice the effect runs more than once.
+
+What to practise:
+- The empty dependency array
+- When an effect runs
+
+Task 23: Use useState with useLayoutEffect
+
+Description:
+Create a counter using useState. Display the counter value inside
+an h1 element. Use useLayoutEffect to print the current counter
+value in the console whenever the counter changes.
+
+Add a button to increase the counter.
+
+What to practise:
+- Using useState
+- Updating state with a button
+- Using [count] as the dependency array
+
+Task 24: Update a Message
+
+Description:
+Create a message with the initial value "Hello". Add a button that
+changes the message to "Welcome". Use useLayoutEffect to print the
+latest message in the console whenever the message changes.
+
+What to practise:
+- Updating string state
+- Using useLayoutEffect with a state variable
+- Understanding when the effect runs
+
+Task 25: Run the Effect After Every Render
+
+Description:
+Create a component with a button and a counter. Write
+useLayoutEffect without a dependency array. Print
+"Component Rendered" in the console.
+
+Click the button several times and observe the console.
+
+What to practise:
+- Leaving out the dependency array
+- Understanding that the effect runs after every render
+
+============================================================
+SECTION 2: SIMPLE DOM PRACTICE WITH useRef
+============================================================
+
+Task 26: Change Heading Color
+
+Description:
+Create an h1 element with the text "Hello React". Create a ref
+using useRef and attach it to the h1 element.
+
+Inside useLayoutEffect, use the ref to change the heading's text
+color to red.
+
+What to practise:
+- Creating a ref with useRef
+- Attaching a ref to an HTML element
+- Accessing an element through ref.current
+
+Task 27: Change a Box Background Color
+
+Description:
+Create a div element and give it some width and height using CSS.
+Attach a ref to the div.
+
+Inside useLayoutEffect, use the ref to change the box's background
+color to yellow.
+
+What to practise:
+- Accessing a div using useRef
+- Changing a DOM element's style
+
+Task 28: Automatically Focus an Input
+
+Description:
+Create an input field and attach a ref to it. Use useLayoutEffect
+to focus the input automatically when the component mounts.
+
+Hint:
+Use the focus() method on the input element.
+
+What to practise:
+- Using useRef with an input
+- Accessing an input element
+- Calling the focus() method
+
+Task 29: Get the Width of a Box
+
+Description:
+Create a div with a width of 200px and a height of 100px. Attach
+a ref to the div.
+
+Inside useLayoutEffect, use getBoundingClientRect() to get the
+width of the box. Print the width in the console.
+
+What to practise:
+- Accessing an element's size
+- Using getBoundingClientRect()
+- Reading the width property
+
+Task 30: Get the Height of a Box
+
+Description:
+Create a div with a width of 200px and a height of 100px. Attach
+a ref to the div.
+
+Inside useLayoutEffect, use getBoundingClientRect() to get the
+height of the box. Print the height in the console.
+
+What to practise:
+- Measuring an element's height
+- Reading the height property
+- Using useRef and useLayoutEffect together
+
+============================================================
+IMPORTANT CONCEPTS TO REMEMBER
+============================================================
+
+1. useLayoutEffect runs after React updates the DOM and before
+   the browser paints the screen.
+
+2. useLayoutEffect(() => { ... }, [])
+   Runs when the component mounts (with a development StrictMode
+   caveat).
+
+3. useLayoutEffect(() => { ... }, [count])
+   Runs after the initial mount and again when count changes.
+
+4. useLayoutEffect(() => { ... })
+   Runs after every render.
+
+5. useRef is useful when you need to access an HTML element
+   directly, such as an input, heading, or div.
+
+6. Use useLayoutEffect mainly for work that must happen before
+   the browser paints, such as measuring an element and making
+   a layout adjustment. For most other side effects, useEffect
+   is the better choice.
+
+============================================================
+END OF PRACTICE SHEET
+============================================================
+
+PRACTICE TIP:
+Complete Tasks 1 to 5 first. These help you understand the basic
+behaviour of useLayoutEffect and its dependency array.
+
+After that, complete Tasks 6 to 10 to practise useRef and simple
+DOM operations.
+
+Try each task yourself before checking a solution. Open the
+browser console whenever a task asks you to print a value.
+
