@@ -1,0 +1,150 @@
+Important – React Practice Tasks
+
+1.  Use Redux Toolkit for all 15 slices.
+2.  Each slice must have at least 2 reducers.
+3.  Use action.payload wherever data needs to be passed.
+4.  Export all actions and reducers correctly.
+5.  Do not copy solutions.
+6.  After completing all slices, combine them in rootReducer.js and
+    configure your Redux store.
+
+
+REDUX TOOLKIT PRACTICE PROJECT 15 SLICES — BASIC, INTERMEDIATE &
+ADVANCED
+
+============================================================ PART 1:
+BASIC SLICES
+============================================================
+
+TASK 1 — productSlice.js Create a product management slice.
+
+Requirements: - Create an initialState with products (empty array) and
+totalProducts (0). - Create a slice named product. - Add addProduct to
+add a new product. - Add removeProduct to remove a product using its
+ID. - Export both actions and the reducer.
+
+TASK 2 — cartSlice.js Create a shopping cart slice.
+
+Requirements: - Create an initialState with cartItems (empty array) and
+totalQuantity (0). - Create a slice named cart. - Add addToCart to add
+an item. - Add removeFromCart to remove an item using its ID. - Export
+both actions and the reducer.
+
+TASK 3 — todoSlice.js Create a todo management slice.
+
+Requirements: - Create an initialState with todos (empty array). -
+Create a slice named todo. - Add addTodo to add a new task. - Add
+deleteTodo to delete a task using its ID. - Export both actions and the
+reducer.
+
+TASK 4 — counterSlice.js Create a counter slice.
+
+Requirements: - Create an initialState with count set to 0. - Create a
+slice named counter. - Add increment to increase the count by 1. - Add
+decrement to decrease the count by 1. - Export both actions and the
+reducer.
+
+TASK 5 — profileSlice.js Create a user profile slice.
+
+Requirements: - Create an initialState with name, email, and phone. -
+Create a slice named profile. - Add updateProfile to update profile
+information. - Add clearProfile to reset the profile. - Export both
+actions and the reducer.
+
+============================================================ PART 2:
+INTERMEDIATE SLICES
+============================================================
+
+TASK 6 — themeSlice.js Create a theme management slice.
+
+Requirements: - Create an initialState with theme set to “light”. -
+Create a slice named theme. - Add setDarkTheme to change the theme to
+dark. - Add setLightTheme to change the theme to light. - Export both
+actions and the reducer.
+
+TASK 7 — wishlistSlice.js Create a wishlist slice.
+
+Requirements: - Create an initialState with wishlistItems (empty
+array). - Create a slice named wishlist. - Add addToWishlist to add an
+item. - Add removeFromWishlist to remove an item using its ID. - Export
+both actions and the reducer.
+
+TASK 8 — orderSlice.js Create an order management slice.
+
+Requirements: - Create an initialState with orders (empty array) and
+orderStatus (“pending”). - Create a slice named order. - Add addOrder to
+add a new order. - Add cancelOrder to cancel an order using its ID. -
+Export both actions and the reducer.
+
+TASK 9 — paymentSlice.js Create a payment management slice.
+
+Requirements: - Create an initialState with amount (0) and paymentStatus
+(“pending”). - Create a slice named payment. - Add setAmount to update
+the payment amount. - Add setPaymentStatus to update the payment
+status. - Export both actions and the reducer.
+
+TASK 10 — notificationSlice.js Create a notification management slice.
+
+Requirements: - Create an initialState with notifications (empty
+array). - Create a slice named notification. - Add addNotification to
+add a notification. - Add clearNotifications to remove all
+notifications. - Export both actions and the reducer.
+
+============================================================ PART 3:
+ADVANCED PRACTICE SLICES
+============================================================
+
+TASK 11 — messageSlice.js Create a messaging slice.
+
+Requirements: - Create an initialState with messages (empty array). -
+Create a slice named message. - Add sendMessage to add a new message. -
+Add deleteMessage to delete a message using its ID. - Export both
+actions and the reducer.
+
+TASK 12 — postSlice.js Create a post management slice.
+
+Requirements: - Create an initialState with posts (empty array). -
+Create a slice named post. - Add addPost to add a new post. - Add
+deletePost to delete a post using its ID. - Export both actions and the
+reducer.
+
+TASK 13 — commentSlice.js Create a comment management slice.
+
+Requirements: - Create an initialState with comments (empty array). -
+Create a slice named comment. - Add addComment to add a new comment. -
+Add deleteComment to delete a comment using its ID. - Export both
+actions and the reducer.
+
+TASK 14 — categorySlice.js Create a category management slice.
+
+Requirements: - Create an initialState with categories (empty array). -
+Create a slice named category. - Add addCategory to add a category. -
+Add removeCategory to remove a category using its ID. - Export both
+actions and the reducer.
+
+TASK 15 — filterSlice.js Create a filter management slice.
+
+Requirements: - Create an initialState with searchText (empty string)
+and selectedCategory (“all”). - Create a slice named filter. - Add
+setSearchText to update the search text. - Add setSelectedCategory to
+update the selected category. - Export both actions and the reducer.
+
+============================================================ EXPECTED
+FOLDER STRUCTURE
+============================================================
+
+src/ | |– redux/ | |– productSlice.js | |– cartSlice.js | |–
+todoSlice.js | |– counterSlice.js | |– profileSlice.js | |–
+themeSlice.js | |– wishlistSlice.js | |– orderSlice.js | |–
+paymentSlice.js | |– notificationSlice.js | |– messageSlice.js | |–
+postSlice.js | |– commentSlice.js | |– categorySlice.js | |–
+filterSlice.js | |– rootReducer.js |– store.js |– App.jsx |– main.jsx
+
+============================================================ IMPORTANT
+RULES ============================================================
+
+
+============================================================ YOUR GOAL
+============================================================
+
+Build a complete Redux Toolkit practice project independently!
