@@ -1,0 +1,255 @@
+# Redux Toolkit – 15 Practical Form & Table Tasks
+
+## Part 1: Basic Tasks
+
+### Task 1 – Product Management
+Create a Product Management Form.
+
+**Form Fields:**
+- Product Name
+- Product Price
+- Product Category
+- Product Quantity
+
+**Requirements:**
+1. Add new products through the form.
+2. Display all products in a table.
+3. Remove products using their ID.
+4. Display the total number of products.
+5. Use Redux Toolkit for state management.
+
+### Task 2 – Shopping Cart Management
+Create a Shopping Cart Application.
+
+**Form Fields:**
+- Product ID
+- Product Name
+- Unit Price
+- Quantity
+
+**Requirements:**
+1. Add products to the cart.
+2. Display cart items in a table.
+3. Remove products from the cart.
+4. Calculate total quantity of cart items.
+5. Use Redux Toolkit for state management.
+
+### Task 3 – Todo Management
+Create a Todo Management Application.
+
+**Form Fields:**
+- Task Title
+- Task Description
+- Priority (Low, Medium, High)
+- Due Date
+
+**Requirements:**
+1. Add new tasks.
+2. Display all tasks in a table.
+3. Delete tasks using their ID.
+4. Add a completed/pending status.
+5. Use Redux Toolkit for state management.
+
+### Task 4 – Counter Management
+Create a Counter Application.
+
+**Requirements:**
+1. Display the current counter value.
+2. Add an Increment button.
+3. Add a Decrement button.
+4. Add a Reset button.
+5. Display the updated count immediately.
+6. Manage the counter using Redux Toolkit.
+
+### Task 5 – Profile Management
+Create a User Profile Management Application.
+
+**Form Fields:**
+- Full Name
+- Date of Birth
+- City
+- Occupation
+- Website URL
+
+**Requirements:**
+1. Create a profile using the form.
+2. Display profile information.
+3. Update existing profile information.
+4. Add a Clear Profile button.
+5. Use Redux Toolkit for state management.
+
+## Part 2: Intermediate Tasks
+
+### Task 6 – Theme Management
+Create a Theme Management Application.
+
+**Requirements:**
+1. Create Light Theme and Dark Theme buttons.
+2. Change the complete application appearance.
+3. Display the currently selected theme.
+4. Add a theme toggle button.
+5. Manage theme state using Redux Toolkit.
+
+### Task 7 – Wishlist Management
+Create a Wishlist Application.
+
+**Form Fields:**
+- Item Name
+- Item Brand
+- Item Price
+- Item Description
+
+**Requirements:**
+1. Add items to the wishlist.
+2. Display wishlist items in a table.
+3. Remove items from the wishlist.
+4. Display the total number of wishlist items.
+5. Use Redux Toolkit for state management.
+
+### Task 8 – Order Management
+Create an Order Management Application.
+
+**Form Fields:**
+- Order ID
+- Customer Name
+- Product Name
+- Order Amount
+- Order Date
+
+**Requirements:**
+1. Add new orders.
+2. Display all orders in a table.
+3. Cancel orders using their ID.
+4. Display order status (Pending, Completed, Cancelled).
+5. Use Redux Toolkit for state management.
+
+### Task 9 – Payment Management
+Create a Payment Management Application.
+
+**Form Fields:**
+- Transaction ID
+- Customer ID
+- Payment Amount
+- Payment Method
+- Payment Date
+
+**Requirements:**
+1. Set payment amount.
+2. Update payment status.
+3. Display payment information in a table.
+4. Show Pending, Successful and Failed statuses.
+5. Use Redux Toolkit for state management.
+
+### Task 10 – Notification Management
+Create a Notification Management Application.
+
+**Form Fields:**
+- Notification Title
+- Notification Message
+- Notification Type
+- Notification Date
+
+**Requirements:**
+1. Add new notifications.
+2. Display notifications in a table.
+3. Clear all notifications.
+4. Display notification type (Info, Warning, Success, Error).
+5. Use Redux Toolkit for state management.
+
+## Part 3: Advanced Tasks
+
+### Task 11 – Message Management
+Create a Messaging Application.
+
+**Form Fields:**
+- Sender Name
+- Receiver Name
+- Message Content
+- Message Date
+
+**Requirements:**
+1. Send new messages.
+2. Display all messages in a table.
+3. Delete messages using their ID.
+4. Display sender and receiver information.
+5. Use Redux Toolkit for state management.
+
+### Task 12 – Post Management
+Create a Social Media Post Management Application.
+
+**Form Fields:**
+- Post Title
+- Post Content
+- Author Name
+- Post Category
+
+**Requirements:**
+1. Create new posts.
+2. Display posts in a table.
+3. Delete posts using their ID.
+4. Display the total number of posts.
+5. Use Redux Toolkit for state management.
+
+### Task 13 – Comment Management
+Create a Comment Management Application.
+
+**Form Fields:**
+- Post ID
+- Comment Author
+- Comment Content
+- Comment Date
+
+**Requirements:**
+1. Add comments to posts.
+2. Display all comments in a table.
+3. Delete comments using their ID.
+4. Display the related Post ID.
+5. Use Redux Toolkit for state management.
+
+### Task 14 – Category Management
+Create a Category Management Application.
+
+**Form Fields:**
+- Category Name
+- Category Description
+- Category Type
+- Category Status
+
+**Requirements:**
+1. Add new categories.
+2. Display categories in a table.
+3. Remove categories using their ID.
+4. Display the total number of categories.
+5. Use Redux Toolkit for state management.
+
+### Task 15 – Filter Management
+Create a Product Filtering Application.
+
+**Requirements:**
+1. Display a list of products.
+2. Add a search input to search products by name.
+3. Add a category dropdown to filter products.
+4. Add an All Categories option.
+5. Update the displayed products based on selected filters.
+6. Manage search text and selected category using Redux Toolkit.
+
+---
+
+## Common Instructions for All Tasks
+
+1. Use React functional components.
+2. Use Redux Toolkit for state management.
+3. Create separate slice files.
+4. Each slice must contain at least two reducers.
+5. Use `action.payload` wherever data needs to be passed.
+6. Use `useDispatch()` to dispatch actions.
+7. Use `useSelector()` to access Redux state.
+8. Use controlled forms wherever form input is required.
+9. Display submitted data in tables wherever applicable.
+10. Implement proper validation for forms.
+11. Add Delete, Update or Clear functionality wherever required.
+12. Combine all reducers in `rootReducer.js`.
+13. Configure the Redux store in `store.js`.
+14. Connect Redux Provider in `main.jsx`.
+
+**Final Goal:** Build one complete Redux Toolkit practice project containing all 15 slices with working forms, tables, buttons, validation and state management.
