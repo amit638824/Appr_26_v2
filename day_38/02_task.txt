@@ -1,0 +1,882 @@
+# MONGODB – 50 PRACTICAL PRACTICE TASKS
+## BASIC, INTERMEDIATE & ADVANCED LEVEL
+
+**Technology:** MongoDB, MongoDB Compass, MongoDB Shell (mongosh)  
+**Total Tasks:** 50  
+**Practice Type:** Query-Based Practical Assignment
+
+---
+
+# IMPORTANT INSTRUCTIONS
+
+1. Complete all 50 tasks independently.
+2. Use MongoDB Shell (`mongosh`) to write and execute queries.
+3. You can also use MongoDB Compass to visually verify database operations.
+4. Do not copy solutions from the internet or other students.
+5. Write every query yourself and execute it in MongoDB.
+6. Use appropriate database, collection and document names.
+7. Complete all CRUD operations wherever required.
+8. Use `insertOne()`, `insertMany()`, `find()`, `findOne()`, `updateOne()`, `updateMany()`, `deleteOne()` and `deleteMany()` wherever applicable.
+9. Practice comparison, logical, element and array operators.
+10. Verify the output after every operation.
+
+## MANDATORY SCREENSHOT INSTRUCTIONS
+
+**This rule applies to all 50 tasks.**
+
+1. Execute the MongoDB query in MongoDB Shell.
+2. Take a screenshot showing the executed query and its output.
+3. Open your Microsoft Word document.
+4. Write the complete task question in Word.
+5. Paste the corresponding query screenshot directly below that question.
+6. If a task contains multiple operations, paste screenshots of all important operations.
+7. Screenshots must be clear and readable.
+8. Do not paste only the output. The executed query must also be visible.
+9. Save your document using the following name:
+
+`MongoDB_50_Practical_Tasks_YourName.docx`
+
+**Example Word Document Format:**
+
+TASK 1 – Database Creation and Management
+
+Question: Create a database named CollegeDB, create a students collection and perform the required database operations.
+
+Screenshot 1: Database creation query and output.
+
+Screenshot 2: Collection creation and output.
+
+Screenshot 3: Database deletion query and verification.
+
+---
+
+# PART 1 – BASIC LEVEL (TASK 1–15)
+
+## TASK 1 – Database Creation, Management & Deletion
+
+Create and manage a database named `CollegeDB`.
+
+Requirements:
+
+- Create a database named CollegeDB.
+- Create a collection named students.
+- Insert at least 5 student documents.
+- Update the details of an existing student.
+- Display all databases.
+- Verify the currently selected database.
+- Delete a temporary database named TestDB.
+- Drop CollegeDB after taking the required screenshots.
+
+Note: MongoDB does not provide a direct database rename or general database-update command. Database data can be modified through collections and documents. Database renaming requires a migration/copy approach.
+
+## TASK 2 – Collection Creation and Deletion
+
+Create a database named `CompanyDB`.
+
+Requirements:
+
+- Create an employees collection.
+- Create a departments collection.
+- Create a projects collection.
+- Display all collections.
+- Check whether a particular collection exists.
+- Delete the projects collection.
+- Verify that the collection has been deleted.
+
+## TASK 3 – Insert Documents
+
+Create a database named `SchoolDB` and a collection named `students`.
+
+Requirements:
+
+- Insert one student using `insertOne()`.
+- Insert at least 10 students using `insertMany()`.
+- Each student must have:
+  - studentId
+  - name
+  - age
+  - email
+  - course
+  - city
+  - marks
+- Display all inserted documents.
+- Check the number of documents.
+
+## TASK 4 – Read Documents
+
+Use the students collection.
+
+Requirements:
+
+- Display all students.
+- Display only one student using `findOne()`.
+- Find a student using studentId.
+- Find students belonging to Lucknow.
+- Find students enrolled in B.Tech.
+- Count all students.
+- Display the first 5 students.
+
+## TASK 5 – Update One Document
+
+Use `updateOne()`.
+
+Requirements:
+
+- Update one student's name.
+- Update one student's email.
+- Change one student's city.
+- Update one student's marks.
+- Verify every updated document using `find()`.
+
+## TASK 6 – Update Multiple Documents
+
+Use `updateMany()`.
+
+Requirements:
+
+- Increase the marks of students belonging to B.Tech.
+- Change the city of all students from Kanpur to Lucknow.
+- Update the course of students having a specified condition.
+- Verify all updated documents.
+
+## TASK 7 – Delete One Document
+
+Use `deleteOne()`.
+
+Requirements:
+
+- Delete a student using studentId.
+- Delete a student using email.
+- Verify that the deleted student no longer exists.
+- Display the remaining students.
+
+## TASK 8 – Delete Multiple Documents
+
+Use `deleteMany()`.
+
+Requirements:
+
+- Delete all students belonging to a particular city.
+- Delete students whose marks are below 30.
+- Delete students belonging to a particular course.
+- Count the remaining documents.
+
+## TASK 9 – Complete CRUD Operation
+
+Create a collection named `products`.
+
+Requirements:
+
+- Insert at least 10 products.
+- Read all products.
+- Find a product using productId.
+- Update product price.
+- Update product quantity.
+- Delete a product using productId.
+- Display all remaining products.
+
+## TASK 10 – Database and Collection Information
+
+Requirements:
+
+- Display all databases.
+- Display the current database.
+- Display all collections.
+- Display the total number of documents in students.
+- Display the total number of documents in products.
+- Check collection statistics using `stats()`.
+- Display database statistics using `stats()`.
+
+## TASK 11 – Find with Conditions
+
+Use the students collection.
+
+Requirements:
+
+- Find students whose age is greater than 20.
+- Find students whose age is less than 25.
+- Find students whose marks are equal to 80.
+- Find students whose marks are not equal to 50.
+- Find students whose age is greater than or equal to 21.
+- Find students whose marks are less than or equal to 60.
+
+## TASK 12 – Comparison Operators
+
+Practice MongoDB comparison operators.
+
+Requirements:
+
+- Find students using `$gt`.
+- Find students using `$gte`.
+- Find students using `$lt`.
+- Find students using `$lte`.
+- Find students using `$eq`.
+- Find students using `$ne`.
+- Find students using `$in`.
+- Find students using `$nin`.
+
+## TASK 13 – Logical Operators
+
+Practice logical operators.
+
+Requirements:
+
+- Find students using `$and`.
+- Find students using `$or`.
+- Find students using `$not`.
+- Find students using `$nor`.
+- Find students whose marks are greater than 70 AND age is greater than 20.
+- Find students whose city is Lucknow OR Kanpur.
+- Find students who do not belong to a particular course.
+
+## TASK 14 – Sorting Documents
+
+Use `sort()`.
+
+Requirements:
+
+- Sort students by name in ascending order.
+- Sort students by name in descending order.
+- Sort students by marks in ascending order.
+- Sort students by marks in descending order.
+- Sort students by age.
+- Sort students by marks and age together.
+
+## TASK 15 – Limit and Skip
+
+Practice pagination.
+
+Requirements:
+
+- Display the first 5 students using `limit()`.
+- Display the first 10 students.
+- Skip the first 5 students.
+- Skip 5 students and display the next 5.
+- Create pagination using `skip()` and `limit()`.
+
+---
+
+# PART 2 – INTERMEDIATE LEVEL (TASK 16–35)
+
+## TASK 16 – Projection
+
+Practice field selection using `find()`.
+
+Requirements:
+
+- Display only student names.
+- Display only names and emails.
+- Hide the `_id` field.
+- Display names, courses and marks.
+- Exclude the email field.
+- Practice inclusion and exclusion projection.
+
+## TASK 17 – Update Operators
+
+Practice the following operators:
+
+- `$set`
+- `$unset`
+- `$inc`
+- `$mul`
+- `$rename`
+- `$min`
+- `$max`
+- `$currentDate`
+
+Requirements:
+
+- Update a student's city using `$set`.
+- Remove a field using `$unset`.
+- Increase marks using `$inc`.
+- Multiply a product price using `$mul`.
+- Rename a document field using `$rename`.
+- Set a field's minimum and maximum values using `$min` and `$max`.
+- Update a date field using `$currentDate`.
+
+## TASK 18 – Upsert Operation
+
+Practice the `upsert` option.
+
+Requirements:
+
+- Update an existing student using `updateOne()`.
+- Enable `upsert: true`.
+- Insert a new student if the matching student does not exist.
+- Try the same operation with `upsert: false`.
+- Compare both results.
+
+## TASK 19 – Replace Documents
+
+Practice `replaceOne()`.
+
+Requirements:
+
+- Replace one student's complete document.
+- Keep the same `_id` where appropriate.
+- Add new fields to the replacement document.
+- Verify which previous fields are removed.
+- Compare `replaceOne()` with `updateOne()`.
+
+## TASK 20 – Array Fields
+
+Create a collection named `courses`.
+
+Requirements:
+
+- Insert documents containing an array of subjects.
+- Find courses containing JavaScript.
+- Find courses containing React.
+- Find courses containing both JavaScript and React.
+- Update an array using `$push`.
+- Remove an array element using `$pull`.
+- Add multiple elements using `$each`.
+
+## TASK 21 – Array Operators
+
+Practice:
+
+- `$all`
+- `$size`
+- `$elemMatch`
+- `$push`
+- `$pop`
+- `$pull`
+- `$addToSet`
+
+Requirements:
+
+- Find documents containing all specified skills.
+- Find documents whose array contains a particular number of elements.
+- Find array elements using `$elemMatch`.
+- Add new skills to an array.
+- Remove duplicate insertion using `$addToSet`.
+- Remove the first or last array element using `$pop`.
+
+## TASK 22 – Embedded Documents
+
+Create a collection named `employees`.
+
+Requirements:
+
+- Insert employees with embedded address documents.
+- Insert employees with embedded education documents.
+- Find employees from a particular city using dot notation.
+- Find employees with a specific qualification.
+- Update an embedded document field.
+- Remove an embedded document field.
+- Display the complete employee information.
+
+## TASK 23 – Null and Missing Fields
+
+Requirements:
+
+- Find documents where a phone field is null.
+- Find documents where the phone field does not exist.
+- Find documents where the phone field exists.
+- Find documents where the phone field is not null.
+- Practice `$exists`.
+- Practice `$type`.
+
+## TASK 24 – Regular Expressions
+
+Practice `$regex`.
+
+Requirements:
+
+- Find students whose names start with A.
+- Find students whose names end with a.
+- Find students whose names contain the letter R.
+- Find students whose names contain a specific word.
+- Perform case-insensitive searching.
+- Search emails ending with gmail.com.
+
+## TASK 25 – Date Queries
+
+Create a collection named `orders`.
+
+Requirements:
+
+- Insert at least 10 orders with orderDate.
+- Find orders placed after a specific date.
+- Find orders placed before a specific date.
+- Find orders between two dates.
+- Find orders placed in a particular month.
+- Sort orders by date.
+- Update an order date.
+
+## TASK 26 – Count and Distinct
+
+Requirements:
+
+- Count all students.
+- Count students belonging to B.Tech.
+- Count students having marks above 70.
+- Display all unique cities using `distinct()`.
+- Display all unique courses.
+- Count orders belonging to a particular status.
+
+## TASK 27 – Bulk Write Operations
+
+Practice `bulkWrite()`.
+
+Requirements:
+
+- Insert multiple employees.
+- Update multiple employee salaries.
+- Delete one employee.
+- Replace one employee document.
+- Perform all operations using a single `bulkWrite()` call.
+- Verify the final collection.
+
+## TASK 28 – Indexing Basics
+
+Practice indexing.
+
+Requirements:
+
+- Create an ascending index on student name.
+- Create a descending index on marks.
+- Display all indexes.
+- Find documents using an indexed field.
+- Delete an index.
+- Compare collection indexes before and after deletion.
+
+## TASK 29 – Unique and Compound Indexes
+
+Requirements:
+
+- Create a unique index on email.
+- Try inserting duplicate email values.
+- Observe the duplicate key error.
+- Create a compound index on city and course.
+- Display all indexes.
+- Drop the compound index.
+
+## TASK 30 – Explain Query
+
+Practice `explain()`.
+
+Requirements:
+
+- Execute a normal find query.
+- Use `explain("executionStats")`.
+- Observe `totalDocsExamined`.
+- Observe `totalKeysExamined`.
+- Observe `executionTimeMillis`.
+- Create an index and execute the same query again.
+- Compare the query execution plans.
+
+## TASK 31 – Aggregation Basics
+
+Create a collection named `sales`.
+
+Requirements:
+
+- Insert at least 15 sales documents.
+- Use `$match` to filter sales.
+- Use `$group` to group sales by category.
+- Use `$sum` to calculate total sales.
+- Use `$avg` to calculate average sales.
+- Use `$min` to find the minimum sale.
+- Use `$max` to find the maximum sale.
+
+## TASK 32 – Aggregation Pipeline
+
+Practice the following stages:
+
+- `$match`
+- `$group`
+- `$sort`
+- `$project`
+- `$limit`
+- `$skip`
+
+Requirements:
+
+- Filter sales above ₹1,000.
+- Group sales by product.
+- Calculate total sales per product.
+- Sort products by total sales.
+- Display the top 5 products.
+- Apply pagination to the aggregation results.
+
+## TASK 33 – Aggregation with Multiple Fields
+
+Requirements:
+
+- Group sales by city and product.
+- Calculate total quantity.
+- Calculate total revenue.
+- Calculate average product price.
+- Find the highest revenue-generating city.
+- Sort the results by revenue.
+- Display only the required fields.
+
+## TASK 34 – Unwind and Lookup
+
+Practice:
+
+- `$unwind`
+- `$lookup`
+- `$project`
+- `$match`
+
+Requirements:
+
+- Create customers and orders collections.
+- Insert customers with unique customerId.
+- Insert orders containing customerId.
+- Use `$lookup` to combine customer and order information.
+- Use `$unwind` to process array results.
+- Display customer name with order details.
+- Filter orders using a particular status.
+
+## TASK 35 – Aggregation Advanced Operators
+
+Practice:
+
+- `$count`
+- `$addFields`
+- `$set`
+- `$unset`
+- `$replaceRoot`
+- `$facet`
+
+Requirements:
+
+- Count products in each category.
+- Add a calculated field for total price.
+- Remove unwanted fields.
+- Restructure documents using `$replaceRoot`.
+- Use `$facet` to generate multiple result sets.
+- Verify all aggregation results.
+
+---
+
+# PART 3 – ADVANCED LEVEL (TASK 36–50)
+
+## TASK 36 – Employee Management System
+
+Create a database named `EmployeeDB`.
+
+Requirements:
+
+- Create employees collection.
+- Insert at least 20 employee records.
+- Each employee must have:
+  - employeeId
+  - name
+  - email
+  - department
+  - salary
+  - age
+  - joiningDate
+  - city
+- Perform complete CRUD operations.
+- Find employees department-wise.
+- Find employees with salary above ₹50,000.
+- Update employee salaries.
+- Delete employees who meet a specified condition.
+
+## TASK 37 – E-Commerce Product Management
+
+Create a database named `EcommerceDB`.
+
+Requirements:
+
+- Create products collection.
+- Insert at least 20 products.
+- Each product must have:
+  - productId
+  - name
+  - category
+  - price
+  - stock
+  - brand
+  - rating
+- Find products category-wise.
+- Find products within a specified price range.
+- Find products with stock below 10.
+- Update product prices.
+- Increase and decrease stock.
+- Delete discontinued products.
+
+## TASK 38 – Shopping Cart Management
+
+Create a `carts` collection.
+
+Requirements:
+
+- Insert customer shopping carts.
+- Each cart must contain multiple products.
+- Store productId, quantity and price inside the cart.
+- Find carts belonging to a particular customer.
+- Add products to a cart.
+- Update product quantity.
+- Remove products from a cart.
+- Calculate the total cart amount using aggregation.
+
+## TASK 39 – Order Management System
+
+Create an `orders` collection.
+
+Requirements:
+
+- Insert at least 15 orders.
+- Store orderId, customerId, products, totalAmount, orderDate and status.
+- Find pending orders.
+- Find delivered orders.
+- Update order status.
+- Cancel a particular order.
+- Calculate total revenue.
+- Calculate the number of orders for each status.
+
+## TASK 40 – Student Result Management System
+
+Create a database named `ResultDB`.
+
+Requirements:
+
+- Create students and results collections.
+- Insert at least 20 student records.
+- Store subject-wise marks.
+- Find students who passed all subjects.
+- Find students who failed in any subject.
+- Calculate total marks.
+- Calculate percentage.
+- Find the topper.
+- Sort students by percentage.
+- Display the top 5 students.
+
+## TASK 41 – Relationship Between Collections
+
+Create three collections:
+
+- students
+- courses
+- enrollments
+
+Requirements:
+
+- Insert at least 10 students.
+- Insert at least 5 courses.
+- Create enrollment documents containing studentId and courseId.
+- Connect related collections using `$lookup`.
+- Display student names with their enrolled courses.
+- Find students enrolled in multiple courses.
+- Find courses having the highest number of students.
+
+## TASK 42 – Advanced Filtering Challenge
+
+Use the employees collection.
+
+Requirements:
+
+- Find employees with salary between ₹30,000 and ₹80,000.
+- Find employees from Lucknow or Kanpur.
+- Find employees above 25 years of age with salary above ₹40,000.
+- Find employees whose department is not HR.
+- Find employees whose names start with S.
+- Find employees who have a specific skill in their skills array.
+- Combine at least three operators in one query.
+
+## TASK 43 – Advanced Aggregation Challenge
+
+Use the sales collection.
+
+Requirements:
+
+- Calculate total sales by city.
+- Calculate monthly revenue.
+- Find the top 5 selling products.
+- Find the average order value.
+- Find the highest sales day.
+- Calculate total revenue by category.
+- Use multiple aggregation stages in one pipeline.
+
+## TASK 44 – Text Search and Text Index
+
+Requirements:
+
+- Create a collection named articles.
+- Insert at least 10 articles.
+- Each article must contain title, description and author.
+- Create a text index.
+- Search articles using `$text`.
+- Use `$search`.
+- Display the text search score using `$meta`.
+- Sort results by relevance.
+
+## TASK 45 – Schema Validation
+
+Requirements:
+
+- Create a collection named users.
+- Apply JSON Schema validation.
+- Make name a required string field.
+- Make email a required string field.
+- Make age a number.
+- Restrict age to a valid range.
+- Try inserting valid documents.
+- Try inserting invalid documents.
+- Observe validation errors.
+- Modify the validation rules.
+
+## TASK 46 – Transactions
+
+Practice MongoDB transactions using a replica set or a supported transaction-enabled deployment.
+
+Requirements:
+
+- Create accounts collection.
+- Insert two bank account documents.
+- Transfer money from one account to another.
+- Use a transaction session.
+- Deduct money from the sender.
+- Add money to the receiver.
+- Commit the transaction.
+- Simulate a failure and abort another transaction.
+- Verify account balances after both operations.
+
+## TASK 47 – Aggregation with Date and Time
+
+Requirements:
+
+- Use the orders collection.
+- Insert orders with different dates.
+- Group orders by year.
+- Group orders by month.
+- Calculate daily revenue.
+- Calculate monthly revenue.
+- Find the busiest order month.
+- Use date aggregation operators.
+
+## TASK 48 – MongoDB Backup and Restore
+
+Requirements:
+
+- Create a database named BackupDB.
+- Insert at least 10 documents.
+- Take a database backup using `mongodump`.
+- Verify the backup files.
+- Restore the database using `mongorestore`.
+- Verify restored collections.
+- Compare the original and restored document counts.
+
+## TASK 49 – Performance Optimization
+
+Requirements:
+
+- Insert at least 1,000 employee documents.
+- Execute queries without indexes.
+- Check query performance using `explain()`.
+- Create indexes on frequently searched fields.
+- Create a compound index.
+- Compare execution statistics.
+- Identify unnecessary indexes.
+- Drop an unused index.
+- Document the performance differences.
+
+## TASK 50 – FINAL PROJECT: COMPLETE E-COMMERCE DATABASE
+
+Create a complete database named `FinalEcommerceDB`.
+
+Create the following collections:
+
+1. users
+2. products
+3. categories
+4. carts
+5. orders
+6. payments
+7. reviews
+
+Requirements:
+
+**Database Management**
+- Create the database.
+- Create all 7 collections.
+- Insert sample documents into every collection.
+- Display all collections.
+
+**CRUD Operations**
+- Insert multiple users and products.
+- Find users and products.
+- Update user profiles.
+- Update product prices and stock.
+- Delete products.
+- Delete users where appropriate.
+
+**Filtering and Searching**
+- Filter products by category.
+- Search products by name.
+- Find products by price range.
+- Find products with low stock.
+- Sort products by rating.
+- Apply pagination.
+
+**Aggregation**
+- Calculate total revenue.
+- Find the best-selling products.
+- Calculate total orders per user.
+- Calculate average product rating.
+- Find the highest-selling category.
+
+**Relationships**
+- Connect users with orders.
+- Connect products with categories.
+- Connect orders with payments.
+- Connect products with reviews.
+- Use `$lookup` to retrieve related information.
+
+**Advanced Operations**
+- Create indexes.
+- Apply schema validation.
+- Use bulk operations.
+- Use aggregation pipelines.
+- Verify query performance using `explain()`.
+
+**Final Output:**
+
+Your database should work like a basic e-commerce backend database. All collections must contain sample data, and all important queries must execute successfully.
+
+---
+
+# FINAL SUBMISSION CHECKLIST
+
+Before submitting your assignment, verify the following:
+
+- [ ] All 50 tasks completed.
+- [ ] Database creation and deletion practiced.
+- [ ] Collection creation and deletion practiced.
+- [ ] Insert operations completed.
+- [ ] Read operations completed.
+- [ ] Update operations completed.
+- [ ] Delete operations completed.
+- [ ] Filtering and comparison operators practiced.
+- [ ] Sorting and pagination completed.
+- [ ] Projection completed.
+- [ ] Array and embedded document queries completed.
+- [ ] Aggregation pipelines completed.
+- [ ] Indexing and performance optimization completed.
+- [ ] Relationships using `$lookup` completed.
+- [ ] Transactions practiced.
+- [ ] Backup and restore practiced.
+- [ ] All query screenshots pasted below their respective questions in Word.
+- [ ] Final project completed.
+- [ ] Word document saved properly.
+
+# SUBMISSION DETAILS
+
+**Assignment Name:** MongoDB – 50 Practical Tasks
+
+**Total Questions:** 50
+
+**Submission Format:** Microsoft Word (.docx)
+
+**Screenshot Requirement:** Mandatory for every task.
+
+**Important:** Every question must be followed by its corresponding MongoDB query and output screenshot. Tasks without screenshots will be considered incomplete.
+
+**Goal:** Build strong practical knowledge of MongoDB from database creation to advanced database management and real-world project implementation.
