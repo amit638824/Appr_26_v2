@@ -1,0 +1,93 @@
+MongoDB – Practice Assignment (80 Tasks)
+Instructions:
+- Solve all tasks using MongoDB Shell (mongosh).
+- Write queries yourself without copying solutions.
+- Use the database name company and collection name employees.
+- For salary-ranking questions, assume all employee salaries are unique.
+Section 1: Database Handling (1–8)
+1. Create a database named company.
+2. Switch to the company database.
+3. Display all available databases.
+4. Check the name of the currently selected database.
+5. Create a collection named employees.
+6. Display all collections in the current database.
+7. Rename the employees collection to staff.
+8. Delete the staff collection.
+Section 2: Insert Operations (9–18)
+9. Insert one employee with name, age, city, department, and salary.
+10. Insert an employee named Amit.
+11. Insert five employees using insertMany().
+12. Insert ten employee documents.
+13. Insert an employee with a hobbies array.
+14. Insert an employee with a skills array.
+15. Insert an employee with an additional field isActive: true.
+16. Insert an employee with name, age, salary, and experience.
+17. Insert three employees belonging to the HR department.
+18. Insert five employees belonging to the IT department.
+Section 3: Read / Find Operations (19–32)
+19. Display all employees.
+20. Find an employee whose name is Amit.
+21. Find employees whose age is 25.
+22. Find employees whose salary is 50000.
+23. Find all employees belonging to the IT department.
+24. Find employees who live in Delhi.
+25. Find employees whose salary is greater than 40000.
+26. Find employees whose salary is less than 30000.
+27. Find employees whose age is greater than 20 and less than 30.
+28. Find employees whose salary is between 30000 and 60000.
+29. Find all employees belonging to the HR department.
+30. Find employees whose age is greater than or equal to 25.
+31. Find employees whose city is not Delhi.
+32. Find an employee using their name as a search condition.
+Section 4: Update Operations (33–48)
+33. Update Amit's salary to 50000.
+34. Update Riya's age to 25.
+35. Change Rahul's city from Lucknow to Delhi.
+36. Change the department of all IT employees to Technology.
+37. Add verified: true to all employees in the HR department.
+38. Add an address field to Amit's document.
+39. Remove the city field from Riya's document.
+40. Increase Sana's age by 1.
+41. Increase Amit's salary by 5000.
+42. Decrease Rahul's salary by 2000.
+43. Add music to Riya's hobbies array using $push.
+44. Add React to Amit's skills array using $push.
+45. Add reading to Sana's hobbies array using $addToSet.
+46. Rename the name field to fullName using $rename.
+47. Increase the salary of all employees older than 30 by 1000 using updateMany().
+48. Add isActive: true to all employees living in Delhi using updateMany().
+Section 5: Delete Operations (49–54)
+49. Delete the employee named Amit.
+50. Delete employees whose age is less than 20.
+51. Delete employees belonging to the HR department.
+52. Delete employees whose salary is less than 20000.
+53. Delete all documents from the employees collection.
+54. Drop the employees collection.
+Section 6: Cursor Methods (55–64)
+55. Display all employees using find().
+56. Display only the first 5 employees using limit(5).
+57. Display only the first 10 employees using limit(10).
+58. Skip the first 5 documents using skip(5).
+59. Skip the first 10 documents using skip(10).
+60. Display employees from the 6th to the 10th position using skip(5).limit(5).
+61. Sort employees by salary in ascending order.
+62. Sort employees by salary in descending order.
+63. Sort employees by age in ascending order.
+64. Display employee documents in a formatted output using pretty().
+Section 7: Salary-Based Questions (65–80)
+65. Find the employee with the highest salary.
+66. Find the employee with the lowest salary.
+67. Find the employee with the second-highest salary.
+68. Find the employee with the third-highest salary.
+69. Find the employee with the fourth-highest salary.
+70. Find the employee with the fifth-highest salary.
+71. Find the employee with the second-lowest salary.
+72. Find the employee with the third-lowest salary.
+73. Find the employee with the fourth-lowest salary.
+74. Find the employee with the fifth-lowest salary.
+75. Display the top 3 highest-paid employees.
+76. Display the top 3 lowest-paid employees.
+77. Display the top 5 highest-paid employees.
+78. Find the name and department of the employee with the second-highest salary.
+79. Find the salary and city of the employee with the third-highest salary.
+80. Sort employees by salary in descending order and display the employee at the 5th position.
