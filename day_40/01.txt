@@ -1,0 +1,142 @@
+MongoDB – Practical Assignment (50 Questions)
+
+Database: company
+Collection: users
+Total Sets: 10
+Questions per Set: 5
+Total Questions: 50
+Platform: MongoDB Shell (mongosh)
+
+Instructions
+
+1. Solve all questions using MongoDB Shell (mongosh).
+2. Use the database name company and collection name users.
+3. Create the database and insert 15 users' records before starting.
+4. Write queries yourself. Do not copy solutions.
+5. Execute every query and verify its output.
+6. Take a screenshot of every executed query along with its output.
+7. Open MS Word and paste each screenshot directly below its respective question.
+8. Make sure the query and output are clearly visible in every screenshot.
+9. Maintain proper question numbering and formatting.
+
+Important: Every question must have its own query and output screenshot pasted directly below that question.
+
+SET 1 – Database & Collection Handling (1–5)
+
+1. Create a database named company.
+
+2. Create a collection named users.
+
+3. Display all available databases.
+
+4. Display the currently selected database name.
+
+5. Display all collections available inside the company database.
+
+SET 2 – Insert Operations (6–10)
+
+6. Insert one user named Rahul with age 25, city Delhi, salary 45000 and department HR.
+
+7. Insert one user named Priya with age 23, city Lucknow, salary 40000 and department IT.
+
+8. Insert five users at once using insertMany().
+
+9. Insert one user named Amit with age 22, city Kanpur, salary 35000 and department IT.
+
+10. Display all inserted users and verify their records.
+
+SET 3 – Basic Find Operations (11–15)
+
+11. Display all users using find().
+
+12. Find the user whose name is Amit.
+
+13. Find all users who belong to the IT department.
+
+14. Find all users who live in Lucknow.
+
+15. Find all users whose age is 25.
+
+SET 4 – Logical Operators (16–20)
+
+16. Find all users who belong to IT department AND live in Lucknow using $and.
+
+17. Find all users who belong to either IT OR HR department using $or.
+
+18. Find users who live in Delhi OR have age 25 using $or.
+
+19. Find users who belong to IT department AND have salary greater than 40000 using $and.
+
+20. Find users who belong to HR department OR have age less than 23 using $or.
+
+SET 5 – Comparison Operators (21–25)
+
+21. Find all users whose age is equal to 25 using $eq.
+
+22. Find all users whose department is not equal to HR using $ne.
+
+23. Find all users whose salary is greater than 40000 using $gt.
+
+24. Find all users whose salary is greater than or equal to 45000 using $gte.
+
+25. Find all users whose age is less than 25 using $lt.
+
+SET 6 – Comparison Operators (26–30)
+
+26. Find all users whose age is less than or equal to 25 using $lte.
+
+27. Find all users whose department belongs to IT, HR or Finance using $in.
+
+28. Find all users whose department does not belong to IT or HR using $nin.
+
+29. Find all users whose salary is greater than 30000 and less than 60000 using $gt and $lt.
+
+30. Find all users whose age is greater than or equal to 23 AND salary is less than or equal to 50000 using $gte and $lte.
+
+SET 7 – Sorting, Skip, Limit & Count (31–35)
+
+31. Display all users in ascending order of their names using sort().
+
+32. Display all users in descending order of their salaries using sort().
+
+33. Display only the first five users using limit().
+
+34. Skip the first five users and display the remaining records using skip().
+
+35. Count the total number of users belonging to the IT department using countDocuments().
+
+SET 8 – Update Operations (36–40)
+
+36. Update Rahul's salary to 50000 using updateOne() and $set.
+
+37. Update Priya's city to Delhi using $set.
+
+38. Increase Amit's salary by 5000 using $inc.
+
+39. Increase the salary of all IT department users by 2000 using updateMany() and $inc.
+
+40. Change the department of Rahul from HR to IT using $set.
+
+SET 9 – Advanced Update & Delete Operations (41–45)
+
+41. Add a new field named status with value Active to Amit's document using $set.
+
+42. Remove the status field from Amit's document using $unset.
+
+43. Update Rahul's salary to 60000 using $set.
+
+44. Rename the field city to location for one selected user using $rename.
+
+45. Delete one user named Amit using deleteOne().
+
+SET 10 – Mixed Practical & Delete Operations (46–50)
+
+46. Delete all users belonging to the Sales department using deleteMany().
+
+47. Delete all users whose city is Delhi using deleteMany().
+
+48. Display all remaining users after performing the delete operations.
+
+49. Display the top five highest-paid users using sort() and limit().
+
+50. Find IT department users, sort them in descending order of salary, skip the first user and display the next three users.
