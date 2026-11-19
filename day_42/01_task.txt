@@ -1,0 +1,166 @@
+MONGODB – 40 PRACTICAL TASKS Student Assignment | Beginner to
+Intermediate
+========================== IMPORTANT INSTRUCTIONS ===========================
+1.  Complete all 40 tasks in the given order.
+2.  Read and understand each task before writing a query.
+3.  Write and execute every query yourself in MongoDB Shell (mongosh).
+4.  Do not copy and paste queries without understanding how they work.
+5.  Create the required databases and collections before inserting data.
+6.  Use meaningful field names and appropriate data types.
+7.  Insert sufficient sample data so that every query can be tested
+    properly.
+8.  Check the output after executing each query.
+9.  If a query gives an error, identify the mistake, correct it, and run
+    it again.
+10. Save all commands and queries in a properly organized .js or .txt
+    file.
+11. Add comments to explain important queries wherever necessary.
+12. Maintain your MongoDB notes. Write the definition, syntax, and at
+    least one example for every topic covered.
+13. Revise the concepts regularly. You may be asked to explain or
+    demonstrate any query.
+14. Complete the assignment independently and be prepared for a
+    practical test or interview discussion.
+15. Do not leave any task incomplete. If you face a problem, make an
+    effort to understand and solve it before asking for help.
+
+SUBMISSION REQUIREMENTS - Submit your completed query file. - Keep your
+database and collection names clear and consistent. - Make sure your
+queries run successfully. - Keep your notes complete and up to date. -
+Be ready to demonstrate your work and explain the logic behind your
+queries.
+
+===================== SECTION 1: MONGODB BASICS (TASKS 1–5) ========================
+
+1.  Create a database named company.
+2.  Create a collection named employees.
+3.  Insert 10 employee documents with the fields name, email, age,
+    department, salary, and city.
+4.  Insert 5 additional employee documents using insertMany().
+5.  Display all employee records and check the total number of
+    documents.
+=========================== SECTION 2: CRUD OPERATIONS (TASKS 6–10) ================
+
+6.  Find all employees belonging to the IT department.
+7.  Find an employee using their name.
+8.  Update the salary of an employee.
+9.  Add a new field named isActive with the value true to an employee.
+10. Delete an employee using their _id.
+================ SECTION 3: QUERY AND COMPARISON OPERATORS (TASKS 11–14) ===============
+
+11. Find employees whose salary is greater than 30,000 using $gt.
+12. Find employees whose age is less than or equal to 25 using $lte.
+13. Find employees whose salary is between 25,000 and 50,000 using $gte
+    and $lte.
+14. Find employees whose department is either IT or HR using $in.
+===================== SECTION 4: ARRAY OPERATORS (TASKS 15–17) ============================
+
+Create a collection named students with the fields name, age, and skills
+(array).
+
+15. Find students who have the skill “JavaScript” using $in.
+16. Find students who have both “HTML” and “CSS” skills using $all.
+17. Find students whose skills array contains exactly 3 elements using
+    $size.
+
+================ SECTION 5: ELEMENT AND EVALUATION OPERATORS (TASKS 18–20) ==================
+
+18. Find employees who have an email field using $exists.
+19. Find employees whose salary field is of numeric type using $type.
+20. Find employees whose names match a particular pattern using $regex.
+
+===================== SECTION 6: PROJECTION AND CURSOR METHODS (TASKS 21–23) ==================
+
+21. Display only employee names and salaries using projection.
+22. Exclude the _id field from the result.
+23. Display the first 5 employees using limit() and skip the first 2
+    records using skip().
+====================== SECTION 7: AGGREGATION PIPELINE (TASKS 24–27) =======================
+24. Display employees whose salary is greater than 30,000 using $match.
+25. Display only employee names, departments, and salaries using
+    $project.
+26. Sort employees by salary in descending order using $sort.
+27. Group employees according to their departments using $group.
+
+================= SECTION 8: ACCUMULATOR OPERATORS (TASKS 28–32) ==========================
+
+28. Calculate the total salary of all employees using $sum.
+29. Calculate the average salary of each department using $avg.
+30. Find the highest and lowest salary in each department using $max and
+    $min.
+31. Count the total number of employees in each department using $count
+    inside $group.
+32. Create an array of employee names in each department using $push and
+    find unique departments using $addToSet.
+
+==================== SECTION 9: STRING OPERATORS (TASKS 33–36) =====================
+33. Convert all employee names into uppercase using $toUpper and
+    lowercase using $toLower.
+34. Combine employee names and city names using $concat.
+35. Find the length of each employee name using $strLenCP and extract
+    the first three characters using $substrCP.
+36. Split employee names into separate parts using $split and remove
+    extra spaces using $trim.
+
+============================================================ SECTION 10:
+DATA MODELING AND RELATIONSHIPS (TASKS 37–40)
+============================================================
+
+37. Create a student document using the Embedded Data Model with student
+    details, address, and contact information.
+
+38. Create separate customers and orders collections using the
+    Referenced Data Model. Connect orders with customers using
+    customerId.
+
+39. Create examples of all three relationships:
+
+    a.  One-to-One: User and Profile.
+    b.  One-to-Many: Customer and Orders.
+    c.  Many-to-Many: Students and Courses.
+
+40. Use the $lookup aggregation stage to join the customers and orders
+    collections and display customer details along with their orders.
+
+============================================================ 
+          NOTES AND REVISION REQUIREMENTS
+============================================================
+
+Along with the practical tasks, prepare and maintain notes for every
+topic listed below:
+
+1.  MongoDB introduction and basic terminology.
+2.  Database and collection creation.
+3.  insertOne(), insertMany(), find(), and findOne().
+4.  updateOne(), updateMany(), replaceOne(), deleteOne(), and
+    deleteMany().
+5.  Query and comparison operators.
+6.  Logical operators.
+7.  Array operators.
+8.  Element operators.
+9.  Evaluation operators.
+10. Projection and cursor methods.
+11. Aggregation pipeline and its stages.
+12. Accumulator operators.
+13. String operators.
+14. Embedded and referenced data models.
+15. One-to-One, One-to-Many, and Many-to-Many relationships.
+16. $lookup and its syntax.
+
+For every topic, write: - Definition - Purpose / use - Syntax - At least
+one practical example - Expected output or explanation
+
+============================================================
+                        FINAL REMINDER 
+============================================================
+
+Complete all 40 tasks carefully and maintain your notes alongside the
+practical work. Learning the syntax is not enough; you must understand
+what each query does and why it is used.
+
+Be prepared to explain your queries, show their output, and perform
+similar tasks independently during a practical test or interview.
+
+CONSISTENCY, PRACTICE, AND UNDERSTANDING ARE IMPORTANT.
+
+END OF ASSIGNMENT
