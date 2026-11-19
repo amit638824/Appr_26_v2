@@ -1,0 +1,138 @@
+MongoDB – Practical Assignment (50 Questions)
+Database: company
+Collection: users
+Total Sets: 10
+Questions per Set: 5
+Total Questions: 50
+Platform: MongoDB Shell (mongosh)
+
+Instructions
+Solve all questions using MongoDB Shell (mongosh).
+
+Use the database name company and collection name users.
+
+Create the database and insert 15 users' records before starting.
+
+Write queries yourself. Do not copy solutions.
+
+Execute every query and verify its output.
+
+Take a screenshot of every executed query along with its output.
+
+Open MS Word and paste each screenshot directly below its respective question.
+
+Make sure the query and output are clearly visible in every screenshot.
+
+Maintain proper question numbering and formatting.
+
+Important: Every question must have its own query and output screenshot pasted directly below that question.
+
+SET 1 – Array $slice Operator (1–5)
+1. Display the first three elements of the skills array using $slice.
+
+2. Display the last two elements of the skills array using $slice.
+
+3. Display the first five elements of the subjects array using $slice.
+
+4. Display three elements of the skills array starting from index 2 using $slice.
+
+5. Display only the first two elements of the hobbies array along with the user's name using projection and $slice.
+
+SET 2 – Regular Expression ($regex) (6–10)
+6. Find all users whose names contain the letter a using $regex.
+
+7. Find all users whose city contains the word Luck using $regex.
+
+8. Find all users whose department contains the word IT using $regex.
+
+9. Find all users whose email contains the word gmail using $regex.
+
+10. Find all users whose names contain the word an using $regex.
+
+SET 3 – Case-Insensitive Regex Search (11–15)
+11. Find all users whose names contain the letter a, ignoring uppercase and lowercase differences using $options: "i".
+
+12. Find all users whose city contains delhi, ignoring case sensitivity.
+
+13. Find all users whose department contains it, ignoring case sensitivity.
+
+14. Find all users whose email contains GMAIL, ignoring case sensitivity.
+
+15. Find all users whose names contain RAH, ignoring case sensitivity.
+
+SET 4 – Regex Prefix and Suffix Search (16–20)
+16. Find all users whose names start with the letter A using the prefix pattern ^A.
+
+17. Find all users whose city names start with Lu using regex prefix search.
+
+18. Find all users whose names end with the letter a using the suffix pattern $.
+
+19. Find all users whose email addresses end with .com using regex suffix search.
+
+20. Find all users whose department names start with F using regex prefix search.
+
+SET 5 – Numeric Pattern & Negating Regex (21–25)
+21. Find all users whose mobile numbers start with 98 using a numeric regex pattern.
+
+22. Find all users whose mobile numbers end with 45 using a numericp regex pattern.p
+
+23. Find all users whose mobile numbers contain 123 using $regex.
+
+24. Find all users whose names do not start with the letter A using $not and $regex.
+
+25. Find all users whose city names do not contain the word Delhi using $not and $regex.
+
+SET 6 – Aggregation Pipeline: $match and $group (26–30)
+26. Display all users belonging to the IT department using $match.
+
+27. Find users whose salary is greater than 40000 using $match.
+
+28. Count the total number of users in each department using $group and $sum.
+
+29. Calculate the average salary of users in each department using $group and $avg.
+
+30. Find the maximum salary in each department using $group and $max.
+
+SET 7 – Aggregation Pipeline: $sort, $count and $sortByCount (31–35)
+31. Display all users in ascending order of salary using $sort.
+
+32. Display all users in descending order of age using $sort.
+
+33. Count the total number of users using the $count aggregation stage.
+
+34. Count the number of users in each city using $sortByCount.
+
+35. Count the number of users in each department using $sortByCount.
+
+SET 8 – Aggregation Pipeline: $unwind (36–40)
+36. Display each skill of users as a separate document using $unwind.
+
+37. Display each hobby of users as a separate document using $unwind.
+
+38. Display each subject of users as a separate document using $unwind.
+
+39. Find all users belonging to the IT department and display their individual skills using $match and $unwind.
+
+40. Count how many users have each skill using $unwind and $group.
+
+SET 9 – Aggregation Pipeline: $project, $limit and $skip (41–45)
+41. Display only the name, age and city fields using $project.
+
+42. Display the name and salary fields while hiding the _id field using $project.
+
+43. Display only the first five users using $limit.
+
+44. Skip the first five users and display the remaining records using $skip.
+
+45. Display the name and department of the first five users whose salary is greater than 30000 using $match, $project and $limit.
+
+SET 10 – Mixed Aggregation Practical (46–50)
+46. Find IT department users, sort them by salary in descending order and display the top three users using $match, $sort and $limit.
+
+47. Find users whose names start with A, display only their name and city using $match and $project.
+
+48. Count the total number of users in each department and sort the result in descending order using $group, $sum and $sort.
+
+49. Find the top five most common skills among users using $unwind, $group, $sum and $sort.
+
+50. Find users whose names contain the letter a (case-insensitive), skip the first two matching users, display the next three users and show only their name, city and salary using $match, $skip, $limit and $project.
