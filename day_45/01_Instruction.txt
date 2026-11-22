@@ -1,0 +1,21 @@
+IMPORTANT INSTRUCTIONS
+
+Complete the entire assigned task carefully and ensure that every question is answered correctly and in detail.
+
+1. COMPLETE ALL QUESTIONS Solve every question and cover all assigned topics without skipping anything.
+2. INCLUDE SCREENSHOTS Add all relevant screenshots wherever required to demonstrate the completed work and its output.
+3. PREPARE A DOCUMENT Organize all questions, answers, code, outputs, and screenshots into a properly formatted document.
+4. FINAL SUBMISSION Make sure the document is professionally formatted, checked, and ready to submit in either PDF or DOC/DOCX format.
+5. LEARN ALL MONGODB QUERIES Study and practice all important MongoDB queries, commands, operators, and concepts. Understand their syntax and practical applications.
+6. COMPLETE NOTES REVISION Complete the revision of all notes and important topics. Focus on understanding concepts rather than just memorizing them.
+7. FINAL REVIEW Double-check every answer, verify all outputs, correct mistakes, and ensure that nothing is missing before submission.
+
+REMEMBER:
+
+"REVISION IS THE KEY TO SUCCESS."
+
+Consistent practice, proper understanding, and complete preparation lead to excellent results.
+
+FINAL GOAL: Complete the work, understand every concept, revise thoroughly, and submit a perfect final document.
+
+You can copy this content into Notepad and save it as `Task_Instructions.txt` using UTF-8 encoding.
