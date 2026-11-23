@@ -1,0 +1,183 @@
+EXPRESS.JS PRACTICE TASKS 40 EASY TASKS – GET & POST METHODS Topic:
+Array of Objects | Express.js | GET | POST | req.body | Array Methods
+
+============================================================ GENERAL
+INSTRUCTIONS
+============================================================
+
+1.  Create a separate Express.js practice project.
+2.  Use an array of objects to store data.
+3.  Use only GET and POST HTTP methods.
+4.  Use express.json() to receive JSON data in POST requests.
+5.  Test every API using Postman.
+6.  Do not use MongoDB or any other database.
+7.  Use port 5000.
+8.  For POST tasks, add the new object to the existing array.
+9.  For GET tasks involving a single record or filtering, use suitable
+    array methods.
+10. Return responses in JSON format.
+
+============================================================ SECTION 1:
+BASIC GET API (TASK 1–10)
+============================================================
+
+Task 1: Create a GET API /users that returns an array of 5 users with id
+and name.
+
+Task 2: Create a GET API /students that returns 5 students with id, name
+and age.
+
+Task 3: Create a GET API /products that returns 5 products with id, name
+and price.
+
+Task 4: Create a GET API /employees that returns 5 employees with id,
+name and salary.
+
+Task 5: Create a GET API /books that returns 5 books with id, title and
+author.
+
+Task 6: Create a GET API /courses that returns 5 courses with id,
+courseName and duration.
+
+Task 7: Create a GET API /cars that returns 5 cars with id, brand and
+price.
+
+Task 8: Create a GET API /mobiles that returns 5 mobiles with id, brand
+and ram.
+
+Task 9: Create a GET API /teachers that returns 5 teachers with id, name
+and subject.
+
+Task 10: Create a GET API /orders that returns 5 orders with id,
+productName and quantity.
+
+============================================================ SECTION 2:
+GET API WITH ARRAY FILTERING (TASK 11–20)
+============================================================
+
+Task 11: Create a GET API /users/:id that returns a single user from the
+users array using the ID.
+
+Task 12: Create a GET API /students/:id that returns a single student
+using the ID.
+
+Task 13: Create a GET API /products/:id that returns a single product
+using the ID.
+
+Task 14: Create a GET API /employees/:id that returns a single employee
+using the ID.
+
+Task 15: Create a GET API /books/:id that returns a single book using
+the ID.
+
+Task 16: Create a GET API /students/course/:courseName that returns all
+students belonging to a particular course.
+
+Task 17: Create a GET API /products/category/:category that returns
+products belonging to a particular category.
+
+Task 18: Create a GET API /employees/department/:department that returns
+employees from a particular department.
+
+Task 19: Create a GET API /users/active that returns only users whose
+isActive value is true.
+
+Task 20: Create a GET API /products/price/:price that returns products
+whose price is less than the given price.
+
+============================================================ SECTION 3:
+BASIC POST API (TASK 21–30)
+============================================================
+
+Instructions: For each task, create an initially populated array of
+objects. Accept data from req.body and add the new object to the
+existing array using POST.
+
+Task 21: Create a POST API /users that accepts name and age from the
+request body and adds a new user to the users array.
+
+Task 22: Create a POST API /students that accepts name, age and course
+and adds a new student.
+
+Task 23: Create a POST API /products that accepts name, price and
+category and adds a new product.
+
+Task 24: Create a POST API /employees that accepts name, salary and
+department and adds a new employee.
+
+Task 25: Create a POST API /books that accepts title, author and price
+and adds a new book.
+
+Task 26: Create a POST API /courses that accepts courseName, duration
+and fees and adds a new course.
+
+Task 27: Create a POST API /cars that accepts brand, model and price and
+adds a new car.
+
+Task 28: Create a POST API /mobiles that accepts brand, ram and price
+and adds a new mobile.
+
+Task 29: Create a POST API /teachers that accepts name, subject and
+experience and adds a new teacher.
+
+Task 30: Create a POST API /orders that accepts productName, quantity
+and price and adds a new order.
+
+============================================================ SECTION 4:
+GET + POST COMBINED PRACTICE (TASK 31–40)
+============================================================
+
+Instructions: For each task, create an array of objects and implement
+all the listed GET and POST endpoints.
+
+Task 31: USERS API - GET /users – Fetch all users. - POST /users – Add a
+new user.
+
+Task 32: STUDENTS API - GET /students – Fetch all students. - GET
+/students/:id – Fetch a single student. - POST /students – Add a new
+student.
+
+Task 33: PRODUCTS API - GET /products – Fetch all products. - GET
+/products/:id – Fetch a single product. - POST /products – Add a new
+product.
+
+Task 34: EMPLOYEES API - GET /employees – Fetch all employees. - GET
+/employees/:id – Fetch a single employee. - POST /employees – Add a new
+employee.
+
+Task 35: BOOKS API - GET /books – Fetch all books. - GET /books/:id –
+Fetch a single book. - POST /books – Add a new book.
+
+Task 36: COURSES API - GET /courses – Fetch all courses. - GET
+/courses/:id – Fetch a single course. - POST /courses – Add a new
+course.
+
+Task 37: MOBILES API - GET /mobiles – Fetch all mobiles. - GET
+/mobiles/:id – Fetch a single mobile. - POST /mobiles – Add a new
+mobile.
+
+Task 38: TEACHERS API - GET /teachers – Fetch all teachers. - GET
+/teachers/:id – Fetch a single teacher. - POST /teachers – Add a new
+teacher.
+
+Task 39: DEPARTMENTS API - GET /departments – Fetch all departments. -
+GET /departments/:id – Fetch a single department. - POST /departments –
+Add a new department.
+
+Task 40: STUDENT MANAGEMENT API - GET /students – Fetch all students. -
+GET /students/:id – Fetch a single student. - POST /students – Add a new
+student. - GET /students/course/:course – Fetch students by course. -
+GET /students/age/:age – Fetch students by age.
+
+============================================================ IMPORTANT
+NOTES ============================================================
+
+1.  Use let when declaring arrays that will be modified with push().
+2.  Use req.params to read values from URL parameters.
+3.  Use req.body to read data sent in POST requests.
+4.  Use find() to get one matching object from an array.
+5.  Use filter() to get multiple matching objects from an array.
+6.  Use push() to add a new object to an array.
+7.  Remember that array data is stored only in memory. It resets when
+    the server restarts.
+8.  Complete the tasks in order, starting from Task 1.

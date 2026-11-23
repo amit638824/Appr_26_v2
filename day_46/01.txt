@@ -1,0 +1,197 @@
+MOST IMPORTANT
+================================
+Complete your previous task-sheet 
+===================================
+
+============================================================ GENERAL
+INSTRUCTIONS
+============================================================
+
+1.  Use MongoDB Shell (mongosh) or MongoDB Compass.
+2.  Practice with the db.createCollection() command.
+3.  Use the validator option with $jsonSchema.
+4.  Define the required fields and their BSON types.
+5.  Use additionalProperties: false only when a task asks you to
+    restrict extra fields.
+6.  Test every schema by inserting both valid and invalid documents.
+7.  Observe the validation error when a document does not match the
+    schema.
+8.  Use validationLevel and validationAction where tasks ask for them.
+9.  Do not use Mongoose. These tasks focus on MongoDB’s native schema
+    validation.
+10. Use a separate collection for each task unless a task says
+    otherwise.
+
+============================================================ SECTION 1:
+BASIC SCHEMA VALIDATION (TASK 1–5)
+============================================================
+
+Task 1: Create a collection named users with schema validation. Each
+document must contain: - name: string - age: int - email: string
+
+Make all three fields required. Insert one valid document and one
+invalid document to test the validator.
+
+Task 2: Create a collection named students. Define these fields: - name:
+string - rollNo: int - course: string - fees: double
+
+Make every field required. Test the collection with valid and invalid
+documents.
+
+Task 3: Create a collection named products. Define these fields: -
+productName: string - price: double - quantity: int - inStock: bool
+
+Make all fields required and test each BSON type.
+
+Task 4: Create a collection named employees. Define these fields: -
+employeeId: int - name: string - department: string - salary: double
+
+Make all fields required. Try inserting a document where salary is a
+string and observe the validation result.
+
+Task 5: Create a collection named books. Define these fields: - title:
+string - author: string - pages: int - published: bool
+
+Make all fields required. Insert documents with correct and incorrect
+field types.
+
+============================================================ SECTION 2:
+REQUIRED FIELDS AND EXTRA FIELDS (TASK 6–10)
+============================================================
+
+Task 6: Create a collection named customers. Make name, email and phone
+required fields. Set their BSON types to string. Try inserting a
+document without the phone field and check whether MongoDB rejects it.
+
+Task 7: Create a collection named courses. Allow only these fields: -
+courseName: string - duration: string - fees: double
+
+Make all fields required. Use additionalProperties: false to prevent
+documents from containing fields that are not listed in the schema. Test
+by inserting an extra field named instructor.
+
+Task 8: Create a collection named orders. Define: - orderId: int -
+customerName: string - totalAmount: double - status: string
+
+Make orderId, customerName and totalAmount required. Allow status to be
+optional. Test documents both with and without status.
+
+Task 9: Create a collection named departments. Define: - departmentName:
+string - floor: int - manager: string
+
+Make departmentName and floor required. Keep manager optional. Test
+documents with and without manager.
+
+Task 10: Create a collection named vehicles. Define: - brand: string -
+model: string - year: int - price: double
+
+Make brand, model and year required. Allow price to be optional. Test
+the required and optional fields.
+
+============================================================ SECTION 3:
+ENUM, ARRAY AND NESTED OBJECT VALIDATION (TASK 11–15)
+============================================================
+
+Task 11: Create a collection named userAccounts. Define: - username:
+string - email: string - role: string
+
+Make all fields required. Use enum to allow role to contain only: -
+admin - user - editor
+
+Test with one allowed role and one role that is not in the enum.
+
+Task 12: Create a collection named applications. Define: -
+applicantName: string - skills: array of strings
+
+Make both fields required. Insert a valid skills array and then try an
+array containing a number.
+
+Task 13: Create a collection named movieReviews. Define: - movieName:
+string - rating: int - comments: string
+
+Make all fields required. Use minimum and maximum constraints so rating
+must be from 1 to 5. Test ratings below, within and above the range.
+
+Task 14: Create a collection named studentProfiles. Define: - name:
+string - address: object - city: string - state: string - pincode: int
+
+Make name and address required. Inside address, make city and state
+required. Test a valid nested address and an address with a missing
+city.
+
+Task 15: Create a collection named blogPosts. Define: - title: string -
+author: string - tags: array of strings - published: bool
+
+Make all fields required. Test an empty tags array, a valid tags array
+and an array containing a value of the wrong type.
+
+============================================================ SECTION 4:
+ADVANCED VALIDATION OPTIONS (TASK 16–20)
+============================================================
+
+Task 16: Create a collection named bankAccounts with schema validation.
+Define: - accountHolder: string - accountNumber: string - balance:
+double
+
+Make all fields required. Use minimum: 0 for balance so a negative
+balance is rejected. Test positive, zero and negative balances.
+
+Task 17: Create a collection named eventRegistrations. Define: -
+participantName: string - email: string - age: int
+
+Make all fields required. Use minimum and maximum constraints so age
+must be from 18 to 60. Test values inside and outside the range.
+
+Task 18: Create a collection named inventory with schema validation.
+Define: - itemName: string - quantity: int - price: double
+
+Make all fields required. Set validationAction to “error” and test an
+invalid insert. Then explore how the collection behaves with the “warn”
+validation action.
+
+Task 19: Create a collection named feedback with schema validation.
+Define: - customerName: string - message: string - rating: int
+
+Make all fields required. Set validationLevel to “strict”. Insert valid
+data, then use an update operation that would make a document invalid.
+Observe the validation result.
+
+Task 20: Create a collection named internshipApplications with schema
+validation. Define: - applicantName: string - email: string - skills:
+array of strings - experience: int - status: string - address: object
+containing city and state as strings
+
+Make applicantName, email, skills, experience and status required. Use
+enum for status with these allowed values: - pending - selected -
+rejected
+
+Use minimum: 0 for experience. Validate the nested address fields and
+restrict extra top-level fields using additionalProperties: false.
+Insert valid and invalid documents to test the complete schema.
+
+============================================================ IMPORTANT
+MONGODB VALIDATION CONCEPTS
+============================================================
+
+Practice and understand these concepts while completing the tasks:
+
+1.  db.createCollection() – Create a collection with options.
+2.  validator – Add validation rules to a collection.
+3.  $jsonSchema – Define a JSON Schema validator.
+4.  bsonType – Specify MongoDB BSON data types.
+5.  required – Specify fields that must be present.
+6.  properties – Define rules for document fields.
+7.  additionalProperties – Control whether extra fields are allowed.
+8.  enum – Restrict a field to a list of allowed values.
+9.  minimum and maximum – Set numeric limits.
+10. validationLevel – Control when validation is applied.
+11. validationAction – Choose whether invalid writes are rejected or
+    warned.
+12. collMod – Modify validation rules on an existing collection.
+
+NOTE: MongoDB schema validation checks documents when they are inserted
+or updated. It does not automatically add missing fields or convert
+values to the required BSON types. Use the correct BSON types when
+inserting documents. For example, use NumberInt(25) for an int and
+NumberDecimal(“25.5”) or an appropriate double value for a double,
+according to the schema.
