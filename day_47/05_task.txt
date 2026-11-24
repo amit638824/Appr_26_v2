@@ -1,0 +1,383 @@
+Express.js – API Routing Practice Tasks
+
+Topic: Express.js Routing, Request Body, Query Parameters & URL
+Parameters
+
+Instructions 1. Create an Express.js server. 2. Use port 8000. 3. Import
+Express and initialize the application. 4. Use express.json()
+middleware. 5. Create separate and unique URLs for every API. 6. Use the
+correct request property according to the task: - req.body – POST
+requests - req.query – GET requests - req.params – DELETE requests 7.
+Send the received data using res.send(). 8. Do not use any database. 9.
+Complete all tasks using Express.js only.
+
+SECTION 1: POST REQUESTS (req.body)
+
+Task 1: Insert Student Create a POST API with URL /insertStudent.
+Receive the following data from the request body: - studentName -
+email - mobile - course Return all received data using res.send().
+
+Task 2: Register Employee Create a POST API with URL /registerEmployee.
+Receive: - employeeName - department - salary - city Return all received
+data.
+
+Task 3: Add Product Create a POST API with URL /addProduct. Receive: -
+productName - category - price - quantity Return all received data.
+
+Task 4: Create Account Create a POST API with URL /createAccount.
+Receive: - username - email - password - accountType Return all received
+data.
+
+Task 5: Add Teacher Create a POST API with URL /addTeacher. Receive: -
+teacherName - subject - qualification - experience Return all received
+data.
+
+Task 6: Register Customer Create a POST API with URL /registerCustomer.
+Receive: - customerName - email - phone - address Return all received
+data.
+
+Task 7: Add Course Create a POST API with URL /addCourse. Receive: -
+courseName - duration - fees - technology Return all received data.
+
+Task 8: Insert Book Create a POST API with URL /insertBook. Receive: -
+bookName - author - publisher - price Return all received data.
+
+Task 9: Add Mobile Create a POST API with URL /addMobile. Receive: -
+mobileName - brand - ram - storage - price Return all received data.
+
+Task 10: Register Patient Create a POST API with URL /registerPatient.
+Receive: - patientName - age - gender - disease Return all received
+data.
+
+Task 11: Add Vehicle Create a POST API with URL /addVehicle. Receive: -
+vehicleName - vehicleNumber - vehicleType - color Return all received
+data.
+
+Task 12: Create Employee Profile Create a POST API with URL
+/createEmployeeProfile. Receive: - fullName - email - designation -
+experience Return all received data.
+
+Task 13: Add Department Create a POST API with URL /addDepartment.
+Receive: - departmentName - departmentHead - totalEmployees - location
+Return all received data.
+
+Task 14: Insert Order Create a POST API with URL /insertOrder.
+Receive: - orderNumber - customerName - totalAmount - paymentMode Return
+all received data.
+
+Task 15: Add Restaurant Create a POST API with URL /addRestaurant.
+Receive: - restaurantName - ownerName - location - foodType Return all
+received data.
+
+Task 16: Register Internship Create a POST API with URL
+/registerInternship. Receive: - internName - technology - duration -
+collegeName Return all received data.
+
+Task 17: Add Laptop Create a POST API with URL /addLaptop. Receive: -
+laptopName - processor - ram - storage - price Return all received data.
+
+Task 18: Create Bank Account Create a POST API with URL
+/createBankAccount. Receive: - accountHolder - bankName - accountType -
+branchName Return all received data.
+
+Task 19: Add Movie Create a POST API with URL /addMovie. Receive: -
+movieName - director - releaseYear - language Return all received data.
+
+Task 20: Register Driver Create a POST API with URL /registerDriver.
+Receive: - driverName - licenseNumber - experience - vehicleType Return
+all received data.
+
+Task 21: Add Event Create a POST API with URL /addEvent. Receive: -
+eventName - eventDate - eventLocation - organizerName Return all
+received data.
+
+Task 22: Insert Employee Salary Create a POST API with URL
+/insertEmployeeSalary. Receive: - employeeId - employeeName -
+basicSalary - allowance - deduction Return all received data.
+
+Task 23: Add Internship Application Create a POST API with URL
+/addInternshipApplication. Receive: - applicantName - email -
+technology - qualification Return all received data.
+
+Task 24: Register Hotel Create a POST API with URL /registerHotel.
+Receive: - hotelName - ownerName - city - roomCapacity Return all
+received data.
+
+Task 25: Add Software Project Create a POST API with URL
+/addSoftwareProject. Receive: - projectName - technology -
+projectManager - deadline Return all received data.
+
+Task 26: Insert Shopping Cart Create a POST API with URL
+/insertShoppingCart. Receive: - customerId - productName - quantity -
+totalPrice Return all received data.
+
+Task 27: Add Sports Player Create a POST API with URL /addSportsPlayer.
+Receive: - playerName - sportName - teamName - jerseyNumber Return all
+received data.
+
+Task 28: Register Vendor Create a POST API with URL /registerVendor.
+Receive: - vendorName - companyName - email - contactNumber Return all
+received data.
+
+Task 29: Add Training Program Create a POST API with URL
+/addTrainingProgram. Receive: - programName - trainerName - duration -
+trainingFees Return all received data.
+
+Task 30: Insert Complaint Create a POST API with URL /insertComplaint.
+Receive: - complainantName - complaintType - description - contactNumber
+Return all received data.
+
+SECTION 2: GET REQUESTS (req.query)
+
+Task 31: Fetch Student Create a GET API with URL /fetchStudent. Receive
+the following data through query parameters: - studentId - studentName -
+course Return all received data. Example URL:
+http://localhost:8000/fetchStudent?studentId=101&studentName=Rahul&course=MERN
+
+Task 32: Search Employee Create a GET API with URL /searchEmployee.
+Receive: - employeeId - department - city Return all received data.
+
+Task 33: Filter Products Create a GET API with URL /filterProducts.
+Receive: - category - minPrice - maxPrice Return all received data.
+
+Task 34: Search Customer Create a GET API with URL /searchCustomer.
+Receive: - customerName - city - mobile Return all received data.
+
+Task 35: Find Teacher Create a GET API with URL /findTeacher. Receive: -
+teacherName - subject - experience Return all received data.
+
+Task 36: Search Book Create a GET API with URL /searchBook. Receive: -
+bookName - author - publisher Return all received data.
+
+Task 37: Find Course Create a GET API with URL /findCourse. Receive: -
+courseName - technology - duration Return all received data.
+
+Task 38: Search Mobile Create a GET API with URL /searchMobile.
+Receive: - brand - ram - storage - maxPrice Return all received data.
+
+Task 39: Find Patient Create a GET API with URL /findPatient. Receive: -
+patientName - age - disease Return all received data.
+
+Task 40: Search Vehicle Create a GET API with URL /searchVehicle.
+Receive: - vehicleName - vehicleType - color Return all received data.
+
+Task 41: Find Department Create a GET API with URL /findDepartment.
+Receive: - departmentName - departmentHead - location Return all
+received data.
+
+Task 42: Search Order Create a GET API with URL /searchOrder. Receive: -
+orderNumber - customerName - paymentMode Return all received data.
+
+Task 43: Find Restaurant Create a GET API with URL /findRestaurant.
+Receive: - restaurantName - city - foodType Return all received data.
+
+Task 44: Search Internship Create a GET API with URL /searchInternship.
+Receive: - technology - duration - qualification Return all received
+data.
+
+Task 45: Find Laptop Create a GET API with URL /findLaptop. Receive: -
+laptopName - processor - minRam - maxPrice Return all received data.
+
+Task 46: Search Bank Account Create a GET API with URL
+/searchBankAccount. Receive: - accountHolder - bankName - accountType
+Return all received data.
+
+Task 47: Find Movie Create a GET API with URL /findMovie. Receive: -
+movieName - director - language - releaseYear Return all received data.
+
+Task 48: Search Driver Create a GET API with URL /searchDriver.
+Receive: - driverName - licenseNumber - vehicleType Return all received
+data.
+
+Task 49: Find Event Create a GET API with URL /findEvent. Receive: -
+eventName - eventDate - organizerName Return all received data.
+
+Task 50: Search Employee Salary Create a GET API with URL
+/searchEmployeeSalary. Receive: - employeeId - employeeName -
+minSalary - maxSalary Return all received data.
+
+Task 51: Find Applicant Create a GET API with URL /findApplicant.
+Receive: - applicantName - technology - collegeName Return all received
+data.
+
+Task 52: Search Hotel Create a GET API with URL /searchHotel. Receive: -
+hotelName - city - roomCapacity Return all received data.
+
+Task 53: Find Software Project Create a GET API with URL
+/findSoftwareProject. Receive: - projectName - technology -
+projectManager Return all received data.
+
+Task 54: Search Shopping Cart Create a GET API with URL
+/searchShoppingCart. Receive: - customerId - productName - quantity
+Return all received data.
+
+Task 55: Find Sports Player Create a GET API with URL /findSportsPlayer.
+Receive: - playerName - sportName - teamName Return all received data.
+
+Task 56: Search Vendor Create a GET API with URL /searchVendor.
+Receive: - vendorName - companyName - contactNumber Return all received
+data.
+
+Task 57: Find Training Program Create a GET API with URL
+/findTrainingProgram. Receive: - programName - trainerName - duration
+Return all received data.
+
+Task 58: Search Complaint Create a GET API with URL /searchComplaint.
+Receive: - complainantName - complaintType - contactNumber Return all
+received data.
+
+Task 59: Find Scholarship Create a GET API with URL /findScholarship.
+Receive: - scholarshipName - eligibility - scholarshipAmount Return all
+received data.
+
+Task 60: Search Flight Create a GET API with URL /searchFlight.
+Receive: - flightNumber - source - destination - travelDate Return all
+received data.
+
+SECTION 3: DELETE REQUESTS (req.params)
+
+Task 61: Delete Student Create a DELETE API with URL /delStudent/:id.
+Receive the student ID using URL parameters. Return the received ID.
+Example URL: http://localhost:8000/delStudent/101
+
+Task 62: Remove Employee Create a DELETE API with URL
+/removeEmployee/:empId. Receive the employee ID using URL parameters.
+Return the received employee ID.
+
+Task 63: Delete Product Create a DELETE API with URL
+/deleteProduct/:productId. Receive the product ID using URL parameters.
+Return the received product ID.
+
+Task 64: Remove Customer Create a DELETE API with URL
+/removeCustomer/:customerId. Receive the customer ID using URL
+parameters. Return the received customer ID.
+
+Task 65: Delete Teacher Create a DELETE API with URL
+/deleteTeacher/:teacherId. Receive the teacher ID using URL parameters.
+Return the received teacher ID.
+
+Task 66: Remove Book Create a DELETE API with URL /removeBook/:bookId.
+Receive the book ID using URL parameters. Return the received book ID.
+
+Task 67: Delete Course Create a DELETE API with URL
+/deleteCourse/:courseId. Receive the course ID using URL parameters.
+Return the received course ID.
+
+Task 68: Remove Mobile Create a DELETE API with URL
+/removeMobile/:mobileId. Receive the mobile ID using URL parameters.
+Return the received mobile ID.
+
+Task 69: Delete Patient Create a DELETE API with URL
+/deletePatient/:patientId. Receive the patient ID using URL parameters.
+Return the received patient ID.
+
+Task 70: Remove Vehicle Create a DELETE API with URL
+/removeVehicle/:vehicleId. Receive the vehicle ID using URL parameters.
+Return the received vehicle ID.
+
+Task 71: Delete Department Create a DELETE API with URL
+/deleteDepartment/:departmentId. Receive the department ID using URL
+parameters. Return the received department ID.
+
+Task 72: Remove Order Create a DELETE API with URL
+/removeOrder/:orderId. Receive the order ID using URL parameters. Return
+the received order ID.
+
+Task 73: Delete Restaurant Create a DELETE API with URL
+/deleteRestaurant/:restaurantId. Receive the restaurant ID using URL
+parameters. Return the received restaurant ID.
+
+Task 74: Remove Internship Create a DELETE API with URL
+/removeInternship/:internshipId. Receive the internship ID using URL
+parameters. Return the received internship ID.
+
+Task 75: Delete Laptop Create a DELETE API with URL
+/deleteLaptop/:laptopId. Receive the laptop ID using URL parameters.
+Return the received laptop ID.
+
+Task 76: Remove Bank Account Create a DELETE API with URL
+/removeBankAccount/:accountId. Receive the account ID using URL
+parameters. Return the received account ID.
+
+Task 77: Delete Movie Create a DELETE API with URL
+/deleteMovie/:movieId. Receive the movie ID using URL parameters. Return
+the received movie ID.
+
+Task 78: Remove Driver Create a DELETE API with URL
+/removeDriver/:driverId. Receive the driver ID using URL parameters.
+Return the received driver ID.
+
+Task 79: Delete Event Create a DELETE API with URL
+/deleteEvent/:eventId. Receive the event ID using URL parameters. Return
+the received event ID.
+
+Task 80: Remove Employee Salary Create a DELETE API with URL
+/removeEmployeeSalary/:salaryId. Receive the salary ID using URL
+parameters. Return the received salary ID.
+
+Task 81: Delete Applicant Create a DELETE API with URL
+/deleteApplicant/:applicantId. Receive the applicant ID using URL
+parameters. Return the received applicant ID.
+
+Task 82: Remove Hotel Create a DELETE API with URL
+/removeHotel/:hotelId. Receive the hotel ID using URL parameters. Return
+the received hotel ID.
+
+Task 83: Delete Software Project Create a DELETE API with URL
+/deleteSoftwareProject/:projectId. Receive the project ID using URL
+parameters. Return the received project ID.
+
+Task 84: Remove Shopping Cart Create a DELETE API with URL
+/removeShoppingCart/:cartId. Receive the cart ID using URL parameters.
+Return the received cart ID.
+
+Task 85: Delete Sports Player Create a DELETE API with URL
+/deleteSportsPlayer/:playerId. Receive the player ID using URL
+parameters. Return the received player ID.
+
+Task 86: Remove Vendor Create a DELETE API with URL
+/removeVendor/:vendorId. Receive the vendor ID using URL parameters.
+Return the received vendor ID.
+
+Task 87: Delete Training Program Create a DELETE API with URL
+/deleteTrainingProgram/:programId. Receive the program ID using URL
+parameters. Return the received program ID.
+
+Task 88: Remove Complaint Create a DELETE API with URL
+/removeComplaint/:complaintId. Receive the complaint ID using URL
+parameters. Return the received complaint ID.
+
+Task 89: Delete Scholarship Create a DELETE API with URL
+/deleteScholarship/:scholarshipId. Receive the scholarship ID using URL
+parameters. Return the received scholarship ID.
+
+Task 90: Remove Flight Create a DELETE API with URL
+/removeFlight/:flightId. Receive the flight ID using URL parameters.
+Return the received flight ID.
+
+SECTION 4: SERVER CONFIGURATION
+
+Task 91: Start Express Server Start your Express server using
+app.listen(). - Port: 8000 - Display a message in the terminal when the
+server starts successfully. - Display the server URL:
+http://localhost:8000
+
+IMPORTANT API STRUCTURE
+
+Method: POST Request Property: req.body Total Tasks: 30
+
+Method: GET Request Property: req.query Total Tasks: 30
+
+Method: DELETE Request Property: req.params Total Tasks: 30
+
+Server Configuration: app.listen() Total Tasks: 1
+
+TOTAL: 90 API TASKS + 1 SERVER CONFIGURATION TASK
+
+IMPORTANT NOTES - Every API must have a unique URL. - POST requests must
+receive data through req.body. - GET requests must receive data through
+req.query. - DELETE requests must receive data through req.params. - Use
+res.send() to return the received data. - Do not use MongoDB, MySQL, or
+any other database. - Write all API routes inside a single Express.js
+server file. - Students must write the complete code themselves without
+copying solutions.
