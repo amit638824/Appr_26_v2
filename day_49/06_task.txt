@@ -1,0 +1,152 @@
+CRUD PRACTICE SHEET – 11 TASKS Technology: Node.js, Express.js, MongoDB,
+Mongoose Total Tasks: 11 Database: crud Port: 8000
+
+GENERAL INSTRUCTIONS 
+1. Create a separate schema and model for every task. 
+2. Use Express.js and Mongoose for all APIs. 
+3. Connect every task to the same MongoDB database: mongodb://localhost:27017/crud 
+4. Use express.json() middleware to read JSON request bodies. 
+5. Create all four CRUD APIs for every task: POST, GET, DELETE, and PUT. 
+6. Use req.body for POST and PUT data. 
+7. Use req.params to receive the MongoDB _id for DELETE and PUT. 
+8. Use .save() for POST, .find() for GET, findByIdAndDelete() for DELETE,
+ and findByIdAndUpdate() with $set for PUT. 
+9. Use unique kebab-case URLs exactly as listed. 10. Every schema
+must contain the five listed fields. MongoDB will generate the _id
+automatically. 11. Test every API using Postman. Return suitable success
+and error responses.
+
+COMMON EXPRESS SETUP - Import express and mongoose. - Create an Express
+app. - Add app.use(express.json()). - Connect to
+mongodb://localhost:27017/crud. - Run the server on port 8000. - Create
+separate schema/model definitions and API routes for each task.
+
+================================================== SECTION 1 – BASIC
+CRUD TASKS ==================================================
+
+TASK 1: CUSTOMER MANAGEMENT SYSTEM Create a CRUD system to manage
+customer records.
+
+Model Name: Customer Collection: customers Schema Fields: 1. name –
+String 2. email – String 3. phone – String 4. city – String 5.
+membershipType – String
+
+API ROUTES - POST /add-customer - GET /fetch-customers - DELETE
+/delete-customer/:_id - PUT /update-customer/:_id
+
+TASK 2: PRODUCT MANAGEMENT SYSTEM Create a CRUD system to manage
+products in a shop.
+
+Model Name: Product Collection: products Schema Fields: 1. productName –
+String 2. category – String 3. price – Number 4. stock – Number 5. brand
+– String
+
+API ROUTES - POST /add-product - GET /fetch-products - DELETE
+/delete-product/:_id - PUT /update-product/:_id
+
+TASK 3: BOOK MANAGEMENT SYSTEM Create a CRUD system to manage books in a
+library.
+
+Model Name: Book Collection: books Schema Fields: 1. title – String 2.
+author – String 3. genre – String 4. price – Number 5. publicationYear –
+Number
+
+API ROUTES - POST /add-book - GET /fetch-books - DELETE
+/delete-book/:_id - PUT /update-book/:_id
+
+TASK 4: COURSE MANAGEMENT SYSTEM Create a CRUD system to manage
+available courses.
+
+Model Name: Course Collection: courses Schema Fields: 1. courseName –
+String 2. duration – String 3. fees – Number 4. mode – String 5.
+instructor – String
+
+API ROUTES - POST /add-course - GET /fetch-courses - DELETE
+/delete-course/:_id - PUT /update-course/:_id
+
+================================================== SECTION 2 –
+INTERMEDIATE CRUD TASKS
+==================================================
+
+TASK 5: ORDER MANAGEMENT SYSTEM Create a CRUD system to manage customer
+orders.
+
+Model Name: Order Collection: orders Schema Fields: 1. orderNumber –
+String 2. customerName – String 3. totalAmount – Number 4. orderStatus –
+String 5. paymentMethod – String
+
+API ROUTES - POST /add-order - GET /fetch-orders - DELETE
+/delete-order/:_id - PUT /update-order/:_id
+
+TASK 6: HOTEL ROOM MANAGEMENT SYSTEM Create a CRUD system to manage
+hotel rooms.
+
+Model Name: HotelRoom Collection: hotelrooms Schema Fields: 1.
+roomNumber – String 2. roomType – String 3. pricePerNight – Number 4.
+availability – Boolean 5. floor – Number
+
+API ROUTES - POST /add-hotel-room - GET /fetch-hotel-rooms - DELETE
+/delete-hotel-room/:_id - PUT /update-hotel-room/:_id
+
+TASK 7: VEHICLE MANAGEMENT SYSTEM Create a CRUD system to manage
+vehicles in a showroom.
+
+Model Name: Vehicle Collection: vehicles Schema Fields: 1. company –
+String 2. model – String 3. registrationNumber – String 4. price –
+Number 5. fuelType – String
+
+API ROUTES - POST /add-vehicle - GET /fetch-vehicles - DELETE
+/delete-vehicle/:_id - PUT /update-vehicle/:_id
+
+TASK 8: FOOD MENU MANAGEMENT SYSTEM Create a CRUD system to manage food
+items in a restaurant.
+
+Model Name: FoodItem Collection: fooditems Schema Fields: 1. itemName –
+String 2. category – String 3. price – Number 4. isAvailable – Boolean
+5. description – String
+
+API ROUTES - POST /add-food-item - GET /fetch-food-items - DELETE
+/delete-food-item/:_id - PUT /update-food-item/:_id
+====================== SECTION 3 – ADVANCED CRUD TASKS ==========================
+TASK 9: EVENT MANAGEMENT SYSTEM Create a CRUD system to manage events.
+
+Model Name: Event Collection: events Schema Fields: 1. eventName –
+String 2. venue – String 3. eventDate – String 4. ticketPrice – Number
+5. availableSeats – Number
+
+API ROUTES - POST /add-event - GET /fetch-events - DELETE
+/delete-event/:_id - PUT /update-event/:_id
+
+TASK 10: INVENTORY MANAGEMENT SYSTEM Create a CRUD system to manage
+inventory items in a warehouse.
+
+Model Name: Inventory Collection: inventories Schema Fields: 1. itemName
+– String 2. sku – String 3. quantity – Number 4. purchasePrice – Number
+5. supplierName – String
+
+API ROUTES - POST /add-inventory - GET /fetch-inventories - DELETE
+/delete-inventory/:_id - PUT /update-inventory/:_id
+
+TASK 11: INTERNSHIP MANAGEMENT SYSTEM Create a CRUD system to manage
+internship openings.
+
+Model Name: Internship Collection: internships Schema Fields: 1. role –
+String 2. technology – String 3. duration – String 4. stipend – Number
+5. openings – Number
+
+API ROUTES - POST /add-internship - GET /fetch-internships - DELETE
+/delete-internship/:_id - PUT /update-internship/:_id
+
+================================================== COMPLETION CHECKLIST
+==================================================
+
+[ ] I created all 11 schemas and models. [ ] I connected the application
+to the crud database. [ ] I created all 11 POST APIs. [ ] I created all
+11 GET APIs. [ ] I created all 11 DELETE APIs using req.params and _id.
+[ ] I created all 11 PUT APIs using req.params, req.body, and $set. [ ]
+I used unique URLs for every task. [ ] I tested all APIs in Postman. [ ]
+I checked success and error responses.
+
+IMPORTANT Do not copy one task’s model or routes and simply rename the
+URL. Build and test each task independently. Keep the same database and
+server port for all 11 tasks.
