@@ -1,0 +1,16 @@
+IMPORTANT NOTICE
+
+Complete the Book Management System with full CRUD operations (Create,
+Read, Update, Delete).
+
+-   Implement proper form validation for all fields.
+-   All fields are required.
+-   Display appropriate validation error messages.
+-   Prevent form submission if validation fails.
+-   Implement Add, Edit, Update, View, and Delete functionality.
+-   Show confirmation before deleting a record.
+-   Display success/error messages for every operation.
+-   Ensure all operations work correctly without page refresh.
+
+Note: Both CRUD functionality and form validation must work properly.
+Only UI design is not sufficient.
